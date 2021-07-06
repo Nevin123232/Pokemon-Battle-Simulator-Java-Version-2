@@ -1,5 +1,4 @@
 # Pokemon-battle-simulator-Java-version-
-Programmer: Nevin N.
 
 A text-based battle sim inspired by pokemon showdown's battle simulator. 
 This is a battle simulator where two players choose between 31 pokemon and have a 1v1 fight between them. The .java files contain the base code to run the project.
