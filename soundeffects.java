@@ -55,7 +55,7 @@ public class soundeffects {
 				
 				whatever.printStackTrace();// (is like whatever.getmessage())  (both output the error/exception)
 				
-				System.out.println("A glitch occures (Whoever created this is stoopid lol)");
+				System.out.println("A glitch occured");
 			}
 			
 			
@@ -99,7 +99,7 @@ public class soundeffects {
 				
 				whatever.printStackTrace();// (is like whatever.getmessage())  (both output the error/exception)
 				
-				System.out.println("A glitch occures (Whoever created this is stoopid lol)");
+				System.out.println("A glitch occured");
 			}
 			
 			
@@ -140,7 +140,7 @@ public class soundeffects {
 				
 				whatever.printStackTrace();// (is like whatever.getmessage())  (both output the error/exception)
 				
-				System.out.println("A glitch occures (Whoever created this is stoopid lol)");
+				System.out.println("A glitch occured");
 			}
 			
 			
@@ -187,7 +187,7 @@ public class soundeffects {
 			
 			whatever.printStackTrace();// (is like whatever.getmessage())  (both output the error/exception)
 			
-			System.out.println("A glitch occures (Whoever created this is stoopid lol)");
+			System.out.println("A glitch occured");
 		}
 		
 		
@@ -232,7 +232,7 @@ public class soundeffects {
 			
 			whatever.printStackTrace();// (is like whatever.getmessage())  (both output the error/exception)
 			
-			System.out.println("A glitch occures (Whoever created this is stoopid lol)");
+			System.out.println("A glitch occured");
 		}
 		
 		
@@ -285,7 +285,7 @@ public class soundeffects {
   			
   			whatever.printStackTrace();// (is like whatever.getmessage())  (both output the error/exception)
   			
-  			System.out.println("A glitch occures (Whoever created this is stoopid lol)");
+  			System.out.println("A glitch occured");
   		}
   		
   		
@@ -332,7 +332,7 @@ public class soundeffects {
   			
   			whatever.printStackTrace();// (is like whatever.getmessage())  (both output the error/exception)
   			
-  			System.out.println("A glitch occures (Whoever created this is stoopid lol)");
+  			System.out.println("A glitch occured");
   		}
   		
   		
@@ -378,7 +378,7 @@ public class soundeffects {
   			
   			whatever.printStackTrace();// (is like whatever.getmessage())  (both output the error/exception)
   			
-  			System.out.println("A glitch occures (Whoever created this is stoopid lol)");
+  			System.out.println("A glitch occured");
   		}
   		
   		
@@ -424,7 +424,7 @@ public class soundeffects {
   			
   			whatever.printStackTrace();// (is like whatever.getmessage())  (both output the error/exception)
   			
-  			System.out.println("A glitch occures (Whoever created this is stoopid lol)");
+  			System.out.println("A glitch occured");
   		}
   		
   		
@@ -471,7 +471,7 @@ public class soundeffects {
   			
   			whatever.printStackTrace();// (is like whatever.getmessage())  (both output the error/exception)
   			
-  			System.out.println("A glitch occures (Whoever created this is stoopid lol)");
+  			System.out.println("A glitch occured");
   		}
   		
   		
@@ -520,7 +520,7 @@ public class soundeffects {
   			
   			whatever.printStackTrace();// (is like whatever.getmessage())  (both output the error/exception)
   			
-  			System.out.println("A glitch occures (Whoever created this is stoopid lol)");
+  			System.out.println("A glitch occured");
   		}
   		
   		
@@ -567,7 +567,7 @@ public class soundeffects {
 			
 			whatever.printStackTrace();// (is like whatever.getmessage())  (both output the error/exception)
 			
-			System.out.println("A glitch occures (Whoever created this is stoopid lol)");
+			System.out.println("A glitch occured");
 		}
 		
 		
