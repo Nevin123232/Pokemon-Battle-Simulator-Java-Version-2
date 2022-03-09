@@ -46,19 +46,19 @@ The usable pokemon programmed into this project are:
 
 The .java files contain the base code to run the project.
 The other files are sound files that play music and sound effects during program execution. The winners and losers are filed in text files in the computer at the end of the program.
-The userlanguage java file is the driver file but all files are needed for program execution
+The userlanguage java file is the driver file but all files are needed for program execution.
 
 
-Two users choose one pokemon each and battle for superiority
+Two users choose one pokemon each and battle for superiority.
 
-The intro.java file contains the code that runs the visuals for the introduction credits
-The introtune.java runs the music in the opening credits
-the move.java  file outlines the properties of pokemon moves present in the program
-The pokemon.java outlines the properties of the pokemon present in the program
-soundeffects.java plays sound effects during execution
-userlanguage is the main class of the program
-The endcredits/endtune java files runs the closing credits
+The intro.java file contains the code that runs the visuals for the introduction credits.
+The introtune.java runs the music in the opening credits.
+The move.java  file outlines the properties of pokemon moves present in the program.
+The pokemon.java outlines the properties of the pokemon present in the program.
+The soundeffects.java plays sound effects during execution.
+The class userlanguage, is the main class of the program.
+The endcredits/endtune java files runs the closing credits.
 
-All other files are sound files that contain soundeffects and battle themes 
+All other files are sound files that contain soundeffects and battle themes.
 
-No copyright intended, all brands belong to their respective owners
+No copyright intended, all brands belong to their respective owners.
