@@ -4,7 +4,7 @@ Project Creator: Nevin Ndonwi
 
 Contact info: nevinfonndonwi@gmail.com
 
-Project Duration: January 2021 - March 2021 (3 months)
+Project Duration: December 2020 - March 2021 (3 months)
 
 This is the second version that I created, the first one I created was a test run in c++. 
 
