@@ -18,7 +18,7 @@ import javax.sound.sampled.Clip;
 // time stuff (how to delay printing) 
 
  
-// This is where we get all the inputs 
+// This is where we get all the inputs
 
 public class userlanguage extends Thread{ // this is the main file , makes threads work
 	 
