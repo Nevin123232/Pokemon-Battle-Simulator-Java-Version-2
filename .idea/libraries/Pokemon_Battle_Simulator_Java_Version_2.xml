@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Pokemon-Battle-Simulator-Java-Version-2">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Battle Sound effects.zip!/" />
+      <root url="jar://$PROJECT_DIR$/End credits theme.zip!/" />
+      <root url="jar://$PROJECT_DIR$/Intro Credits theme.zip!/" />
+      <root url="jar://$PROJECT_DIR$/Pokemon cries.zip!/" />
+      <root url="jar://$PROJECT_DIR$/Choosing pokemon menu theme.zip!/" />
+      <root url="jar://$PROJECT_DIR$/Victory theme.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
