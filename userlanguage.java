@@ -1088,7 +1088,7 @@ public static void playfirered(  ) {
 			}
 			
 			
-		playbattle();// transitions to play the pokemon emerald victory theme!!!!
+		playbattle();// transitions to play the pokemon battle theme!!!!
 		}
 		else {
 			
