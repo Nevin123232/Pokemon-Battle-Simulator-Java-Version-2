@@ -11,7 +11,7 @@ public class battlesequence {
 /*     
  * //
  *  // 
-  		
+
   //
    * 
    *   
@@ -26,7 +26,12 @@ public class battlesequence {
 	static double maxdamageroll = 1.00;
 	
     public static void battleCoordinator(pokemon player1poke, move player1move, pokemon player2poke, move player2move) { // this function will determine who will move first 
-	
+
+		//checks if any player's pokemon have fainted
+		if( (player1poke.hp <= 0) || (player2poke.hp <= 0)){
+			return;
+		}
+
     	if(player1poke.ability.equals("noguard")) {
     		
     		player1poke.move1.accuracy = 101;
@@ -127,8 +132,11 @@ public class battlesequence {
 				
 			}
 		}
-		
-		
+
+		//checks if any player's pokemon have fainted
+		if( (player1poke.hp <= 0) || (player2poke.hp <= 0)){
+			return;
+		}
 		
 		if(player1move.priority > player2move.priority) { // if player 1 move has a higher priority then it will go first
 
@@ -175,8 +183,12 @@ public class battlesequence {
             	 System.out.println("Player 2's " + player2move.movename + " has missed lol. ");
             	  
              }
-	
-			
+
+
+			//checks if any player's pokemon have fainted
+			if( (player1poke.hp <= 0) || (player2poke.hp <= 0)){
+				return;
+			}
 
 		}
 		else if(player1move.priority < player2move.priority) {  // if player 2 move has a higher priority then it will go first
@@ -219,9 +231,13 @@ public class battlesequence {
              	 System.out.println(" Player 1's " + player1move.movename + " has missed lol. ");
              	  
               }
-		
-              
-				
+
+
+
+			//checks if any player's pokemon have fainted
+			if( (player1poke.hp <= 0) || (player2poke.hp <= 0)){
+				return;
+			}
 		}
 		
 		
@@ -269,11 +285,14 @@ public class battlesequence {
                 	 System.out.println(" Player 2's " + player2move.movename +   " has missed lol.");
                 	  
                  }
-		
-				
-				
+
+
+				//checks if any player's pokemon have fainted
+				if( (player1poke.hp <= 0) || (player2poke.hp <= 0)){
+					return;
+				}
 			}
-			else if(player1poke.speed < player2poke.speed) { // if player 2's move is higher then it will move first
+			else if(player1poke.speed < player2poke.speed) { // if player 2's speed is higher then it will move first
 				
 				
 	           int accuracy = rand.nextInt(100); //makes a random value. possible values 0-99
@@ -314,8 +333,11 @@ public class battlesequence {
                 	 System.out.println(" Player 1's " + player1move.movename + " has missed lol. ");
                 	  
                  }
-		
-                 
+
+				//checks if any player's pokemon have fainted
+				if( (player1poke.hp <= 0) || (player2poke.hp <= 0)){
+					return;
+				}
 				
 				
 			}
@@ -365,8 +387,11 @@ public class battlesequence {
 		                	 System.out.println(" Player 1's " + player1move.movename + " move has missed lol. ");
 		                	  
 		                 }
-				
-		                 
+
+					//checks if any player's pokemon have fainted
+					if( (player1poke.hp <= 0) || (player2poke.hp <= 0)){
+						return;
+					}
 							
 				}
 				else if(num <= 1) { // if the number is 0 or 1 then player 1 moves first
@@ -410,8 +435,11 @@ public class battlesequence {
 	                	 System.out.println("Player 2's " + player2move.movename + " has missed lol. ");
 	                	  
 	                 }
-			
-					
+
+					//checks if any player's pokemon have fainted
+					if( (player1poke.hp <= 0) || (player2poke.hp <= 0)){
+						return;
+					}
 					
 				}
 				
@@ -428,7 +456,15 @@ public class battlesequence {
 	 
 	
     public static void player1move(pokemon player1poke, move player1move, pokemon player2poke, move player2move) { // this function will be used for player 1's attack  
-    	// accuracy and move boosts have been determined already. 
+
+
+
+//checks if any player's pokemon have fainted
+		if( (player1poke.hp <= 0) || (player2poke.hp <= 0)){
+			return;
+		}
+
+		// accuracy and move boosts have been determined already.
     	
     		System.out.println("\n PLAYER 1's TURN  \n");
     		String player = " Player 2  ";
@@ -466,8 +502,13 @@ public class battlesequence {
     			soundeffects.poisoned();
     			System.out.println("Player 1's pokemon lost health to poison. " + player1poke.hp + " - " + poison + " = " + (player1poke.hp - poison));
     			player1poke.hp = player1poke.hp - poison;
-    			
-    			
+
+				//checks if any player's pokemon have fainted
+				if( (player1poke.hp <= 0) || (player2poke.hp <= 0)){
+					return;
+				}
+
+
     		}
     		
     		
@@ -477,8 +518,12 @@ public class battlesequence {
     			soundeffects.burned();
     			System.out.println("Player 1's pokemon lost health to burn. " + player1poke.hp + " - " + burn + " = " + (player1poke.hp - burn));
     			player1poke.hp = player1poke.hp - burn;
-    			
-    			
+
+
+				//checks if any player's pokemon have fainted
+				if( (player1poke.hp <= 0) || (player2poke.hp <= 0)){
+					return;
+				}
     		}
     		
     		
@@ -593,6 +638,12 @@ public class battlesequence {
     				double damage = ((double)(((((2 * 100) * 0.2) + 2 )   * 40 * (double) (player1poke.attack/ (double) player1poke.def)) * 0.02 ) + 2) ; // How much damage the move will do (the equation)
     		    	
     				player1poke.hp -= damage;
+
+					//checks if any player's pokemon have fainted
+					if( (player1poke.hp <= 0) || (player2poke.hp <= 0)){
+						return;
+					}
+
         			return;
     				
     			}
@@ -641,62 +692,66 @@ public class battlesequence {
     			player1move.power *= 1.5;
     			
     		}
-    		
-    		
-    		
-    		
-    		
+
+
+
+
+		//checks if any player's pokemon have fainted
+		if( (player1poke.hp <= 0) || (player2poke.hp <= 0)){
+			return;
+		}
+
 //STEEL MOVES
     		if(player1move.movename.equals("meteormash")) {
-    			
+
     			player2poke.hp = meteormash(player1poke, player1move, player2poke,  player);
-    			
+
     			
     		}
     		else if(player1move.movename.equals("bulletpunch")) {
-    			
+
     			player2poke.hp = bulletpunch(player1poke, player1move, player2poke,  player);
-    			
-    			
+
+
     		}
     		else if(player1move.movename.equals("irontail")) {
-    			
+
     			player2poke.hp = irontail(player1poke, player1move, player2poke,  player);
-    			
-    			
+
+
     		}
     		else if(player1move.movename.equals("doubleironbash")) {
-    			
+
     			player2poke.hp = doubleironbash(player1poke, player1move, player2poke,  player);
-    			
+
     			
     		}
     		else if(player1move.movename.equals("steelwing")) {
     			
     			player2poke.hp = steelwing(player1poke, player1move, player2poke,  player);
-    			
-    			
+
+
     		}
     		else if(player1move.movename.equals("flashcannon")) {
     			
     			player2poke.hp = flashcannon(player1poke, player1move, player2poke,  player);
-    			
-    			
+
+
     		}
     		else if(player1move.movename.equals("ironhead")) {
     			
     			player2poke.hp = ironhead(player1poke, player1move, player2poke,  player);
-    			
+
     			
     		}// HEAL MOVES
     		else if(player1move.movename.equals("recover")) {
-    			
+
     			 recover(player1poke, player1move, player2poke,  player);
     			
     			
     		}
     		else if(player1move.movename.equals("morningsun")) {
-		
+
     			morningsun(player1poke, player1move, player2poke,  player);
 		
 		
@@ -751,7 +806,7 @@ public class battlesequence {
     		
         		}
     			else if(player1move.movename.equals("nastyplot")) {
-        			
+
     				nastyplot(player1poke, player1move, player2poke,  player);
     		
     		
@@ -787,7 +842,7 @@ public class battlesequence {
 
     		    			}
     			else if(player1move.movename.equals("toxic")) {
-    				
+
     				toxic(player1poke, player1move, player2poke,  player);
 
 
@@ -1270,8 +1325,12 @@ public class battlesequence {
     
     
     public static void player2move(pokemon player1poke, move player1move, pokemon player2poke, move player2move) { // this function will be used for player 2's attack  
-    	
-    	
+
+
+		//checks if any player's pokemon have fainted
+		if( (player1poke.hp <= 0) || (player2poke.hp <= 0)){
+			return;
+		}
     		System.out.println("\n PLAYER 2'S TURN    \n");
     		String player = " Player 1  ";
     		
@@ -1312,8 +1371,11 @@ public class battlesequence {
     			soundeffects.poisoned();
     			System.out.println("Player 2's pokemon lost health to poison. " + player2poke.hp + " - " + poison + " = " + (player2poke.hp - poison));
     			player2poke.hp = player2poke.hp - poison;
-    			
-    			
+
+				//checks if any player's pokemon have fainted
+				if( (player1poke.hp <= 0) || (player2poke.hp <= 0)){
+					return;
+				}
     		}
     		
     		
@@ -1323,8 +1385,11 @@ public class battlesequence {
     			soundeffects.burned();
     			System.out.println("Player 2's pokemon lost health to burn. " + player2poke.hp + " - " + burn + " = " + (player2poke.hp - burn));
     			player2poke.hp = player2poke.hp - burn;
-    			
-    			
+
+				//checks if any player's pokemon have fainted
+				if( (player1poke.hp <= 0) || (player2poke.hp <= 0)){
+					return;
+				}
     		}
     		
     		
@@ -1357,7 +1422,12 @@ public class battlesequence {
     				double damage = ((double)(((((2 * 100) * 0.2) + 2 )   * 40 * (double) (player2poke.attack/ (double) player2poke.def)) * 0.02 ) + 2) ; // How much damage the move will do (the equation)
     		    	
     				player2poke.hp -= damage;
-    				
+
+					//checks if any player's pokemon have fainted
+					if( (player1poke.hp <= 0) || (player2poke.hp <= 0)){
+						return;
+					}
+
         			return;
     				
     			}	
@@ -1493,7 +1563,12 @@ public class battlesequence {
     			player2move.power *= 1.5;
     			
     		}
-    		
+
+
+		//checks if any player's pokemon have fainted
+		if( (player1poke.hp <= 0) || (player2poke.hp <= 0)){
+			return;
+		}
     		//STEEL MOVES
     		
            if(player2move.movename.equals("meteormash")) {
