@@ -9,8 +9,8 @@ import java.security.*; // imports the secure random class to make a more secure
 public class battlesequence {  
    
 /*     
- * 
- *  
+ * //
+ *  // 
   		
   //
    * 
@@ -21,6 +21,9 @@ public class battlesequence {
  */  // (This only makes pseudorandom) static Random rand = new Random();  // just like with the scanner we have to make a new random number generator, we can make t static so that we don't have to re-declare it throughout the program. 
 	static SecureRandom rand = new SecureRandom();   // makes true random 
 	
+	//ranges for pokemon damage rolls
+	static double mindamageroll = 0.85;
+	static double maxdamageroll = 1.00;
 	
     public static void battleCoordinator(pokemon player1poke, move player1move, pokemon player2poke, move player2move) { // this function will determine who will move first 
 	
@@ -2060,8 +2063,9 @@ public class battlesequence {
     
     	double health = defender.hp; // health value of the pokemon being attacked
     	
-    	
-    	double roll = rand.nextDouble() + 0.2;  if(roll == 0.0) {roll = 0.2;}  if(roll == 0.0) {roll = 0.2;} // The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
+    	//working
+		
+    	double roll = mindamageroll + (maxdamageroll - mindamageroll) * rand.nextDouble() ; // The stupid damage roll pokemon made in gen 3: 0.85-1, 
     	
     	
     	soundeffects.noo(); 
@@ -2252,7 +2256,7 @@ public class battlesequence {
     	double health = defender.hp; // health value of the pokemon being attacked
     	
     	
-          double roll = rand.nextDouble() + 0.2;  if(roll == 0.0) {roll = 0.2;} // The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
+          double roll = mindamageroll + (maxdamageroll - mindamageroll) * rand.nextDouble() ; // The stupid damage roll pokemon made in gen 3: 0.85-1
     	
           soundeffects.noo(); 
           
@@ -2438,9 +2442,9 @@ public class battlesequence {
 
 
     	double health = defender.hp; // health value of the pokemon being attacked
-    	
-    	
-        double roll = rand.nextDouble() + 0.2;  if(roll == 0.0) {roll = 0.2;}// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
+
+
+		double roll = mindamageroll + (maxdamageroll - mindamageroll) * rand.nextDouble() ; // The stupid damage roll pokemon made in gen 3: 0.85-1
     	
         soundeffects.noo(); 
         
@@ -2629,10 +2633,10 @@ public class battlesequence {
     	
 
     	double health = defender.hp; // health value of the pokemon being attacked
-    	
-    	
-        double roll = rand.nextDouble() + 0.2;  if(roll == 0.0) {roll = 0.2;}// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
-    	
+
+
+		double roll = mindamageroll + (maxdamageroll - mindamageroll) * rand.nextDouble() ; // The stupid damage roll pokemon made in gen 3: 0.85-1
+		
         soundeffects.noo(); 
         
     	System.out.println("Your damage roll is " + roll);
@@ -2807,7 +2811,7 @@ public class battlesequence {
     	double health = defender.hp; // health value of the pokemon being attacked
     	
     	
-        double roll = rand.nextDouble() + 0.2;  if(roll == 0.0) {roll = 0.2;}// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
+        double roll = mindamageroll + (maxdamageroll - mindamageroll) * rand.nextDouble() ; //now modified to 0.85-1)// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
     	
         soundeffects.noo(); 
         
@@ -2989,7 +2993,7 @@ public class battlesequence {
     	double health = defender.hp; // health value of the pokemon being attacked
     	
     	
-        double roll = rand.nextDouble() + 0.2;  if(roll == 0.0) {roll = 0.2;}// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
+        double roll = mindamageroll + (maxdamageroll - mindamageroll) * rand.nextDouble() ; //now modified to 0.85-1)// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
     	
         soundeffects.noo(); 
         
@@ -3193,7 +3197,7 @@ public class battlesequence {
   	double health = defender.hp; // health value of the pokemon being attacked
   	
   	
-      double roll = rand.nextDouble() + 0.2;  if(roll == 0.0) {roll = 0.2;}// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
+      double roll = mindamageroll + (maxdamageroll - mindamageroll) * rand.nextDouble() ; //now modified to 0.85-1)// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
   	
       soundeffects.noo(); 
       
@@ -3978,7 +3982,7 @@ public class battlesequence {
         	    	double health = defender.hp; // health value of the pokemon being attacked
         	    	
         	    	
-        	        double roll = rand.nextDouble() + 0.2;  if(roll == 0.0) {roll = 0.2;}// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
+        	        double roll = mindamageroll + (maxdamageroll - mindamageroll) * rand.nextDouble() ; //now modified to 0.85-1)// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
         	    	
         	        soundeffects.noo(); 
         	        
@@ -4890,7 +4894,7 @@ public class battlesequence {
         	    	double health = defender.hp; // health value of the pokemon being attacked
         	    	
         	    	
-        	        double roll = rand.nextDouble() + 0.2;  if(roll == 0.0) {roll = 0.2;}// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
+        	        double roll = mindamageroll + (maxdamageroll - mindamageroll) * rand.nextDouble() ; //now modified to 0.85-1)// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
         	    	
         	        soundeffects.noo(); 
         	        
@@ -5047,7 +5051,7 @@ public class battlesequence {
         	    	double health = defender.hp; // health value of the pokemon being attacked
         	    	
         	    	
-        	        double roll = rand.nextDouble() + 0.2;  if(roll == 0.0) {roll = 0.2;}// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
+        	        double roll = mindamageroll + (maxdamageroll - mindamageroll) * rand.nextDouble() ; //now modified to 0.85-1)// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
         	    	
         	        soundeffects.noo(); 
         	        
@@ -5252,7 +5256,7 @@ public class battlesequence {
         	    	double health = defender.hp; // health value of the pokemon being attacked
         	    	
         	    	
-        	        double roll = rand.nextDouble() + 0.2;  if(roll == 0.0) {roll = 0.2;}// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
+        	        double roll = mindamageroll + (maxdamageroll - mindamageroll) * rand.nextDouble() ; //now modified to 0.85-1)// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
         	    	
         	    
         	        soundeffects.noo(); 
@@ -5381,7 +5385,7 @@ public class battlesequence {
         	    	double health = defender.hp; // health value of the pokemon being attacked
         	    	
         	    	
-        	        double roll = rand.nextDouble() + 0.2;  if(roll == 0.0) {roll = 0.2;}// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
+        	        double roll = mindamageroll + (maxdamageroll - mindamageroll) * rand.nextDouble() ; //now modified to 0.85-1)// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
         	    	
         	        soundeffects.noo(); 
         	        
@@ -5538,7 +5542,7 @@ public class battlesequence {
         	    	double health = defender.hp; // health value of the pokemon being attacked
         	    	
         	    	
-        	        double roll = rand.nextDouble() + 0.2;  if(roll == 0.0) {roll = 0.2;}// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
+        	        double roll = mindamageroll + (maxdamageroll - mindamageroll) * rand.nextDouble() ; //now modified to 0.85-1)// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
         	    	
         	        soundeffects.noo(); 
         	        
@@ -5702,7 +5706,7 @@ public class battlesequence {
         	    	double health = defender.hp; // health value of the pokemon being attacked
         	    	
         	    	
-        	        double roll = rand.nextDouble() + 0.2;  if(roll == 0.0) {roll = 0.2;}// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
+        	        double roll = mindamageroll + (maxdamageroll - mindamageroll) * rand.nextDouble() ; //now modified to 0.85-1)// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
         	    	
         	    	System.out.println("Your damage roll is " + roll);
         	    	
@@ -5859,7 +5863,7 @@ public class battlesequence {
         	    	double health = defender.hp; // health value of the pokemon being attacked
         	    	
         	    	
-        	        double roll = rand.nextDouble() + 0.2;  if(roll == 0.0) {roll = 0.2;}// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
+        	        double roll = mindamageroll + (maxdamageroll - mindamageroll) * rand.nextDouble() ; //now modified to 0.85-1)// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
         	    	
         	    	System.out.println("Your damage roll is " + roll);
         	    	
@@ -6014,7 +6018,7 @@ public class battlesequence {
         	    	double health = defender.hp; // health value of the pokemon being attacked
         	    	
         	    	
-        	        double roll = rand.nextDouble() + 0.2;  if(roll == 0.0) {roll = 0.2;}// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
+        	        double roll = mindamageroll + (maxdamageroll - mindamageroll) * rand.nextDouble() ; //now modified to 0.85-1)// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
         	    	
         	    	System.out.println("Your damage roll is " + roll);
         	    	
@@ -6228,7 +6232,7 @@ public class battlesequence {
         	    	double health = defender.hp; // health value of the pokemon being attacked
         	    	
         	    	
-        	        double roll = rand.nextDouble() + 0.2;  if(roll == 0.0) {roll = 0.2;}// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
+        	        double roll = mindamageroll + (maxdamageroll - mindamageroll) * rand.nextDouble() ; //now modified to 0.85-1)// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
         	    	
         	    	System.out.println("Your damage roll is " + roll);
         	    	
@@ -6434,7 +6438,7 @@ public class battlesequence {
         	    	double health = defender.hp; // health value of the pokemon being attacked
         	    	
         	    	
-        	        double roll = rand.nextDouble() + 0.2;  if(roll == 0.0) {roll = 0.2;}// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
+        	        double roll = mindamageroll + (maxdamageroll - mindamageroll) * rand.nextDouble() ; //now modified to 0.85-1)// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
         	    	
         	    	System.out.println("Your damage roll is " + roll);
         	    	
@@ -6613,7 +6617,7 @@ public class battlesequence {
         	    	double health = defender.hp; // health value of the pokemon being attacked
         	    	
         	    	
-        	        double roll = rand.nextDouble() + 0.2;  if(roll == 0.0) {roll = 0.2;}// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
+        	        double roll = mindamageroll + (maxdamageroll - mindamageroll) * rand.nextDouble() ; //now modified to 0.85-1)// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
         	    	
         	    	System.out.println("Your damage roll is " + roll);
         	    	
@@ -6836,7 +6840,7 @@ public class battlesequence {
         	    	
         	    	
         	    	
-        	        double roll = rand.nextDouble() + 0.2;  if(roll == 0.0) {roll = 0.2;}// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
+        	        double roll = mindamageroll + (maxdamageroll - mindamageroll) * rand.nextDouble() ; //now modified to 0.85-1)// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
         	    	
         	    	System.out.println("Your damage roll is " + roll);
         	    	
@@ -7016,7 +7020,7 @@ public class battlesequence {
         	    	double health = defender.hp; // health value of the pokemon being attacked
         	    	
         	    	
-        	        double roll = rand.nextDouble() + 0.2;  if(roll == 0.0) {roll = 0.2;}// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
+        	        double roll = mindamageroll + (maxdamageroll - mindamageroll) * rand.nextDouble() ; //now modified to 0.85-1)// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
         	    	
         	    	System.out.println("Your damage roll is " + roll);
         	    	
@@ -7212,7 +7216,7 @@ public class battlesequence {
         	    	double health = defender.hp; // health value of the pokemon being attacked
         	    	
         	    	
-        	        double roll = rand.nextDouble() + 0.2;  if(roll == 0.0) {roll = 0.2;}// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
+        	        double roll = mindamageroll + (maxdamageroll - mindamageroll) * rand.nextDouble() ; //now modified to 0.85-1)// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
         	    	
         	    	System.out.println("Your damage roll is " + roll);
         	    	
@@ -7388,7 +7392,7 @@ public class battlesequence {
         	    	double health = defender.hp; // health value of the pokemon being attacked
         	    	
         	    	
-        	        double roll = rand.nextDouble() + 0.2;  if(roll == 0.0) {roll = 0.2;}// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
+        	        double roll = mindamageroll + (maxdamageroll - mindamageroll) * rand.nextDouble() ; //now modified to 0.85-1)// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
         	    	
         	    	System.out.println("Your damage roll is " + roll);
         	    	
@@ -7590,7 +7594,7 @@ public class battlesequence {
         	    	double health = defender.hp; // health value of the pokemon being attacked
         	    	
         	    	
-        	        double roll = rand.nextDouble() + 0.2;  if(roll == 0.0) {roll = 0.2;}// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
+        	        double roll = mindamageroll + (maxdamageroll - mindamageroll) * rand.nextDouble() ; //now modified to 0.85-1)// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
         	    	
         	    	System.out.println("Your damage roll is " + roll);
         	    	
@@ -7769,7 +7773,7 @@ public class battlesequence {
         	    	double health = defender.hp; // health value of the pokemon being attacked
         	    	
         	    	
-        	        double roll = rand.nextDouble() + 0.2;  if(roll == 0.0) {roll = 0.2;}// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
+        	        double roll = mindamageroll + (maxdamageroll - mindamageroll) * rand.nextDouble() ; //now modified to 0.85-1)// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
         	    	
         	    	System.out.println("Your damage roll is " + roll);
         	    	
@@ -7943,7 +7947,7 @@ public class battlesequence {
         	    	double health = defender.hp; // health value of the pokemon being attacked
         	    	
         	    	
-        	        double roll = rand.nextDouble() + 0.2;  if(roll == 0.0) {roll = 0.2;}// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
+        	        double roll = mindamageroll + (maxdamageroll - mindamageroll) * rand.nextDouble() ; //now modified to 0.85-1)// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
         	    	
         	    	System.out.println("Your damage roll is " + roll);
         	    	
@@ -8139,7 +8143,7 @@ public class battlesequence {
         	    	double health = defender.hp; // health value of the pokemon being attacked
         	    	
         	    	
-        	        double roll = rand.nextDouble() + 0.2;  if(roll == 0.0) {roll = 0.2;}// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
+        	        double roll = mindamageroll + (maxdamageroll - mindamageroll) * rand.nextDouble() ; //now modified to 0.85-1)// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
         	    	
         	    	System.out.println("Your damage roll is " + roll);
         	    	
@@ -8327,7 +8331,7 @@ public class battlesequence {
         	    	double health = defender.hp; // health value of the pokemon being attacked
         	    	
         	    	
-        	        double roll = rand.nextDouble() + 0.2;  if(roll == 0.0) {roll = 0.2;}// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
+        	        double roll = mindamageroll + (maxdamageroll - mindamageroll) * rand.nextDouble() ; //now modified to 0.85-1)// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
         	    	
         	    	System.out.println("Your damage roll is " + roll);
         	    	
@@ -8519,7 +8523,7 @@ public class battlesequence {
         	    	double health = defender.hp; // health value of the pokemon being attacked
         	    	
         	    	
-        	        double roll = rand.nextDouble() + 0.2;  if(roll == 0.0) {roll = 0.2;}// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
+        	        double roll = mindamageroll + (maxdamageroll - mindamageroll) * rand.nextDouble() ; //now modified to 0.85-1)// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
         	    	
         	    	System.out.println("Your damage roll is " + roll);
         	    	
@@ -8727,7 +8731,7 @@ public class battlesequence {
         	    	double health = defender.hp; // health value of the pokemon being attacked
         	    	
         	    	
-        	        double roll = rand.nextDouble() + 0.2;  if(roll == 0.0) {roll = 0.2;}// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
+        	        double roll = mindamageroll + (maxdamageroll - mindamageroll) * rand.nextDouble() ; //now modified to 0.85-1)// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
         	    	
         	    	System.out.println("Your damage roll is " + roll);
         	    	
@@ -8898,7 +8902,7 @@ public class battlesequence {
         	    	double health = defender.hp; // health value of the pokemon being attacked
         	    	
         	    	
-        	        double roll = rand.nextDouble() + 0.2;  if(roll == 0.0) {roll = 0.2;}// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
+        	        double roll = mindamageroll + (maxdamageroll - mindamageroll) * rand.nextDouble() ; //now modified to 0.85-1)// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
         	    	
         	    	System.out.println("Your damage roll is " + roll);
         	    	
@@ -9129,7 +9133,7 @@ public class battlesequence {
         	    	double health = defender.hp; // health value of the pokemon being attacked
         	    	
         	    	
-        	        double roll = rand.nextDouble() + 0.2;  if(roll == 0.0) {roll = 0.2;}// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
+        	        double roll = mindamageroll + (maxdamageroll - mindamageroll) * rand.nextDouble() ; //now modified to 0.85-1)// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
         	    	
         	    	System.out.println("Your damage roll is " + roll);
         	    	
@@ -9307,7 +9311,7 @@ public class battlesequence {
         	    	double health = defender.hp; // health value of the pokemon being attacked
         	    	
         	    	
-        	        double roll = rand.nextDouble() + 0.2;  if(roll == 0.0) {roll = 0.2;}// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
+        	        double roll = mindamageroll + (maxdamageroll - mindamageroll) * rand.nextDouble() ; //now modified to 0.85-1)// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
         	    	
         	    	System.out.println("Your damage roll is " + roll);
         	    	
@@ -9473,7 +9477,7 @@ public class battlesequence {
         	    	double health = defender.hp; // health value of the pokemon being attacked
         	    	
         	    	
-        	        double roll = rand.nextDouble() + 0.2;  if(roll == 0.0) {roll = 0.2;}// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
+        	        double roll = mindamageroll + (maxdamageroll - mindamageroll) * rand.nextDouble() ; //now modified to 0.85-1)// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
         	    	
         	    	System.out.println("Your damage roll is " + roll);
         	    	
@@ -9647,7 +9651,7 @@ public class battlesequence {
         	    	double health = defender.hp; // health value of the pokemon being attacked
         	    	
         	    	
-        	        double roll = rand.nextDouble() + 0.2;  if(roll == 0.0) {roll = 0.2;}// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
+        	        double roll = mindamageroll + (maxdamageroll - mindamageroll) * rand.nextDouble() ; //now modified to 0.85-1)// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
         	    	
         	    	System.out.println("Your damage roll is " + roll);
         	    	
@@ -9831,7 +9835,7 @@ public class battlesequence {
         	    	double health = defender.hp; // health value of the pokemon being attacked
         	    	
         	    	
-        	        double roll = rand.nextDouble() + 0.2;  if(roll == 0.0) {roll = 0.2;}// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
+        	        double roll = mindamageroll + (maxdamageroll - mindamageroll) * rand.nextDouble() ; //now modified to 0.85-1)// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
         	    	
         	    	System.out.println("Your damage roll is " + roll);
         	    	
@@ -9989,7 +9993,7 @@ public class battlesequence {
         	    	double health = defender.hp; // health value of the pokemon being attacked
         	    	
         	    	
-        	        double roll = rand.nextDouble() + 0.2;  if(roll == 0.0) {roll = 0.2;}// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
+        	        double roll = mindamageroll + (maxdamageroll - mindamageroll) * rand.nextDouble() ; //now modified to 0.85-1)// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
         	    	
         	    	System.out.println("Your damage roll is " + roll);
         	    	
@@ -10152,7 +10156,7 @@ public class battlesequence {
         	    	double health = defender.hp; // health value of the pokemon being attacked
         	    	
         	    	
-        	        double roll = rand.nextDouble() + 0.2;  if(roll == 0.0) {roll = 0.2;}// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
+        	        double roll = mindamageroll + (maxdamageroll - mindamageroll) * rand.nextDouble() ; //now modified to 0.85-1)// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
         	    	
         	    	System.out.println("Your damage roll is " + roll);
         	    	
@@ -10317,7 +10321,7 @@ public class battlesequence {
          	    	double health = defender.hp; // health value of the pokemon being attacked
          	    	
          	    	
-         	        double roll = rand.nextDouble() + 0.2;  if(roll == 0.0) {roll = 0.2;}// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
+         	        double roll = mindamageroll + (maxdamageroll - mindamageroll) * rand.nextDouble() ; //now modified to 0.85-1)// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
          	    	
          	    	System.out.println("Your damage roll is " + roll);
          	    	soundeffects.noo(); 
@@ -10513,7 +10517,7 @@ public class battlesequence {
         	    	double health = defender.hp; // health value of the pokemon being attacked
         	    	
         	    	
-        	        double roll = rand.nextDouble() + 0.2;  if(roll == 0.0) {roll = 0.2;}// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
+        	        double roll = mindamageroll + (maxdamageroll - mindamageroll) * rand.nextDouble() ; //now modified to 0.85-1)// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
         	    	
         	    	System.out.println("Your damage roll is " + roll);
         	    	
@@ -10717,7 +10721,7 @@ public class battlesequence {
         	    	double health = defender.hp; // health value of the pokemon being attacked
         	    	
         	    	
-        	        double roll = rand.nextDouble() + 0.2;  if(roll == 0.0) {roll = 0.2;}// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
+        	        double roll = mindamageroll + (maxdamageroll - mindamageroll) * rand.nextDouble() ; //now modified to 0.85-1)// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
         	    	
         	    	System.out.println("Your damage roll is " + roll);
         	    	
@@ -10898,7 +10902,7 @@ public class battlesequence {
         	    	double health = defender.hp; // health value of the pokemon being attacked
         	    	
         	    	
-        	        double roll = rand.nextDouble() + 0.2;  if(roll == 0.0) {roll = 0.2;}// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
+        	        double roll = mindamageroll + (maxdamageroll - mindamageroll) * rand.nextDouble() ; //now modified to 0.85-1)// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
         	    	
         	    	System.out.println("Your damage roll is " + roll);
         	    	
@@ -11070,7 +11074,7 @@ public class battlesequence {
         	    	double health = defender.hp; // health value of the pokemon being attacked
         	    	
         	    	
-        	        double roll = rand.nextDouble() + 0.2;  if(roll == 0.0) {roll = 0.2;}// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
+        	        double roll = mindamageroll + (maxdamageroll - mindamageroll) * rand.nextDouble() ; //now modified to 0.85-1)// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
         	    	
         	    	System.out.println("Your damage roll is " + roll);
         	    	
@@ -11247,7 +11251,7 @@ public class battlesequence {
         	    	double health = defender.hp; // health value of the pokemon being attacked
         	    	
         	    	
-        	        double roll = rand.nextDouble() + 0.2;  if(roll == 0.0) {roll = 0.2;}// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
+        	        double roll = mindamageroll + (maxdamageroll - mindamageroll) * rand.nextDouble() ; //now modified to 0.85-1)// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
         	    	
         	    	System.out.println("Your damage roll is " + roll);
         	    	
@@ -11425,7 +11429,7 @@ public class battlesequence {
         	    	double health = defender.hp; // health value of the pokemon being attacked
         	    	
         	    	
-        	        double roll = rand.nextDouble() + 0.2;  if(roll == 0.0) {roll = 0.2;}// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
+        	        double roll = mindamageroll + (maxdamageroll - mindamageroll) * rand.nextDouble() ; //now modified to 0.85-1)// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
         	    	
         	    	System.out.println("Your damage roll is " + roll);
         	    	
@@ -11599,7 +11603,7 @@ public class battlesequence {
         	    	double health = defender.hp; // health value of the pokemon being attacked
         	    	
         	    	
-        	        double roll = rand.nextDouble() + 0.2;  if(roll == 0.0) {roll = 0.2;}// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
+        	        double roll = mindamageroll + (maxdamageroll - mindamageroll) * rand.nextDouble() ; //now modified to 0.85-1)// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
         	    	
         	    	System.out.println("Your damage roll is " + roll);
         	    	
@@ -11776,7 +11780,7 @@ public class battlesequence {
         	    	double health = defender.hp; // health value of the pokemon being attacked
         	    	
         	    	
-        	        double roll = rand.nextDouble() + 0.2;  if(roll == 0.0) {roll = 0.2;}// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
+        	        double roll = mindamageroll + (maxdamageroll - mindamageroll) * rand.nextDouble() ; //now modified to 0.85-1)// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
         	    	
         	    	System.out.println("Your damage roll is " + roll);
         	    	
@@ -11989,7 +11993,7 @@ public class battlesequence {
         	    	double health = defender.hp; // health value of the pokemon being attacked
         	    	
         	    	
-        	        double roll = rand.nextDouble() + 0.2;  if(roll == 0.0) {roll = 0.2;}// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
+        	        double roll = mindamageroll + (maxdamageroll - mindamageroll) * rand.nextDouble() ; //now modified to 0.85-1)// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
         	    	
         	    	System.out.println("Your damage roll is " + roll);
         	    	
@@ -12175,7 +12179,7 @@ public class battlesequence {
         	    	double health = defender.hp; // health value of the pokemon being attacked
         	    	
         	    	
-        	        double roll = rand.nextDouble() + 0.2;  if(roll == 0.0) {roll = 0.2;}// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
+        	        double roll = mindamageroll + (maxdamageroll - mindamageroll) * rand.nextDouble() ; //now modified to 0.85-1)// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
         	    	
         	    	System.out.println("Your damage roll is " + roll);
         	    	
@@ -12408,7 +12412,7 @@ public class battlesequence {
         	    	double health = defender.hp; // health value of the pokemon being attacked
         	    	
         	    	
-        	        double roll = rand.nextDouble() + 0.2;  if(roll == 0.0) {roll = 0.2;}// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
+        	        double roll = mindamageroll + (maxdamageroll - mindamageroll) * rand.nextDouble() ; //now modified to 0.85-1)// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
         	    	
         	    	System.out.println("Your damage roll is " + roll);
         	    	
@@ -12615,7 +12619,7 @@ public class battlesequence {
         	    	double health = defender.hp; // health value of the pokemon being attacked
         	    	
         	    	
-        	        double roll = rand.nextDouble() + 0.2;  if(roll == 0.0) {roll = 0.2;}// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
+        	        double roll = mindamageroll + (maxdamageroll - mindamageroll) * rand.nextDouble() ; //now modified to 0.85-1)// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
         	    	
         	    	System.out.println("Your damage roll is " + roll);
         	    	
@@ -12834,7 +12838,7 @@ public class battlesequence {
         	    	double health = defender.hp; // health value of the pokemon being attacked
         	    	
         	    	
-        	        double roll = rand.nextDouble() + 0.2;  if(roll == 0.0) {roll = 0.2;}// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
+        	        double roll = mindamageroll + (maxdamageroll - mindamageroll) * rand.nextDouble() ; //now modified to 0.85-1)// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
         	    	
         	    	System.out.println("Your damage roll is " + roll);
         	    	
@@ -13041,7 +13045,7 @@ public class battlesequence {
         	    	double health = defender.hp; // health value of the pokemon being attacked
         	    	
         	    	
-        	        double roll = rand.nextDouble() + 0.2;  if(roll == 0.0) {roll = 0.2;}// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
+        	        double roll = mindamageroll + (maxdamageroll - mindamageroll) * rand.nextDouble() ; //now modified to 0.85-1)// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
         	    	
         	    	System.out.println("Your damage roll is " + roll);
         	    	
@@ -13256,7 +13260,7 @@ public class battlesequence {
         	    	double health = defender.hp; // health value of the pokemon being attacked
         	    	
         	    	
-        	        double roll = rand.nextDouble() + 0.2;  if(roll == 0.0) {roll = 0.2;}// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
+        	        double roll = mindamageroll + (maxdamageroll - mindamageroll) * rand.nextDouble() ; //now modified to 0.85-1)// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
         	    	
         	    	System.out.println("Your damage roll is " + roll);
         	    	
@@ -13468,7 +13472,7 @@ public class battlesequence {
         	    	double health = defender.hp; // health value of the pokemon being attacked
         	    	
         	    	
-        	        double roll = rand.nextDouble() + 0.2;  if(roll == 0.0) {roll = 0.2;}// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
+        	        double roll = mindamageroll + (maxdamageroll - mindamageroll) * rand.nextDouble() ; //now modified to 0.85-1)// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
         	    	
         	    	System.out.println("Your damage roll is " + roll);
         	    	
@@ -13682,7 +13686,7 @@ public class battlesequence {
         	    	double health = defender.hp; // health value of the pokemon being attacked
         	    	
         	    	
-        	        double roll = rand.nextDouble() + 0.2;  if(roll == 0.0) {roll = 0.2;}// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
+        	        double roll = mindamageroll + (maxdamageroll - mindamageroll) * rand.nextDouble() ; //now modified to 0.85-1)// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
         	    	
         	    	System.out.println("Your damage roll is " + roll);
         	    	
@@ -13847,7 +13851,7 @@ public class battlesequence {
         	    	double health = defender.hp; // health value of the pokemon being attacked
         	    	
         	    	
-        	        double roll = rand.nextDouble() + 0.2;  if(roll == 0.0) {roll = 0.2;}// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
+        	        double roll = mindamageroll + (maxdamageroll - mindamageroll) * rand.nextDouble() ; //now modified to 0.85-1)// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
         	    	
         	    	System.out.println("Your damage roll is " + roll);
         	    	
@@ -14047,7 +14051,7 @@ public class battlesequence {
         	    	double health = defender.hp; // health value of the pokemon being attacked
         	    	
         	    	
-        	        double roll = rand.nextDouble() + 0.2;  if(roll == 0.0) {roll = 0.2;}// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
+        	        double roll = mindamageroll + (maxdamageroll - mindamageroll) * rand.nextDouble() ; //now modified to 0.85-1)// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
         	    	
         	    	System.out.println("Your damage roll is " + roll);
         	    	
@@ -14226,7 +14230,7 @@ public class battlesequence {
         	    	double health = defender.hp; // health value of the pokemon being attacked
         	    	
         	    	
-        	        double roll = rand.nextDouble() + 0.2;  if(roll == 0.0) {roll = 0.2;}// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
+        	        double roll = mindamageroll + (maxdamageroll - mindamageroll) * rand.nextDouble() ; //now modified to 0.85-1)// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
         	    	
         	    	System.out.println("Your damage roll is " + roll);
         	    	
@@ -14420,7 +14424,7 @@ public class battlesequence {
         	    	double health = defender.hp; // health value of the pokemon being attacked
         	    	
         	    	
-        	        double roll = rand.nextDouble() + 0.2;  if(roll == 0.0) {roll = 0.2;}// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
+        	        double roll = mindamageroll + (maxdamageroll - mindamageroll) * rand.nextDouble() ; //now modified to 0.85-1)// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
         	    	
         	    	System.out.println("Your damage roll is " + roll);
         	    	
@@ -14633,7 +14637,7 @@ public class battlesequence {
         	    	double health = defender.hp; // health value of the pokemon being attacked
         	    	
         	    	
-        	        double roll = rand.nextDouble() + 0.2;  if(roll == 0.0) {roll = 0.2;}// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
+        	        double roll = mindamageroll + (maxdamageroll - mindamageroll) * rand.nextDouble() ; //now modified to 0.85-1)// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
         	    	
         	    	System.out.println("Your damage roll is " + roll);
         	    	
@@ -14830,7 +14834,7 @@ public class battlesequence {
         	    	double health = defender.hp; // health value of the pokemon being attacked
         	    	
         	    	
-        	        double roll = rand.nextDouble() + 0.2;  if(roll == 0.0) {roll = 0.2;}// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
+        	        double roll = mindamageroll + (maxdamageroll - mindamageroll) * rand.nextDouble() ; //now modified to 0.85-1)// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
         	    	
         	    	System.out.println("Your damage roll is " + roll);
         	    	
@@ -15001,7 +15005,7 @@ public class battlesequence {
         	    	double health = defender.hp; // health value of the pokemon being attacked
         	    	
         	    	
-        	        double roll = rand.nextDouble() + 0.2;  if(roll == 0.0) {roll = 0.2;}// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
+        	        double roll = mindamageroll + (maxdamageroll - mindamageroll) * rand.nextDouble() ; //now modified to 0.85-1)// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
         	    	
         	    	System.out.println("Your damage roll is " + roll);
         	    	
@@ -15173,7 +15177,7 @@ public class battlesequence {
         	    	double health = defender.hp; // health value of the pokemon being attacked
         	    	
         	    	
-        	        double roll = rand.nextDouble() + 0.2;  if(roll == 0.0) {roll = 0.2;}// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
+        	        double roll = mindamageroll + (maxdamageroll - mindamageroll) * rand.nextDouble() ; //now modified to 0.85-1)// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
         	    	
         	    	System.out.println("Your damage roll is " + roll);
         	    	
@@ -15345,7 +15349,7 @@ public class battlesequence {
         	    	double health = defender.hp; // health value of the pokemon being attacked
         	    	
         	    	
-        	        double roll = rand.nextDouble() + 0.2;  if(roll == 0.0) {roll = 0.2;}// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
+        	        double roll = mindamageroll + (maxdamageroll - mindamageroll) * rand.nextDouble() ; //now modified to 0.85-1)// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
         	    	
         	    	System.out.println("Your damage roll is " + roll);
         	    	
@@ -15539,7 +15543,7 @@ public class battlesequence {
         	    	double health = defender.hp; // health value of the pokemon being attacked
         	    	
         	    	
-        	        double roll = rand.nextDouble() + 0.2;  if(roll == 0.0) {roll = 0.2;}// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
+        	        double roll = mindamageroll + (maxdamageroll - mindamageroll) * rand.nextDouble() ; //now modified to 0.85-1)// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
         	    	
         	    	System.out.println("Your damage roll is " + roll);
         	    	
@@ -15746,7 +15750,7 @@ public class battlesequence {
         	    	double health = defender.hp; // health value of the pokemon being attacked
         	    	
         	    	
-        	        double roll = rand.nextDouble() + 0.2;  if(roll == 0.0) {roll = 0.2;}// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
+        	        double roll = mindamageroll + (maxdamageroll - mindamageroll) * rand.nextDouble() ; //now modified to 0.85-1)// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
         	    	
         	    	System.out.println("Your damage roll is " + roll);
         	    	
@@ -15941,7 +15945,7 @@ public class battlesequence {
         	    	double health = defender.hp; // health value of the pokemon being attacked
         	    	
         	    	
-        	        double roll = rand.nextDouble() + 0.2;  if(roll == 0.0) {roll = 0.2;}// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
+        	        double roll = mindamageroll + (maxdamageroll - mindamageroll) * rand.nextDouble() ; //now modified to 0.85-1)// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
         	    	
         	    	System.out.println("Your damage roll is " + roll);
         	    	
@@ -16142,7 +16146,7 @@ public class battlesequence {
         	    	double health = defender.hp; // health value of the pokemon being attacked
         	    	
         	    	
-        	        double roll = rand.nextDouble() + 0.2;  if(roll == 0.0) {roll = 0.2;}// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
+        	        double roll = mindamageroll + (maxdamageroll - mindamageroll) * rand.nextDouble() ; //now modified to 0.85-1)// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
         	    	
         	        soundeffects.noo(); 
         	    	System.out.println("Your damage roll is " + roll);
@@ -16336,7 +16340,7 @@ public class battlesequence {
         	    	double health = defender.hp; // health value of the pokemon being attacked
         	    	
         	    	
-        	        double roll = rand.nextDouble() + 0.2;  if(roll == 0.0) {roll = 0.2;}// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
+        	        double roll = mindamageroll + (maxdamageroll - mindamageroll) * rand.nextDouble() ; //now modified to 0.85-1)// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
         	        soundeffects.noo(); 
         	        
         	    	System.out.println("Your damage roll is " + roll);
@@ -16518,11 +16522,12 @@ public class battlesequence {
         		
         	    	
         	    	double health = defender.hp; // health value of the pokemon being attacked
-        	    	
-        	    	
-        	     	double roll = Math.round(rand.nextDouble()) + 0.2; // The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
-        	    	
-        	     	soundeffects.noo(); 
+
+
+
+					double roll = mindamageroll + (maxdamageroll - mindamageroll) * rand.nextDouble() ; //now modified to 0.85-1)// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
+
+					soundeffects.noo();
         	    	System.out.println("Your damage roll is " + roll);
         	    	
         	    	double damage = ((double)(((((2 * 100) * 0.2) + 2 )   * attack.power * (double) (attacker.attack/ (double) defender.def)) * 0.02 ) + 2) * roll; // How much damage the move will do (the equation)
