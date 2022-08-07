@@ -12,6 +12,10 @@ import java.util.concurrent.TimeUnit;
 import javax.sound.sampled.AudioInputStream;
 import javax.sound.sampled.AudioSystem;
 import javax.sound.sampled.Clip;
+import java.security.SecureRandom;
+
+
+
 
 // Please brace yourself for the mess that is my comments and code
    
@@ -37,7 +41,8 @@ public class userlanguage extends Thread{ // this is the main file , makes threa
 	// volatile means it can be used between threads, static makes it used between functions/methods in this class
 	
 	static Scanner scan = new Scanner(System.in); // makes a new scanner called scan , it is static meaning that it is used in every function in this java file 
-   
+
+	static int songchoice = 0; // used in determining which song file to play during the battle
 	
 	public static boolean legitimizer() { // Checks if the language is legit 
     	
@@ -105,7 +110,7 @@ public class userlanguage extends Thread{ // this is the main file , makes threa
     	boolean poke = false;
     	String[] possiblepokemon = {"metagross", "gliscor", "excadrill", "arcanine", "krookodile", "feraligatr", "gyarados", "starmie", "gengar", "espeon", "jolteon", "glaceon", "archeops", "umbreon", "leafeon", "vaporeon", "flareon", "sylveon", "scizor", "hydreigon", "meloetta", "crobat", "manaphy", "jirachi", "melmetal", "machamp", "milotic", "kingdra", "salamence", "dragonite", "chandelure"};
     	String[] abbreviated = {"met", "gli", "exc" , "arc" , "kro" , "fer", "gya", "sta" , "gen" , "esp", "jol", "gla", "arch", "umb", "lea", "vap", "fla", "syl", "sci", "hyd", "mel", "cro", "man", "jir", "mml", "mac", "mil", "kdr", "sal", "dra", "chan"};
-    	// 21 pokemon are in the possible pokemon array                                                                                                                            "manaphy", "jirachi", "melmetal", "machamp", "milotic", "kingdra", "salamence", "dragonite", "chandelure"};                                    
+    	// 31 pokemon are in the possible pokemon array                                                                                                                            "manaphy", "jirachi", "melmetal", "machamp", "milotic", "kingdra", "salamence", "dragonite", "chandelure"};
     	
     	for(int i = 0; i < abbreviated.length; i++) {
     		
@@ -272,7 +277,27 @@ public class userlanguage extends Thread{ // this is the main file , makes threa
     }
     
     
- 
+ //function built to check user's song input
+	public static boolean songlegitimizer(String input){
+
+		try{
+
+			if(input.equals("s") || input.equals("r") || ((Integer.parseInt(input) < 10) && (Integer.parseInt(input) > 0))) {
+
+				return true; //input is legit
+			}
+			else{
+				return false; //input is not legit
+			}
+		}
+		catch(Exception x){
+
+			System.out.println("Your previous input was invalid, please try again!!\n");
+			return false; //input is not legit
+
+		}
+
+	};
 	public static void main(String[] args) {
 		
 		
@@ -310,7 +335,78 @@ public class userlanguage extends Thread{ // this is the main file , makes threa
 		String player1pokename = "null";
 		String player2pokename = "null";// initializing two strings 
 		if (rick == true) { // if the player speaks english
-		    
+
+			System.out.println("Good this game is available in english");
+
+			System.out.println("\nWhat music would you like as your battle theme?\n"); //asking the user for what song they want
+
+			System.out.println("Here are your choices:\n\n" +
+					"- [input 1] for the gen 5 pokemon world championships theme.\n" +
+					"- [input 2] for is a mashup of hugh's theme.\n" +
+					"- [input 3] for  wally's ORAS theme.\n" +
+					"- [input 4] for the trainer theme mashup of various kanto/jhoto games.\n" +
+					"- [input 5] for silver's fight theme (jhoto pokemon rival theme) (mashup).\n" +
+					"- [input 6] for an ace attorney theme.\n" +
+					"- [input 7] for cynthia's PWT theme.\n" +
+					"- [input 8] for megalovania (from undertale).\n" +
+					"- [input 9] for the PWT final round theme.\n" +
+					"- [input s] for a surprise theme.\n"+
+					"- [input r] for a random theme. (one of the above options chosen randomly by the computer.\n"
+			);
+			String songinput = scan.nextLine(); //gets input 1,2,3,4,5,6,7,8,9,s,r
+
+			while(  songlegitimizer(songinput) == false ){
+
+				System.out.println("Your previous input was invalid");
+
+				System.out.println("\nWhat music would you like as your battle theme?\n"); //asking the user for what song they want
+
+				System.out.println("Here are your choices:\n\n" +
+						"- [input 1] for the gen 5 pokemon world championships theme.\n" +
+						"- [input 2] for is a mashup of hugh's theme.\n" +
+						"- [input 3] for  wally's ORAS theme.\n" +
+						"- [input 4] for the trainer theme mashup of various kanto/jhoto games.\n" +
+						"- [input 5] for silver's fight theme (jhoto pokemon rival theme) (mashup).\n" +
+						"- [input 6] for an ace attorney theme.\n" +
+						"- [input 7] for cynthia's PWT theme.\n" +
+						"- [input 8] for megalovania (from undertale).\n" +
+						"- [input 9] for the PWT final round theme.\n" +
+						"- [input s] for a surprise theme.\n"+
+						"- [input r] for a random theme. (one of the above options chosen randomly by the computer.\n"
+				);
+				songinput = scan.nextLine(); //gets input 1,2,3,4,5,6,7,8,9,s,r
+
+
+
+
+			}
+
+			//determine the value of songchoice integer variable (convert to nummber for later use
+
+			try{
+
+				songchoice = Integer.parseInt(songinput) -1; //user inputs a value one more than the position of the array of songs
+			}
+			catch(Exception ex){
+
+				if(songinput.equals("s")){
+
+					songchoice = 9;
+				}
+				else if (songinput.equals("r")){
+
+					SecureRandom songchooser = new SecureRandom(); //random objectdeclaration
+
+					songchoice = songchooser.nextInt(10); //randomly picks a song (a number between 0 and 9 which will be used in the array later
+				}
+			}
+
+
+
+
+
+
+
 			player1pokename = getpokemonname("player 1" ); // getting the names of the pokemon that player 1 and player 2 want 
 			player2pokename = getpokemonname("player 2" ); 
 			
@@ -325,8 +421,15 @@ public class userlanguage extends Thread{ // this is the main file , makes threa
 			System.out.println("\n French is still being inputted in the main program mainframe lol \n");
 			System.exit(0); // ends program early because french isn't inputted in this program yet lol...
 		}
-		
-		
+
+
+
+
+
+
+
+
+
 		// gets a pokemon's stats 
 		String ree = " player 1 ";
 	 pokemon player1pokemon = getpokemon(player1pokename, ree) ;
@@ -581,7 +684,7 @@ public class userlanguage extends Thread{ // this is the main file , makes threa
         System.out.println(player1key);  // the player1 key determines which moves are going to be sent to the battle function array
        
         
-        System.out.println(deux);
+        System.out.println(deux);f
         System.out.println(player2key);
         
         
@@ -1039,7 +1142,7 @@ public static void playwin(  ) {
 		
 		whatever.printStackTrace();// (is like whatever.getmessage())  (both output the error/exception)
 		
-		System.out.println("A glitch occures (Whoever created this is stoopid lol)");
+		System.out.println("A glitch occured");
 	}
 	
 
@@ -1099,7 +1202,7 @@ public static void playfirered(  ) {
 		
 		whatever.printStackTrace();// (is like whatever.getmessage())  (both output the error/exception)
 		
-		System.out.println("A glitch occures (Whoever created this is stoopid lol)");
+		System.out.println("A glitch occured");
 	}
 	
 
@@ -1122,9 +1225,15 @@ public static void playbattle(  ) {
 
 		
 		
-		String song = "battletheme.wav";// song file name as string
-		
-		
+
+//list of possible songs to play
+		String songs[] = {"battletheme1.wav", "battletheme2.wav", "battletheme3.wav", "battletheme4.wav", "battletheme5.wav",
+				"battletheme6.wav", "battletheme7.wav", "battletheme8.wav", "battletheme9.wav", "battletheme10.wav"};
+
+
+
+		String song = songs[songchoice];// song file name as string
+
 		File noise = new File(song); // song file as the variable resist in the program
 		
 		
@@ -1164,7 +1273,7 @@ public static void playbattle(  ) {
 		
 		whatever.printStackTrace();// (is like whatever.getmessage())  (both output the error/exception)
 		
-		System.out.println("A glitch occures (Whoever created this is stoopid lol)");
+		System.out.println("A glitch occured");
 	}
 	
 
