@@ -4,12 +4,12 @@ Project Creator: Nevin Ndonwi
 
 Contact info: nevinfonndonwi@gmail.com
 
-Project Duration: December 2020 - March 2021 (3 months)
+Project Duration: December 2020 - March 2021 (3 months) (However, updates have been made post-development)
 
 This is the second version that I created, the first one I created was a test run in c++. 
 
 A text-based battle sim inspired by pokemon showdown's battle simulator. 
-This is a battle simulator where two players choose between 31 pokemon and have a 1v1 fight between them.
+This is a battle simulator where two players choose between 53 pokemon and have a 1v1 fight between them.
 
 The usable pokemon programmed into this project are:
 - Arcanine
@@ -24,6 +24,7 @@ The usable pokemon programmed into this project are:
 - Gengar
 - Glaceon
 - Gliscor
+- Greninja
 - Gyarados
 - Hydreigon
 - Jirachi
@@ -37,12 +38,18 @@ The usable pokemon programmed into this project are:
 - Meloetta
 - Metagross
 - Milotic
+- Mimikyu
+- Pikachu
 - Salamence
 - Scizor
 - Starmie
 - Sylveon
+- Togekiss
 - Umbreon
+- Volcarona
 - Vaporeon
+- Zeraora
+
 
 The .java files contain the base code to run the project.
 The other files are sound files that play music and sound effects during program execution. The winners and losers are filed in text files in the computer at the end of the program.

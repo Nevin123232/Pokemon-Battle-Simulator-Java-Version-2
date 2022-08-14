@@ -143,32 +143,56 @@ public class battlesequence {
 			int accuracy = rand.nextInt(100); //makes a random value. possible values 0-99
 			
 		//		System.out.println( accuracy ); //(This can output the value of accuracy)
-			
-			
+
+
+			//CHANGES POKEMON"S TYPE DUE TO PROTEAN
+
+			if(player1poke.ability.equals("protean")){
+
+				System.out.println("!!!Player 1's pokemon's type changed from (" + player1poke.type1 + " , " + player1poke.type2 + ") " + " to (" +
+						player1move.movetype + " , null)!!!");
+				player1poke.type1 = player1move.movetype;
+				player1poke.type2 = "null";
+			}
+
+
+
              if( accuracy < player1move.accuracy ) {
             	 
             	 System.out.println("Player 1's " +  player1move.movename + " hit lol ");
+
+
                 battlesequence.player1move(player1poke, player1move, player2poke, player2move);  // goes to battle function
                
                
         		
 		     }
-             
-             
-             
-             else {
+			 else {
             	 
             	 System.out.println("\n Player 1's " + player1move.movename + " has missed lol. ");
             	 
              }
 		
-			
+
+
+
 		
              int accuracy2 = rand.nextInt(100);
              
 			//	System.out.println( accuracy2  );
-				
-				
+
+
+
+			//CHANGES POKEMON"S TYPE DUE TO PROTEAN
+
+			if(player2poke.ability.equals("protean")){
+
+				System.out.println("!!!Player 2's pokemon's type changed from (" + player2poke.type1 + " , " + player2poke.type2 + ") " + " to (" +
+						player2move.movetype + " , null)!!!");
+				player2poke.type1 = player2move.movetype;
+				player2poke.type2 = "null";
+			}
+
              if( accuracy2 < player2move.accuracy ) {
             	 
             	 System.out.println("Player 2's " + player2move.movename + " hit lol ");
@@ -197,7 +221,17 @@ public class battlesequence {
 	           int accuracy = rand.nextInt(100); //makes a random value. possible values 0-99
 				
 			//		System.out.println( accuracy ); //(This can output the value of accuracy)
-				
+
+
+			//CHANGES POKEMON"S TYPE DUE TO PROTEAN
+
+			if(player2poke.ability.equals("protean")){
+
+				System.out.println("!!!Player 2's pokemon's type changed from (" + player2poke.type1 + " , " + player2poke.type2 + ") " + " to (" +
+						player2move.movetype + " , null)!!!");
+				player2poke.type1 = player2move.movetype;
+				player2poke.type2 = "null";
+			}
 				
               if( accuracy < player2move.accuracy ) {
             	  
@@ -216,8 +250,18 @@ public class battlesequence {
               int accuracy1 = rand.nextInt(100);
               
 //          	System.out.println( accuracy1 ); (outputs the value of the accuracy1 variable)
-				
-				
+
+
+			//CHANGES POKEMON"S TYPE DUE TO PROTEAN
+
+			if(player1poke.ability.equals("protean")){
+
+				System.out.println("!!!Player 1's pokemon's type changed from (" + player1poke.type1 + " , " + player1poke.type2 + ") " + " to (" +
+						player1move.movetype + " , null)!!!");
+				player1poke.type1 = player1move.movetype;
+				player1poke.type2 = "null";
+			}
+
               if( accuracy1 < player1move.accuracy ) {
             	  
             	  System.out.println("Player 1's " + player1move.movename + " hit lol ");
@@ -250,7 +294,17 @@ public class battlesequence {
 				int accuracy = rand.nextInt(100); //makes a random value. possible values 0-99
 				
 				System.out.println( + accuracy );
-				
+
+
+				//CHANGES POKEMON"S TYPE DUE TO PROTEAN
+
+				if(player1poke.ability.equals("protean")){
+
+					System.out.println("!!!Player 1's pokemon's type changed from (" + player1poke.type1 + " , " + player1poke.type2 + ") " + " to (" +
+							player1move.movetype + " , null)!!!");
+					player1poke.type1 = player1move.movetype;
+					player1poke.type2 = "null";
+				}
 				
                  if( accuracy < player1move.accuracy ) {
                 	 
@@ -271,7 +325,17 @@ public class battlesequence {
                  int accuracy2 = rand.nextInt(100);
                  
  			//	System.out.println( accuracy2 );
- 				
+
+
+				//CHANGES POKEMON"S TYPE DUE TO PROTEAN
+
+				if(player2poke.ability.equals("protean")){
+
+					System.out.println("!!!Player 2's pokemon's type changed from (" + player2poke.type1 + " , " + player2poke.type2 + ") " + " to (" +
+							player2move.movetype + " , null)!!!");
+					player2poke.type1 = player2move.movetype;
+					player2poke.type2 = "null";
+				}
  				
                  if( accuracy2 < player2move.accuracy ) {
                 	 
@@ -298,8 +362,18 @@ public class battlesequence {
 	           int accuracy = rand.nextInt(100); //makes a random value. possible values 0-99
 				
 		//	//		System.out.println( accuracy ); //(This can output the value of accuracy) //(This can output the value of accuracy)
-				
-				
+
+
+				//CHANGES POKEMON"S TYPE DUE TO PROTEAN
+
+				if(player2poke.ability.equals("protean")){
+
+					System.out.println("!!!Player 2's pokemon's type changed from (" + player2poke.type1 + " , " + player2poke.type2 + ") " + " to (" +
+							player2move.movetype + " , null)!!!");
+					player2poke.type1 = player2move.movetype;
+					player2poke.type2 = "null";
+				}
+
                  if( accuracy < player2move.accuracy ) {
                 	 
                 	 System.out.println("Player 2's " + player2move.movename + " hit lol ");
@@ -317,7 +391,16 @@ public class battlesequence {
                  int accuracy1 = rand.nextInt(100);
                  
  			//	System.out.println(accuracy1 );
- 				
+
+				//CHANGES POKEMON"S TYPE DUE TO PROTEAN
+
+				if(player1poke.ability.equals("protean")){
+
+					System.out.println("!!!Player 1's pokemon's type changed from (" + player1poke.type1 + " , " + player1poke.type2 + ") " + " to (" +
+							player1move.movetype + " , null)!!!");
+					player1poke.type1 = player1move.movetype;
+					player1poke.type2 = "null";
+				}
  				
                  if( accuracy1 < player1move.accuracy ) {
                 	 
@@ -353,8 +436,18 @@ public class battlesequence {
 			           int accuracy = rand.nextInt(100); //makes a random value. possible values 0-99
 						
 					//		System.out.println( accuracy ); //(This can output the value of accuracy)
-						
-						
+
+
+					//CHANGES POKEMON"S TYPE DUE TO PROTEAN
+
+					if(player2poke.ability.equals("protean")){
+
+						System.out.println("!!!Player 2's pokemon's type changed from (" + player2poke.type1 + " , " + player2poke.type2 + ") " + " to (" +
+								player2move.movetype + " , null)!!!");
+						player2poke.type1 = player2move.movetype;
+						player2poke.type2 = "null";
+					}
+
 		                 if( accuracy < player2move.accuracy ) {
 		                	 
 		                	 System.out.println("Player 2's " + player2move.movename + " hit lol ");
@@ -372,8 +465,17 @@ public class battlesequence {
 		                 int accuracy1 = rand.nextInt(100);
 		                 
 		 		//	System.out.println( accuracy1 ); (outputs the value of the accuracy1 variable)
-		 				
-		 				
+
+
+					//CHANGES POKEMON"S TYPE DUE TO PROTEAN
+
+					if(player1poke.ability.equals("protean")){
+
+						System.out.println("!!!Player 1's pokemon's type changed from (" + player1poke.type1 + " , " + player1poke.type2 + ") " + " to (" +
+								player1move.movetype + " , null)!!!");
+						player1poke.type1 = player1move.movetype;
+						player1poke.type2 = "null";
+					}
 		                 if( accuracy1 < player1move.accuracy ) {
 		                	 
 		                	 System.out.println("Player 1's " + player1move.movename + " hit lol ");
@@ -401,8 +503,19 @@ public class battlesequence {
 					int accuracy = rand.nextInt(100); //makes a random value. possible values 0-99
 					
 				//		System.out.println( accuracy ); //(This can output the value of accuracy)
-					
-					
+
+
+					//CHANGES POKEMON"S TYPE DUE TO PROTEAN
+
+					if(player1poke.ability.equals("protean")){
+
+						System.out.println("!!!Player 1's pokemon's type changed from (" + player1poke.type1 + " , " + player1poke.type2 + ") " + " to (" +
+								player1move.movetype + " , null)!!!");
+						player1poke.type1 = player1move.movetype;
+						player1poke.type2 = "null";
+					}
+
+
 	                 if( accuracy < player1move.accuracy ) {
 	                	 
 	                	 System.out.println("Player 1's " + player1move.movename + " hit lol ");
@@ -422,7 +535,16 @@ public class battlesequence {
 	                 int accuracy2 = rand.nextInt(100);
 	                 
 	 	//			System.out.println( accuracy2 ); (can output accuracy 2 variable)
-	 				
+
+					//CHANGES POKEMON"S TYPE DUE TO PROTEAN
+
+					if(player2poke.ability.equals("protean")){
+
+						System.out.println("!!!Player 2's pokemon's type changed from (" + player2poke.type1 + " , " + player2poke.type2 + ") " + " to (" +
+								player2move.movetype + " , null)!!!");
+						player2poke.type1 = player2move.movetype;
+						player2poke.type2 = "null";
+					}
 	 				
 	                 if( accuracy2 < player2move.accuracy ) {
 	                	 
@@ -457,7 +579,20 @@ public class battlesequence {
 	
     public static void player1move(pokemon player1poke, move player1move, pokemon player2poke, move player2move) { // this function will be used for player 1's attack  
 
+		//checks for disguise
+		if(player1move.attacktype.equals("ph") || player1move.attacktype.equals("sp")){
 
+			if(player2poke.ability.equals("disguise")){
+
+				if(player2poke.disguise == true){
+
+					System.out.println("The opposing pokemon's disguise protected it from taking damage!!!! (That's an L for player 1).");
+					player2poke.disguise = false;
+					return;
+				}
+			}
+
+		}
 
 //checks if any player's pokemon have fainted
 		if( (player1poke.hp <= 0) || (player2poke.hp <= 0)){
@@ -701,6 +836,11 @@ public class battlesequence {
 			return;
 		}
 
+
+
+
+
+
 //STEEL MOVES
     		if(player1move.movename.equals("meteormash")) {
 
@@ -787,6 +927,12 @@ public class battlesequence {
     		
     		
         		}
+				else if(player1move.movename.equals("quiverdance")) {
+
+					quiverdance(player1poke, player1move, player2poke,  player);
+
+
+				}
     			else if(player1move.movename.equals("focusenergy")) {
         			
     				focusenergy(player1poke, player1move, player2poke,  player);
@@ -931,7 +1077,12 @@ public class battlesequence {
 	
 	
     			}
-    		
+				else if(player1move.movename.equals("bugbuzz")) {
+
+					player2poke.hp = bugbuzz(player1poke, player1move, player2poke,  player);
+
+
+				}
     			else if(player1move.movename.equals("pinmissle")) {
 	
     				player2poke.hp = pinmissle(player1poke, player1move, player2poke,  player);
@@ -980,7 +1131,13 @@ public class battlesequence {
     				player2poke.hp = waterfall(player1poke, player1move, player2poke,  player);
 
 
-    			}// ICE MOVES
+    			}
+				else if(player1move.movename.equals("watershuriken")) {
+
+					player2poke.hp = watershuriken(player1poke, player1move, player2poke,  player);
+
+
+				}// ICE MOVES
     			else if(player1move.movename.equals("icepunch")) {
     				
     				player2poke.hp = icepunch(player1poke, player1move, player2poke,  player);
@@ -1040,7 +1197,14 @@ public class battlesequence {
     				player2poke.hp = moonblast(player1poke, player1move, player2poke,  player);
 
 
-    			}// FLYING MOVES
+    			}
+				else if(player1move.movename.equals("playrough")) {
+
+					player2poke.hp = playrough(player1poke, player1move, player2poke,  player);
+
+
+				}
+				// FLYING MOVES
     			else if(player1move.movename.equals("aerialace")) {
     				
     				player2poke.hp = aerialace(player1poke, player1move, player2poke,  player);
@@ -1095,6 +1259,12 @@ public class battlesequence {
 
 
     			}
+				else if(player1move.movename.equals("aurasphere")) {
+
+					player2poke.hp = aurasphere(player1poke, player1move, player2poke,  player);
+
+
+				}
     			else if(player1move.movename.equals("superpower")) {
 		
     				player2poke.hp = superpower(player1poke, player1move, player2poke,  player);
@@ -1112,7 +1282,14 @@ public class battlesequence {
     				player2poke.hp = brickbreak(player1poke, player1move, player2poke,  player);
 
 
-    			}// FIRE MOVES
+    			}
+				else if(player1move.movename.equals("drainpunch")) {
+
+					player2poke.hp = drainpunch(player1poke, player1move, player2poke,  player);
+
+
+				}
+			// FIRE MOVES
     			else if(player1move.movename.equals("flamethrower")) {
     				
     				player2poke.hp = flamethrower(player1poke, player1move, player2poke,  player);
@@ -1160,13 +1337,32 @@ public class battlesequence {
     				player2poke.hp = thunderpunch(player1poke, player1move, player2poke,  player);
 
 
-    			}// POISON MOVES
+    			}
+				else if(player1move.movename.equals("volttackle")) {
+
+					player2poke.hp = volttackle(player1poke, player1move, player2poke,  player);
+
+
+				}
+				else if(player1move.movename.equals("plasmafists")) {
+
+					player2poke.hp = plasmafists(player1poke, player1move, player2poke,  player);
+
+
+				}
+				// POISON MOVES
     			else if(player1move.movename.equals("sludgebomb")) {
     				
     				player2poke.hp = sludgebomb(player1poke, player1move, player2poke,  player);
 
 
     			}
+				else if(player1move.movename.equals("gunkshot")) {
+
+					player2poke.hp = gunkshot(player1poke, player1move, player2poke,  player);
+
+
+				}
     			else if(player1move.movename.equals("crosspoison")) {
 		
     				player2poke.hp = crosspoison(player1poke, player1move, player2poke,  player);
@@ -1226,6 +1422,12 @@ public class battlesequence {
 
 
     			}
+				else if(player1move.movename.equals("extrasensory")) {
+
+					player2poke.hp = extrasensory(player1poke, player1move, player2poke,  player);
+
+
+				}
     			else if(player1move.movename.equals("zenheadbut")) {
 		
     				player2poke.hp = zenheadbut(player1poke, player1move, player2poke,  player);
@@ -1237,7 +1439,19 @@ public class battlesequence {
     				player2poke.hp = shadowball(player1poke, player1move, player2poke,  player);
 
 
-    			}// GROUND MOVES
+    			}
+				else if(player1move.movename.equals("shadowsneak")) {
+
+					player2poke.hp = shadowsneak(player1poke, player1move, player2poke,  player);
+
+
+				}
+				else if(player1move.movename.equals("shadowclaw")) {
+
+					player2poke.hp = shadowclaw(player1poke, player1move, player2poke,  player);
+
+
+				}// GROUND MOVES
     			else if(player1move.movename.equals("earthquake")) {
     				
     				player2poke.hp = earthquake(player1poke, player1move, player2poke,  player);
@@ -1268,9 +1482,10 @@ public class battlesequence {
 
 
     			}
-    	    
+
+
     		
-    		
+    		//flamebody
     		 
             if(player1move.attacktype.equals("ph")) {
          	   
@@ -1302,11 +1517,65 @@ public class battlesequence {
                  
                  }
                  
-        }
+				}
          	   
             }
-            
-            
+
+
+
+//static
+		if(player1move.attacktype.equals("ph")) {
+
+
+			if(player2poke.ability.equals("static")){
+
+				if( (player1poke.status.equals(" No status conditions")) ) {
+					int hit = rand.nextInt(10);
+
+					if(hit > 4) {
+						player1poke.status = "Paralyzed";
+						soundeffects.paralyze();
+						player1poke.speed *= 0.5;
+
+						System.out.println( player2poke.pokename + " has paralyzed the opponent's " + player1poke.pokename + " due to its static ability!! " + player1poke.pokename + "'s speed has been cut in half. ");
+
+					}
+
+
+				}
+
+			}
+
+		}
+
+
+//roughskin
+		if(player1move.attacktype.equals("ph")) {
+
+
+			if(player2poke.ability.equals("roughskin")){
+
+
+
+
+					soundeffects.attack();
+
+			System.out.println( player2poke.pokename + " has hurt the opponent's " + player1poke.pokename + " with its rough skin!! ");
+
+			double rough = (player1poke.maxhp * 0.125);
+			System.out.println("ROUGH SKIN DAMAGE: " + player1poke.hp + " - " + rough + " = " + (player1poke.hp - rough));
+			player1poke.hp -=rough;
+
+
+
+
+
+
+
+
+			}
+
+		}
             
     	   /*
     	    * 
@@ -1321,11 +1590,25 @@ public class battlesequence {
     		
     		
     		
-    	}
+	}
     
     
     public static void player2move(pokemon player1poke, move player1move, pokemon player2poke, move player2move) { // this function will be used for player 2's attack  
 
+		//checks for disguise on player 1's pokemon
+		if(player2move.attacktype.equals("ph") || player2move.attacktype.equals("sp")){
+
+			if(player1poke.ability.equals("disguise")){
+
+				if(player1poke.disguise == true){
+
+					System.out.println("The opposing pokemon's disguise protected it from taking damage!!!! (That's an L for player 2).");
+					player1poke.disguise = false;
+					return;
+				}
+			}
+
+		}
 
 		//checks if any player's pokemon have fainted
 		if( (player1poke.hp <= 0) || (player2poke.hp <= 0)){
@@ -1569,6 +1852,11 @@ public class battlesequence {
 		if( (player1poke.hp <= 0) || (player2poke.hp <= 0)){
 			return;
 		}
+
+
+
+
+
     		//STEEL MOVES
     		
            if(player2move.movename.equals("meteormash")) {
@@ -1643,6 +1931,11 @@ public class battlesequence {
         	   swordsdance(player2poke, player2move, player1poke,  player);
   			
   		 }
+		   else if (player2move.movename.equals("quiverdance")) {
+
+			   quiverdance(player2poke, player2move, player1poke,  player);
+
+		   }
            else if (player2move.movename.equals("focusenergy")) {
         	   
         	   focusenergy(player2poke, player2move, player1poke,  player);
@@ -1769,6 +2062,11 @@ public class battlesequence {
      			player1poke.hp = leechlife(player2poke, player2move, player1poke,  player);
      			
      		 }
+		   else if (player2move.movename.equals("bugbuzz")) {
+
+			   player1poke.hp = bugbuzz(player2poke, player2move, player1poke,  player);
+
+		   }
           else if (player2move.movename.equals("xscissor")) {
          	   
      			player1poke.hp = xscissor(player2poke, player2move, player1poke,  player);
@@ -1803,7 +2101,13 @@ public class battlesequence {
         	   
      			player1poke.hp = aquatail(player2poke, player2move, player1poke,  player);
      			
-     		 }// ICE MOVES
+     		 }
+		   else if (player2move.movename.equals("watershuriken")) {
+
+			   player1poke.hp = watershuriken(player2poke, player2move, player1poke,  player);
+
+		   }
+		   // ICE MOVES
           else if (player2move.movename.equals("iceshard")) {
        	   
    			player1poke.hp = iceshard(player2poke, player2move, player1poke,  player);
@@ -1849,6 +2153,11 @@ public class battlesequence {
    			player1poke.hp = moonblast(player2poke, player2move, player1poke,  player);
    			
    		 }
+	   else if (player2move.movename.equals("playrough")) {
+
+		   player1poke.hp = playrough(player2poke, player2move, player1poke,  player);
+
+	   }
         else if (player2move.movename.equals("dazzlinggleam")) {
         	   
    			player1poke.hp = dazzlinggleam(player2poke, player2move, player1poke,  player);
@@ -1894,11 +2203,21 @@ public class battlesequence {
    			player1poke.hp = brickbreak(player2poke, player2move, player1poke,  player);
    			
    		 }
+	   else if (player2move.movename.equals("drainpunch")) {
+
+		   player1poke.hp = drainpunch(player2poke, player2move, player1poke,  player);
+
+	   }
         else if (player2move.movename.equals("focusblast")) {
       	   
    			player1poke.hp = focusblast(player2poke, player2move, player1poke,  player);
    			
    		 }
+	   else if (player2move.movename.equals("aurasphere")) {
+
+		   player1poke.hp = aurasphere(player2poke, player2move, player1poke,  player);
+
+	   }
         else if (player2move.movename.equals("doublekick")) {
        	   
    			player1poke.hp = doublekick(player2poke, player2move, player1poke,  player);
@@ -1945,6 +2264,16 @@ public class battlesequence {
    			player1poke.hp = thunderpunch(player2poke, player2move, player1poke,  player);
    			
    		 }
+	   else if (player2move.movename.equals("volttackle")) {
+
+		   player1poke.hp = volttackle(player2poke, player2move, player1poke,  player);
+
+	   }
+	   else if (player2move.movename.equals("plasmafists")) {
+
+		   player1poke.hp = plasmafists(player2poke, player2move, player1poke,  player);
+
+	   }
         else if (player2move.movename.equals("thunderfang")) {
       	   
    			player1poke.hp = thunderfang(player2poke, player2move, player1poke,  player);
@@ -1960,6 +2289,11 @@ public class battlesequence {
    			player1poke.hp = sludgebomb(player2poke, player2move, player1poke,  player);
    			
    		 }
+	   else if (player2move.movename.equals("gunkshot")) {
+
+		   player1poke.hp = gunkshot(player2poke, player2move, player1poke,  player);
+
+	   }
         else if (player2move.movename.equals("poisonjab")) {
       	   
    			player1poke.hp = poisonjab(player2poke, player2move, player1poke,  player);
@@ -2010,6 +2344,11 @@ public class battlesequence {
    			player1poke.hp = psychic(player2poke, player2move, player1poke,  player);
    			
    		 }
+	   else if (player2move.movename.equals("extrasensory")) {
+
+		   player1poke.hp = extrasensory(player2poke, player2move, player1poke,  player);
+
+	   }
         else if (player2move.movename.equals("zenheadbut")) {
       	   
    			player1poke.hp = zenheadbut(player2poke, player2move, player1poke,  player);
@@ -2019,7 +2358,17 @@ public class battlesequence {
         	   
    			player1poke.hp = shadowball(player2poke, player2move, player1poke,  player);
    			
-   		 }// GROUND MOVES
+   		 }
+	   else if (player2move.movename.equals("shadowclaw")) {
+
+		   player1poke.hp = shadowclaw(player2poke, player2move, player1poke,  player);
+
+	   }
+	   else if (player2move.movename.equals("shadowsneak")) {
+
+		   player1poke.hp = shadowsneak(player2poke, player2move, player1poke,  player);
+
+	   }// GROUND MOVES
         else if (player2move.movename.equals("earthquake")) {
      	   
    			player1poke.hp = earthquake(player2poke, player2move, player1poke,  player);
@@ -2045,12 +2394,12 @@ public class battlesequence {
    			player1poke.hp = leafblade(player2poke, player2move, player1poke,  player);
    			
    		 }
-           
+
          
             		
            
         	   
-        	   
+        	   //flamebody
            
            if(player2move.attacktype.equals("ph")) {
         	   
@@ -2085,6 +2434,65 @@ public class battlesequence {
        }
         	   
            }
+
+
+
+//static
+		if(player2move.attacktype.equals("ph")) {
+
+
+			if(player1poke.ability.equals("static")){
+
+				if( (player2poke.status.equals(" No status conditions"))  ) {
+					int hit = rand.nextInt(10);
+
+					if(hit > 4) {
+						player2poke.status = "Paralyzed";
+						soundeffects.paralyze();
+						player2poke.speed *= 0.5;
+						System.out.println( player1poke.pokename + " has paralyzed the opponent's " + player2poke.pokename + " due to its static ability!! " + player2poke.pokename + "'s speed has been cut in half. ");
+
+					}
+
+
+				}
+
+			}
+
+		}
+
+
+
+
+
+
+		//roughskin
+		if(player2move.attacktype.equals("ph")) {
+
+
+			if(player1poke.ability.equals("roughskin")){
+
+
+
+
+				soundeffects.attack();
+
+				System.out.println( player1poke.pokename + " has hurt the opponent's " + player2poke.pokename + " with its rough skin!! ");
+
+				double rough = (player2poke.maxhp * 0.125);
+				System.out.println("ROUGH SKIN DAMAGE: " + player2poke.hp + " - " + rough + " = " + (player2poke.hp - rough));
+				player2poke.hp -=rough;
+
+
+
+
+
+
+
+
+			}
+
+		}
            /*
             * 
             * 
@@ -2149,7 +2557,17 @@ public class battlesequence {
     	System.out.println("Your damage roll is " + roll);
     	
     	double damage = ((double)(((((2 * 100) * 0.2) + 2 )   * attack.power * (double) (attacker.attack/ (double) defender.def)) * 0.02 ) + 2) * roll; // How much damage the move will do (the equation)
-    	
+
+
+		if(attacker.ability.equals("toughclaws")){
+
+
+			damage *= 1.3;
+			System.out.println("Tough claws increased the damage of the attack!!");
+
+
+		}
+
     	// make sure to code for crits 
     	
     	int crit = rand.nextInt(400);
@@ -2273,7 +2691,8 @@ public class battlesequence {
        	 
        	 }
        	 
-        
+
+
         damage = Math.round(damage);
         
         System.out.println("\n" + defender.hp + "  "  + " - "  + damage + " = " + "  " + player + "'s new health: " + Math.round(defender.hp - damage)  );
@@ -2338,7 +2757,17 @@ public class battlesequence {
     	System.out.println("Your damage roll is " + roll);
     	
     	double damage = ((double)(((((2 * 100) * 0.2) + 2 )   * attack.power * (double) (attacker.attack/ (double) defender.def)) * 0.02 ) + 2) * roll; // How much damage the move will do (the equation)
-    	
+
+
+		if(attacker.ability.equals("toughclaws")){
+
+
+			damage *= 1.3;
+			System.out.println("Tough claws increased the damage of the attack!!");
+
+
+		}
+
     	// make sure to code for crits 
     	
     	int crit = rand.nextInt(400);
@@ -2438,10 +2867,10 @@ public class battlesequence {
     		damage *= 2;  //Steel is super effective agaisnt these types
     		System.out.println("\n  IT'S SUPER EFFECTIVE !!!! \n");  	soundeffects.attack(); // This plays a sound effect of the move hitting
     		
-    	} 
-        
-        
-        
+    	}
+
+
+
    	 if( (defender.ability.equals("multiscale") ) ){
    	 
    	     if(defender.hp == defender.maxhp) { System.out.println("multiscale reduced the damage the pokemon took");
@@ -2526,7 +2955,19 @@ public class battlesequence {
     	System.out.println("Your damage roll is " + roll);
     	
     	double damage = ((double)(((((2 * 100) * 0.2) + 2 )   * attack.power * (double) (attacker.attack/ (double) defender.def)) * 0.02 ) + 2) * roll; // How much damage the move will do (the equation)
-    	
+
+
+
+
+		if(attacker.ability.equals("toughclaws")){
+
+
+			damage *= 1.3;
+			System.out.println("Tough claws increased the damage of the attack!!");
+
+
+		}
+
     	// make sure to code for crits 
     	
     	int crit = rand.nextInt(400);
@@ -2717,7 +3158,17 @@ public class battlesequence {
     	System.out.println("Your damage roll is " + roll);
     	
     	double damage = ((double)(((((2 * 100) * 0.2) + 2 )   * attack.power * (double) (attacker.attack/ (double) defender.def)) * 0.02 ) + 2) * roll; // How much damage the move will do (the equation)
-    	
+
+
+		if(attacker.ability.equals("toughclaws")){
+
+
+			damage *= 1.3;
+			System.out.println("Tough claws increased the damage of the attack!!");
+
+
+		}
+
     	// make sure to code for crits 
     	
     	int crit = rand.nextInt(400);
@@ -2893,7 +3344,17 @@ public class battlesequence {
     	System.out.println("Your damage roll is " + roll);
     	
     	double damage = ((double)(((((2 * 100) * 0.2) + 2 )   * attack.power * (double) (attacker.attack/ (double) defender.def)) * 0.02 ) + 2) * roll; // How much damage the move will do (the equation)
-    	
+
+
+		if(attacker.ability.equals("toughclaws")){
+
+
+			damage *= 1.3;
+			System.out.println("Tough claws increased the damage of the attack!!");
+
+
+		}
+
     	// make sure to code for crits 
     	
     	int crit = rand.nextInt(400);
@@ -3075,7 +3536,17 @@ public class battlesequence {
     	System.out.println("Your damage roll is " + roll);
     	
     	double damage = ((double)(((((2 * 100) * 0.2) + 2 )   * attack.power * (double) (attacker.attack/ (double) defender.def)) * 0.02 ) + 2) * roll; // How much damage the move will do (the equation)
-    	
+
+
+			if(attacker.ability.equals("toughclaws")){
+
+
+				damage *= 1.3;
+				System.out.println("Tough claws increased the damage of the attack!!");
+
+
+			}
+
     	// make sure to code for crits 
     	
     	int crit = rand.nextInt(400);
@@ -3606,7 +4077,15 @@ public class battlesequence {
              	soundeffects.statincrease();
         		 System.out.println("Your " + attacker.pokename + " has sharply raised its attack ");
              }
-        	 
+
+			public static void quiverdance(pokemon attacker, move attack, pokemon defender, String player) {
+
+				attacker.spa *= 1.5;
+				attacker.spdef *= 1.5;
+				attacker.speed *= 1.5;
+				soundeffects.statincrease();
+				System.out.println("Your " + attacker.pokename + " has raised its special attack and special defense and speed, the opponent is really screwed. ");
+			}
         	 
         	 public static void dragondance(pokemon attacker, move attack, pokemon defender, String player) {
 
@@ -3615,7 +4094,7 @@ public class battlesequence {
              	soundeffects.statincrease();
         		 System.out.println("Your " + attacker.pokename + " has raised its attack and speed (Rip the opponent) ");
              }
-        	 
+
         	 public static void calmmind(pokemon attacker, move attack, pokemon defender, String player) {
 
         		 attacker.spa *= 1.5;
@@ -3754,7 +4233,7 @@ public class battlesequence {
               			defender.speed *= 0.5;
               			soundeffects.paralyze();
               			soundeffects.drop();
-              		 System.out.println("Your " + attacker.pokename + " has paralyzed the opponent's " + defender.pokename + " . " + defender.pokename + "'s speed fell. ");
+              		 System.out.println("Your " + attacker.pokename + " has paralyzed the opponent's " + defender.pokename + " with "  + attack.movename + " . " + defender.pokename + "'s speed fell. ");
               		 
               		 
               		}
@@ -3845,7 +4324,7 @@ public class battlesequence {
                			if(defender.move4.attacktype.equals("ph")) {
                				defender.move4.power *= 0.5;
                			}
-               		 System.out.println("Your " + attacker.pokename + " has burned the opponent's " + defender.pokename + " . " + defender.pokename + "'s physical attacks power has been cut in half. ");
+               		 System.out.println("Your " + attacker.pokename + " has burned the opponent's " + defender.pokename + " with " + attack.movename + " . " + defender.pokename + "'s physical attacks power has been cut in half. ");
                		 
                		 
                		}
@@ -3945,7 +4424,7 @@ public class battlesequence {
         	    		else {
             	    		System.out.println(" THE OPPOSING POKEMON THOUGHT THAT IT COULD ESCAPE BY BOUNCING!!!!!!!!!!!!!!!! \n IT GOT SNIPED IN MID-AIR!!!");
             	    	// pioson types can't miss toxic
-            	    		
+
         	    		}
         	    		
         	    	}
@@ -4976,7 +5455,17 @@ public class battlesequence {
         	    	System.out.println("Your damage roll is " + roll);soundeffects.noo(); 
         	    	
         	    	double damage = ((double)(((((2 * 100) * 0.2) + 2 )   * attack.power * (double) (attacker.attack/ (double) defender.def)) * 0.02 ) + 2) * roll; // How much damage the move will do (the equation)
-        	    	
+
+
+					if(attacker.ability.equals("toughclaws")){
+
+
+						damage *= 1.3;
+						System.out.println("Tough claws increased the damage of the attack!!");
+
+
+					}
+
         	    	// make sure to code for crits 
         	    	
         	    	int crit = rand.nextInt(400);
@@ -5467,7 +5956,17 @@ public class battlesequence {
         	    	System.out.println("Your damage roll is " + roll);
         	    	
         	    	double damage = ((double)(((((2 * 100) * 0.2) + 2 )   * attack.power * (double) (attacker.attack/ (double) defender.def)) * 0.02 ) + 2) * roll; // How much damage the move will do (the equation)
-        	    	
+
+
+					if(attacker.ability.equals("toughclaws")){
+
+
+						damage *= 1.3;
+						System.out.println("Tough claws increased the damage of the attack!!");
+
+
+					}
+
         	    	// make sure to code for crits 
         	    	
         	    	int crit = rand.nextInt(400);
@@ -5624,7 +6123,17 @@ public class battlesequence {
         	    	System.out.println("Your damage roll is " + roll);
         	    	
         	    	double damage = ((double)(((((2 * 100) * 0.2) + 2 )   * attack.power * (double) (attacker.attack/ (double) defender.def)) * 0.02 ) + 2) * roll; // How much damage the move will do (the equation)
-        	    	
+
+
+					if(attacker.ability.equals("toughclaws")){
+
+
+						damage *= 1.3;
+						System.out.println("Tough claws increased the damage of the attack!!");
+
+
+					}
+
         	    	// make sure to code for crits 
         	    	
         	    	int crit = rand.nextInt(400);
@@ -5788,7 +6297,17 @@ public class battlesequence {
         	    	
         	    	soundeffects.noo(); 
         	    	double damage = ((double)(((((2 * 100) * 0.2) + 2 )   * attack.power * (double) (attacker.attack/ (double) defender.def)) * 0.02 ) + 2) * roll; // How much damage the move will do (the equation)
-        	    	
+
+
+					if(attacker.ability.equals("toughclaws")){
+
+
+						damage *= 1.3;
+						System.out.println("Tough claws increased the damage of the attack!!");
+
+
+					}
+
         	    	// make sure to code for crits 
         	    	
         	    	int crit = rand.nextInt(400);
@@ -5945,7 +6464,17 @@ public class battlesequence {
         	    	soundeffects.noo(); 
         	    	
         	    	double damage = ((double)(((((2 * 100) * 0.2) + 2 )   * attack.power * (double) (attacker.attack/ (double) defender.def)) * 0.02 ) + 2) * roll; // How much damage the move will do (the equation)
-        	    	
+
+
+					if(attacker.ability.equals("toughclaws")){
+
+
+						damage *= 1.3;
+						System.out.println("Tough claws increased the damage of the attack!!");
+
+
+					}
+
         	    	// make sure to code for crits 
         	    	
         	    	int crit = rand.nextInt(400);
@@ -6314,7 +6843,17 @@ public class battlesequence {
         	    	soundeffects.noo(); 
         	    	
         	    	double damage = ((double)(((((2 * 100) * 0.2) + 2 )   * attack.power * (double) (attacker.attack/ (double) defender.def)) * 0.02 ) + 2) * roll; // How much damage the move will do (the equation)
-        	    	
+
+
+					if(attacker.ability.equals("toughclaws")){
+
+
+						damage *= 1.3;
+						System.out.println("Tough claws increased the damage of the attack!!");
+
+
+					}
+
         	    	// make sure to code for crits 
         	    	
         	    	int crit = rand.nextInt(400);
@@ -6520,7 +7059,17 @@ public class battlesequence {
         	    	soundeffects.noo(); 
         	    	
         	    	double damage = ((double)(((((2 * 100) * 0.2) + 2 )   * attack.power * (double) (attacker.attack/ (double) defender.def)) * 0.02 ) + 2) * roll; // How much damage the move will do (the equation)
-        	    	
+
+
+					if(attacker.ability.equals("toughclaws")){
+
+
+						damage *= 1.3;
+						System.out.println("Tough claws increased the damage of the attack!!");
+
+
+					}
+
         	    	// make sure to code for crits 
         	    	
         	    	int crit = rand.nextInt(400);
@@ -6671,8 +7220,209 @@ public class battlesequence {
         	    	
         	    	
         	    }
-        	    
-        	    // leechlife
+
+				//BUGBUZZ
+
+
+						public static double bugbuzz(pokemon attacker, move attack, pokemon defender, String player) {
+
+
+							if(defender.bounce == true) { // Checks if the opponent is in the air....
+
+								System.out.println("The move missed because the opponent bounced up high in the air!!!!!");
+								return defender.hp; // misses if the opponent is in the air
+							}
+
+
+							double health = defender.hp; // health value of the pokemon being attacked
+
+
+							double roll = mindamageroll + (maxdamageroll - mindamageroll) * rand.nextDouble() ; //now modified to 0.85-1)// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
+
+							System.out.println("Your damage roll is " + roll);
+
+							soundeffects.noo();
+
+							double damage = ((double)(((((2 * 100) * 0.2) + 2 )   * attack.power * (double) (attacker.spa/ (double) defender.spdef)) * 0.02 ) + 2) * roll; // How much damage the move will do (the equation)
+
+							// make sure to code for crits
+
+							int crit = rand.nextInt(400);
+
+
+
+							if (attack.critrate == 3.0)  {
+
+
+								if (crit <= 27) {
+
+
+									System.out.println("\n YOU GOT A CRIT YOU LUCKY PERSON (You have a normal crit rate) \n");
+
+									if(attacker.ability.equals("sniper")) {
+
+										damage *= 2.5;
+										System.out.println("\n You got the sniper boost \n");
+									}
+									else {
+
+
+										damage *= 1.5;
+
+									}
+								}
+
+							}
+							else if (attack.critrate == 6.0) {
+
+
+								if (crit <= 55) {
+
+									System.out.println("\n YOU GOT A CRIT YOU LUCKY PERSON (You have a high crit rate) \n");
+
+									if(attacker.ability.equals("sniper")) {
+
+										damage *= 2.5;
+										System.out.println("\n You got the sniper boost \n");
+									}
+									else {
+										damage *= 1.5;
+									}
+								}
+
+							}
+							else {
+
+
+
+								if (crit <= 101) {
+
+									System.out.println("\n YOU GOT A CRIT YOU LUCKY PERSON (You have a really high crit rate) \n");
+
+									if(attacker.ability.equals("sniper")) {
+
+										damage *= 2.5;
+										System.out.println("\n You got the sniper boost \n");
+									}
+									else {
+										damage *= 1.5;
+									}
+								}
+
+
+
+							}
+
+
+
+
+
+
+							if( (defender.type1.equals("fairy")) ||  (defender.type1.equals("poison")) || (defender.type1.equals("fighting")) || (defender.type1.equals("fire")) || (defender.type1.equals("flying")) || (defender.type1.equals("steel")) || (defender.type1.equals("rock")) ) {
+
+								damage *= 0.5;  //bug is resisted by these types
+								System.out.println(" \n IT'S NOT VERY EFFECTIVE!!!! \n ");soundeffects.resist();
+
+							}
+
+
+							if(  (defender.type2.equals("fairy")) ||  (defender.type2.equals("poison")) || (defender.type2.equals("fighting")) || (defender.type2.equals("fire")) || (defender.type2.equals("flying")) || (defender.type2.equals("steel")) || (defender.type2.equals("rock")) ) {
+
+								damage *= 0.5;  //bug is resisted by these types
+								System.out.println(" \n IT'S NOT VERY EFFECTIVE!!!! \n ");  soundeffects.resist(); // plays sound effect for a move that resists
+
+							}
+
+
+
+							if(   (defender.type1.equals("grass")) || (defender.type1.equals("psychic"))  || (defender.type1.equals("dark")) ) {
+
+								damage *= 2;  //bug is super effective against these types
+								System.out.println(" \n IT'S SUPER EFFECTIVE!!!! \n ");  soundeffects.attack(); // This plays a sound effect of the move hitting
+
+							}
+
+
+							if(   (defender.type2.equals("grass")) || (defender.type2.equals("psychic")) || (defender.type2.equals("dark"))) {
+
+								damage *= 2;  //bug is super effective agaisnt these types
+								System.out.println("\n  IT'S SUPER EFFECTIVE !!!! \n");  	soundeffects.attack(); // This plays a sound effect of the move hitting
+
+							}
+
+
+
+
+							if( (defender.ability.equals("multiscale") ) ){
+
+								if(defender.hp == defender.maxhp) { System.out.println("multiscale reduced the damage the pokemon took");
+
+									damage = damage/2;
+
+								}
+							}
+
+
+							damage = Math.round(damage);
+
+							System.out.println("\n" + defender.hp + "  "  + " - "  + damage + " = " + "  " + player + "'s new health: " + Math.round(defender.hp - damage)  );
+
+
+							health =  health - damage;
+
+
+
+
+
+							int oof = rand.nextInt(100);
+
+
+							if( !(defender.ability.equals("clearbody"))   ) {
+
+
+
+								if(attacker.ability.equals("serenegrace")) {
+
+									if(oof > 90) {
+
+										defender.spdef *= 0.5;
+										System.out.println("The opponent's special defense decreased, serene grace elped the opponent.... ");
+
+									}
+
+
+
+								}
+
+
+								if(oof < 10) {
+
+									defender.spdef *= 0.5;
+									System.out.println("The opponent's special defense decreased.... ");
+
+								}
+
+
+							}
+
+
+
+
+
+
+
+
+
+
+
+
+							return Math.round(health);
+
+
+
+						}
+
+					// leechlife
         	    
         	    
         	    
@@ -6699,7 +7449,17 @@ public class battlesequence {
         	    	soundeffects.noo(); 
         	    	
         	    	double damage = ((double)(((((2 * 100) * 0.2) + 2 )   * attack.power * (double) (attacker.attack/ (double) defender.def)) * 0.02 ) + 2) * roll; // How much damage the move will do (the equation)
-        	    	
+
+
+					if(attacker.ability.equals("toughclaws")){
+
+
+						damage *= 1.3;
+						System.out.println("Tough claws increased the damage of the attack!!");
+
+
+					}
+
         	    	// make sure to code for crits 
         	    	
         	    	int crit = rand.nextInt(400);
@@ -6827,7 +7587,7 @@ public class battlesequence {
         	    		
         	    		System.out.println("The attacking pokemon gained hp through leechlife!! ");
         	    		
-        	    		System.out.println(attacker.hp + "  " + (damage/2) + " = "  + (attacker.hp + (damage/2)) );
+        	    		System.out.println(attacker.hp + " + " + (damage/2) + " = "  + (attacker.hp + (damage/2)) );
         	    		
         	    		attacker.hp += (damage / 2);
         	    		
@@ -6923,7 +7683,17 @@ public class battlesequence {
         	    	soundeffects.noo(); 
         	    	
         	    	double damage = ((double)(((((2 * 100) * 0.2) + 2 )   * attack.power * (double) (attacker.attack/ (double) defender.def)) * 0.02 ) + 2) * roll; // How much damage the move will do (the equation)
-        	    	
+
+
+					if(attacker.ability.equals("toughclaws")){
+
+
+						damage *= 1.3;
+						System.out.println("Tough claws increased the damage of the attack!!");
+
+
+					}
+
         	    	// make sure to code for crits 
         	    	
         	    	int crit = rand.nextInt(400);
@@ -7474,7 +8244,17 @@ public class battlesequence {
         	    	soundeffects.noo(); 
         	    	
         	    	double damage = ((double)(((((2 * 100) * 0.2) + 2 )   * attack.power * (double) (attacker.attack/ (double) defender.def)) * 0.02 ) + 2) * roll; // How much damage the move will do (the equation)
-        	    	
+
+
+					if(attacker.ability.equals("toughclaws")){
+
+
+						damage *= 1.3;
+						System.out.println("Tough claws increased the damage of the attack!!");
+
+
+					}
+
         	    	// make sure to code for crits 
         	    	
         	    	int crit = rand.nextInt(400);
@@ -7676,7 +8456,17 @@ public class battlesequence {
         	    	soundeffects.noo(); 
         	    	
         	    	double damage = ((double)(((((2 * 100) * 0.2) + 2 )   * attack.power * (double) (attacker.attack/ (double) defender.def)) * 0.02 ) + 2) * roll; // How much damage the move will do (the equation)
-        	    	
+
+
+					if(attacker.ability.equals("toughclaws")){
+
+
+						damage *= 1.3;
+						System.out.println("Tough claws increased the damage of the attack!!");
+
+
+					}
+
         	    	// make sure to code for crits 
         	    	
         	    	int crit = rand.nextInt(400);
@@ -8029,7 +8819,17 @@ public class battlesequence {
         	    	soundeffects.noo(); 
         	    	
         	    	double damage = ((double)(((((2 * 100) * 0.2) + 2 )   * attack.power * (double) (attacker.attack/ (double) defender.def)) * 0.02 ) + 2) * roll; // How much damage the move will do (the equation)
-        	    	
+
+
+					if(attacker.ability.equals("toughclaws")){
+
+
+						damage *= 1.3;
+						System.out.println("Tough claws increased the damage of the attack!!");
+
+
+					}
+
         	    	// make sure to code for crits 
         	    	
         	    	int crit = rand.nextInt(400);
@@ -8190,9 +8990,239 @@ public class battlesequence {
         	    	
         	    	
         	    }
-        	    
-        	    
-        	    // 3/22/2021 (Types of moves sketched: Water, bug, steel, normal,  ) (start on ice, dragon, fairy)
+
+
+				//Watershuriken
+
+
+				public static double watershuriken(pokemon attacker, move attack, pokemon defender, String player) {
+
+
+
+
+					if(defender.bounce == true) { // Checks if the opponent is in the air....
+
+						System.out.println("The move missed because the opponent bounced up high in the air!!!!!");
+						return defender.hp; // misses if the opponent is in the air
+					}
+
+
+
+					double health = defender.hp; // health value of the pokemon being attacked
+
+					int times = rand.nextInt(10);
+
+					if( (times == 0) || (times == 1) ) {
+
+
+						attack.power = 15;
+						System.out.println("Watershuriken only hit once (In my game thats a 15 base power)!!!");
+					}
+					else if( (times == 2) || (times == 3) ) {
+						attack.power = 30;
+						System.out.println("Watershuriken only hit twice (In my game thats a 30 base power)!!!");
+
+
+					}
+					else if( (times == 4) || (times == 5) ) {
+						attack.power = 60;
+						System.out.println("Watershuriken only hit 3 times (In my game thats a 60 base power)!!!");
+
+
+					}
+					else if( (times == 6) || (times == 7) ) {
+						attack.power = 120;
+						System.out.println("Watershuriken hit 4 times (In my game thats a 120 base power)!!!");
+
+
+					}
+					else if( (times == 8) || (times == 9) ) {
+						attack.power = 240;
+						System.out.println("Watershuriken hit 5 times (In my game thats a 240 base power) !!!");
+
+
+					}
+
+
+
+					double roll = mindamageroll + (maxdamageroll - mindamageroll) * rand.nextDouble() ; //now modified to 0.85-1)// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
+
+					System.out.println("Your damage roll is " + roll);
+
+
+					soundeffects.noo();
+
+					double damage = ((double)(((((2 * 100) * 0.2) + 2 )   * attack.power * (double) (attacker.attack/ (double) defender.def)) * 0.02 ) + 2) * roll; // How much damage the move will do (the equation)
+
+
+					if(attacker.ability.equals("toughclaws")){
+
+
+						damage *= 1.3;
+						System.out.println("Tough claws increased the damage of the attack!!");
+
+
+					}
+
+
+					if(attacker.ability.equals("toughclaws")){
+
+
+						damage *= 1.3;
+						System.out.println("Tough claws increased the damage of the attack!!");
+
+
+					}
+
+					// make sure to code for crits
+
+					int crit = rand.nextInt(400);
+
+
+
+
+
+
+
+					//type stuff
+
+
+					if(  (defender.type1.equals("water")) || (defender.type1.equals("grass")) || (defender.type1.equals("dragon")) ) {
+
+						damage *= 0.5;  //water is resisted by these types
+						System.out.println(" \n IT'S NOT VERY EFFECTIVE!!!! \n ");   soundeffects.resist();
+
+					}
+
+
+					if(  (defender.type2.equals("water")) || (defender.type2.equals("grass")) || (defender.type2.equals("dragon")) ) {
+
+						damage *= 0.5;  //water is resisted by these types
+						System.out.println(" \n IT'S NOT VERY EFFECTIVE!!!! \n ");  soundeffects.resist(); // plays sound effect for a move that resists
+
+					}
+
+
+
+					if(   (defender.type1.equals("fire")) || (defender.type1.equals("rock"))  || (defender.type1.equals("ground")) ) {
+
+						damage *= 2;  //water is super effective against these types
+						System.out.println(" \n IT'S SUPER EFFECTIVE!!!! \n ");  soundeffects.attack(); // This plays a sound effect of the move hitting
+
+					}
+
+
+					if(   (defender.type2.equals("fire")) || (defender.type2.equals("rock")) || (defender.type2.equals("ground"))) {
+
+						damage *= 2;  //water is super effective agaisnt these types
+						System.out.println("\n  IT'S SUPER EFFECTIVE !!!! \n");  	soundeffects.attack(); // This plays a sound effect of the move hitting
+
+					}
+
+
+
+
+					if (attack.critrate == 3.0)  {
+
+
+						if (crit <= 27) {
+
+
+							System.out.println("\n YOU GOT A CRIT YOU LUCKY PERSON (You have a normal crit rate) \n");
+
+							if(attacker.ability.equals("sniper")) {
+
+								damage *= 2.5;
+								System.out.println("\n You got the sniper boost \n");
+							}
+							else {
+
+
+								damage *= 1.5;
+
+							}
+						}
+
+					}
+					else if (attack.critrate == 6.0) {
+
+
+						if (crit <= 55) {
+
+							System.out.println("\n YOU GOT A CRIT YOU LUCKY PERSON (You have a high crit rate) \n");
+
+							if(attacker.ability.equals("sniper")) {
+
+								damage *= 2.5;
+								System.out.println("\n You got the sniper boost \n");
+							}
+							else {
+								damage *= 1.5;
+							}
+						}
+
+					}
+					else {
+
+
+
+						if (crit <= 101) {
+
+							System.out.println("\n YOU GOT A CRIT YOU LUCKY PERSON (You have a really high crit rate) \n");
+
+							if(attacker.ability.equals("sniper")) {
+
+								damage *= 2.5;
+								System.out.println("\n You got the sniper boost \n");
+							}
+							else {
+								damage *= 1.5;
+							}
+						}
+
+
+
+					}
+
+
+
+
+					if( (defender.ability.equals("multiscale") ) ){
+
+						if(defender.hp == defender.maxhp) { System.out.println("multiscale reduced the damage the pokemon took");
+
+							damage = damage/2;
+
+						}
+					}
+
+
+
+					damage = Math.round(damage);
+
+					System.out.println("\n" + defender.hp + "  "  + " - "  + damage + " = " + "  " + player + "'s new health: " + Math.round(defender.hp - damage)  );
+
+
+					health =  health - damage;
+
+
+
+
+
+					return Math.round(health);
+
+
+
+				}
+
+
+
+
+
+
+
+
+	// 3/22/2021 (Types of moves sketched: Water, bug, steel, normal,  ) (start on ice, dragon, fairy)
         	    
         	    
         	    /*
@@ -8605,7 +9635,17 @@ public class battlesequence {
         	    	soundeffects.noo(); 
         	    	
         	    	double damage = ((double)(((((2 * 100) * 0.2) + 2 )   * attack.power * (double) (attacker.attack/ (double) defender.def)) * 0.02 ) + 2) * roll; // How much damage the move will do (the equation)
-        	    	
+
+
+					if(attacker.ability.equals("toughclaws")){
+
+
+						damage *= 1.3;
+						System.out.println("Tough claws increased the damage of the attack!!");
+
+
+					}
+
         	    	// make sure to code for crits 
         	    	
         	    	int crit = rand.nextInt(400);
@@ -8813,7 +9853,17 @@ public class battlesequence {
         	    	soundeffects.noo(); 
         	    	
         	    	double damage = ((double)(((((2 * 100) * 0.2) + 2 )   * attack.power * (double) (attacker.attack/ (double) defender.def)) * 0.02 ) + 2) * roll; // How much damage the move will do (the equation)
-        	    	
+
+
+					if(attacker.ability.equals("toughclaws")){
+
+
+						damage *= 1.3;
+						System.out.println("Tough claws increased the damage of the attack!!");
+
+
+					}
+
         	    	// make sure to code for crits 
         	    	
         	    	int crit = rand.nextInt(400);
@@ -8984,7 +10034,17 @@ public class battlesequence {
         	    	soundeffects.noo(); 
         	    	
         	    	double damage = ((double)(((((2 * 100) * 0.2) + 2 )   * attack.power * (double) (attacker.attack/ (double) defender.def)) * 0.02 ) + 2) * roll; // How much damage the move will do (the equation)
-        	    	
+
+
+					if(attacker.ability.equals("toughclaws")){
+
+
+						damage *= 1.3;
+						System.out.println("Tough claws increased the damage of the attack!!");
+
+
+					}
+
         	    	// make sure to code for crits 
         	    	
         	    	int crit = rand.nextInt(400);
@@ -9215,7 +10275,17 @@ public class battlesequence {
         	    	soundeffects.noo(); 
         	    	
         	    	double damage = ((double)(((((2 * 100) * 0.2) + 2 )   * attack.power * (double) (attacker.attack/ (double) defender.def)) * 0.02 ) + 2) * roll; // How much damage the move will do (the equation)
-        	    	
+
+
+					if(attacker.ability.equals("toughclaws")){
+
+
+						damage *= 1.3;
+						System.out.println("Tough claws increased the damage of the attack!!");
+
+
+					}
+
         	    	// make sure to code for crits 
         	    	
         	    	int crit = rand.nextInt(400);
@@ -9891,10 +10961,207 @@ public class battlesequence {
         	    	
         	    	
         	    }
-        	    
-        	    
-   
-        	    //DAZZLINGGLEAM
+
+
+
+
+						//PLAYROUGH
+						public static double playrough(pokemon attacker, move attack, pokemon defender, String player) {
+
+
+
+							if(defender.bounce == true) { // Checks if the opponent is in the air....
+
+								System.out.println("The move missed because the opponent bounced up high in the air!!!!!");
+								return defender.hp; // misses if the opponent is in the air
+							}
+
+
+
+							double health = defender.hp; // health value of the pokemon being attacked
+
+
+							double roll = mindamageroll + (maxdamageroll - mindamageroll) * rand.nextDouble() ; //now modified to 0.85-1)// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
+
+							System.out.println("Your damage roll is " + roll);
+
+							soundeffects.noo();
+
+							double damage = ((double)(((((2 * 100) * 0.2) + 2 )   * attack.power * (double) (attacker.attack/ (double) defender.def)) * 0.02 ) + 2) * roll; // How much damage the move will do (the equation)
+
+
+							if(attacker.ability.equals("toughclaws")){
+
+
+								damage *= 1.3;
+								System.out.println("Tough claws increased the damage of the attack!!");
+
+
+							}
+
+							// make sure to code for crits
+
+							int crit = rand.nextInt(400);
+
+
+
+							if (attack.critrate == 3.0)  {
+
+
+								if (crit <= 27) {
+
+
+									System.out.println("\n YOU GOT A CRIT YOU LUCKY PERSON (You have a normal crit rate) \n");
+
+									if(attacker.ability.equals("sniper")) {
+
+										damage *= 2.5;
+										System.out.println("\n You got the sniper boost \n");
+									}
+									else {
+
+
+										damage *= 1.5;
+
+									}
+								}
+
+							}
+							else if (attack.critrate == 6.0) {
+
+
+								if (crit <= 55) {
+
+									System.out.println("\n YOU GOT A CRIT YOU LUCKY PERSON (You have a high crit rate) \n");
+
+									if(attacker.ability.equals("sniper")) {
+
+										damage *= 2.5;
+										System.out.println("\n You got the sniper boost \n");
+									}
+									else {
+										damage *= 1.5;
+									}
+								}
+
+							}
+							else {
+
+
+
+								if (crit <= 101) {
+
+									System.out.println("\n YOU GOT A CRIT YOU LUCKY PERSON (You have a really high crit rate) \n");
+
+									if(attacker.ability.equals("sniper")) {
+
+										damage *= 2.5;
+										System.out.println("\n You got the sniper boost \n");
+									}
+									else {
+										damage *= 1.5;
+									}
+								}
+
+
+
+							}
+
+
+
+							int reduce = rand.nextInt(100);
+
+							if( !(defender.ability.equals("clearbody"))   ) {
+
+								if(reduce < 11) {
+
+									defender.attack *= 0.5;
+									System.out.println("The opposing pokemon's physical attack has been reduced!!!!!!");
+
+
+								}
+
+
+								if(attacker.ability.equals("serenegrace")) {
+
+
+									if(reduce < 22 ) {
+
+										defender.attack *= 0.5;
+
+										System.out.println("The opposing pokemon's physical attack has been reduced (Serene grace has hard carried!!!!!!");
+
+
+									}
+
+								}
+
+
+
+							}
+
+
+							if(   (defender.type1.equals("steel")) || (defender.type1.equals("poison")) ||  (defender.type1.equals("fire"))   ) {
+
+								damage *= 0.5;  //fairy is resisted by these types
+								System.out.println(" \n IT'S NOT VERY EFFECTIVE!!!! \n ");  soundeffects.resist(); // plays sound effect for a move that resists
+
+							}
+
+
+							if(   (defender.type2.equals("steel")) || (defender.type2.equals("poison")) ||  (defender.type2.equals("fire"))  ) {
+
+								damage *= 0.5;  //fairy is resisted by these types
+								System.out.println(" \n IT'S NOT VERY EFFECTIVE!!!! \n ");  soundeffects.resist(); // plays sound effect for a move that resists
+
+							}
+
+
+							if( (defender.type1.equals("dark")) || (defender.type1.equals("dragon"))|| (defender.type1.equals("fighting")) ) {
+
+								damage *= 2;  //fairy is super effective against these types
+								System.out.println(" \n IT'S SUPER EFFECTIVE!!!! \n ");  soundeffects.attack(); // This plays a sound effect of the move hitting
+
+							}
+
+
+							if(  (defender.type2.equals("dark")) || (defender.type2.equals("dragon"))|| (defender.type2.equals("fighting")) ) {
+
+								damage *= 2;  //fairy is super effective against these types
+								System.out.println(" \n IT'S SUPER EFFECTIVE!!!! \n ");  soundeffects.attack(); // This plays a sound effect of the move hitting
+
+							}
+
+							if( (defender.ability.equals("multiscale") ) ){
+
+								if(defender.hp == defender.maxhp) { System.out.println("multiscale reduced the damage the pokemon took");
+
+									damage = damage/2;
+
+								}
+							}
+
+
+
+							damage = Math.round(damage);
+
+							System.out.println("\n" + defender.hp + "  "  + " - "  + damage + " = " + "  " + player + "'s new health: " + Math.round(defender.hp - damage)  );
+
+
+							health =  health - damage;
+
+
+							return Math.round(health);
+
+
+
+						}
+
+
+
+
+
+	//DAZZLINGGLEAM
         	    public static double dazzlinggleam(pokemon attacker, move attack, pokemon defender, String player) {
             	    
         	    	
@@ -10075,7 +11342,17 @@ public class battlesequence {
         	    	soundeffects.noo(); 
         	    	
         	    	double damage = ((double)(((((2 * 100) * 0.2) + 2 )   * attack.power * (double) (attacker.attack/ (double) defender.def)) * 0.02 ) + 2) * roll; // How much damage the move will do (the equation)
-        	    	
+
+
+					if(attacker.ability.equals("toughclaws")){
+
+
+						damage *= 1.3;
+						System.out.println("Tough claws increased the damage of the attack!!");
+
+
+					}
+
         	    	// make sure to code for crits 
         	    	
         	    	int crit = rand.nextInt(400);
@@ -10238,7 +11515,17 @@ public class battlesequence {
         	    	soundeffects.noo(); 
         	    	
         	    	double damage = ((double)(((((2 * 100) * 0.2) + 2 )   * attack.power * (double) (attacker.attack/ (double) defender.def)) * 0.02 ) + 2) * roll; // How much damage the move will do (the equation)
-        	    	
+
+
+					if(attacker.ability.equals("toughclaws")){
+
+
+						damage *= 1.3;
+						System.out.println("Tough claws increased the damage of the attack!!");
+
+
+					}
+
         	    	// make sure to code for crits 
         	    	
         	    	int crit = rand.nextInt(400);
@@ -10507,7 +11794,7 @@ public class battlesequence {
 
          	        int flinch = rand.nextInt(100);
          	        
-         	        if(defender.status.equals(" No status conditions")) {
+
          	        	
          	        	if(attacker.ability.equals("serenegrace")) {
          	        		if( (flinch < 60) && (attacker.speed >= defender.speed)){
@@ -10525,7 +11812,7 @@ public class battlesequence {
          	     
          	        	
          	        	}
-         	        }
+
          	       
          	        
          	       
@@ -10599,7 +11886,16 @@ public class battlesequence {
         	    	soundeffects.noo(); 
         	    	
         	    	double damage = ((double)(((((2 * 100) * 0.2) + 2 )   * attack.power * (double) (attacker.attack/ (double) defender.def)) * 0.02 ) + 2) * roll; // How much damage the move will do (the equation)
-        	    	
+
+					if(attacker.ability.equals("toughclaws")){
+
+
+						damage *= 1.3;
+						System.out.println("Tough claws increased the damage of the attack!!");
+
+
+					}
+
         	    	// make sure to code for crits 
         	    	
         	    	int crit = rand.nextInt(400);
@@ -10959,11 +12255,174 @@ public class battlesequence {
         	    	
         	    	
         	    }
-        	    
-    	    
-    	    
-    	    
-        	    //DOUBLEKICK
+
+
+
+					//AURASPHERE
+
+					public static double aurasphere(pokemon attacker, move attack, pokemon defender, String player) {
+
+
+						double health = defender.hp; // health value of the pokemon being attacked
+
+
+						double roll = mindamageroll + (maxdamageroll - mindamageroll) * rand.nextDouble() ; //now modified to 0.85-1)// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
+
+						System.out.println("Your damage roll is " + roll);
+
+						soundeffects.noo();
+
+						double damage = ((double)(((((2 * 100) * 0.2) + 2 )   * attack.power * (double) (attacker.spa/ (double) defender.spdef)) * 0.02 ) + 2) * roll; // How much damage the move will do (the equation)
+
+						// make sure to code for crits
+
+						int crit = rand.nextInt(400);
+
+
+
+
+						if (attack.critrate == 3.0)  {
+
+
+							if (crit <= 27) {
+
+
+								System.out.println("\n YOU GOT A CRIT YOU LUCKY PERSON (You have a normal crit rate) \n");
+
+								if(attacker.ability.equals("sniper")) {
+
+									damage *= 2.5;
+									System.out.println("\n You got the sniper boost \n");
+								}
+								else {
+
+
+									damage *= 1.5;
+
+								}
+							}
+
+						}
+						else if (attack.critrate == 6.0) {
+
+
+							if (crit <= 55) {
+
+								System.out.println("\n YOU GOT A CRIT YOU LUCKY PERSON (You have a high crit rate) \n");
+
+								if(attacker.ability.equals("sniper")) {
+
+									damage *= 2.5;
+									System.out.println("\n You got the sniper boost \n");
+								}
+								else {
+									damage *= 1.5;
+								}
+							}
+
+						}
+						else {
+
+
+
+							if (crit <= 101) {
+
+								System.out.println("\n YOU GOT A CRIT YOU LUCKY PERSON (You have a really high crit rate) \n");
+
+								if(attacker.ability.equals("sniper")) {
+
+									damage *= 2.5;
+									System.out.println("\n You got the sniper boost \n");
+								}
+								else {
+									damage *= 1.5;
+								}
+							}
+
+
+
+						}
+
+
+
+
+
+
+						if(   (defender.type1.equals("fairy")) ||(defender.type1.equals("bug")) ||(defender.type1.equals("psychic")) ||  (defender.type1.equals("flying")) ||  (defender.type1.equals("poison")) ) {
+
+							damage *= 0.5;  //fighting is resisted by these types
+							System.out.println(" \n IT'S NOT VERY EFFECTIVE!!!! \n ");  soundeffects.resist(); // plays sound effect for a move that resists
+
+						}
+
+
+						if(   (defender.type2.equals("fairy")) ||(defender.type2.equals("bug")) || (defender.type2.equals("psychic")) || (defender.type2.equals("flying")) || (defender.type2.equals("poison")) ) {
+
+							damage *= 0.5;  //fighting is resisted by these types
+							System.out.println(" \n IT'S NOT VERY EFFECTIVE!!!! \n ");  soundeffects.resist(); // plays sound effect for a move that resists
+
+						}
+
+
+						if(  (defender.type1.equals("steel")) ||(defender.type1.equals("dark")) || (defender.type1.equals("rock")) ||(defender.type1.equals("ice")) || (defender.type1.equals("normal")) ) {
+
+							damage *= 2;  //fighting is super effective against these types
+							System.out.println(" \n IT'S SUPER EFFECTIVE!!!! \n ");  soundeffects.attack(); // This plays a sound effect of the move hitting
+
+						}
+
+
+						if(  (defender.type2.equals("steel")) ||(defender.type2.equals("dark")) || (defender.type2.equals("rock")) ||(defender.type2.equals("ice")) || (defender.type2.equals("normal")) ) {
+
+							damage *= 2;  //fighting is super effective against these types
+							System.out.println(" \n IT'S SUPER EFFECTIVE!!!! \n ");  soundeffects.attack(); // This plays a sound effect of the move hitting
+
+						}
+
+
+
+						if(defender.type1.equals("ghost") || defender.type2.equals("ghost")) {
+
+							damage *= 0;
+							System.out.println("\n GHOST POKEMON ARE IMMUNE TO FIGHTING TYPE ATTACKS \n");
+
+						}
+
+
+
+
+
+						if( (defender.ability.equals("multiscale") ) ){
+
+							if(defender.hp == defender.maxhp) { System.out.println("multiscale reduced the damage the pokemon took");
+
+								damage = damage/2;
+
+							}
+						}
+
+						damage = Math.round(damage);
+
+						System.out.println("\n" + defender.hp + "  "  + " - "  + damage + " = " + "  " + player + "'s new health: " + Math.round(defender.hp - damage)  );
+
+
+
+
+
+
+						health =  health - damage;
+
+
+						return Math.round(health);
+
+
+
+					}
+
+
+
+
+	//DOUBLEKICK
         	    public static double doublekick(pokemon attacker, move attack, pokemon defender, String player) {
         	    	
         	    	
@@ -10984,7 +12443,17 @@ public class battlesequence {
         	    	soundeffects.noo(); 
         	    	
         	    	double damage = ((double)(((((2 * 100) * 0.2) + 2 )   * attack.power * (double) (attacker.attack/ (double) defender.def)) * 0.02 ) + 2) * roll; // How much damage the move will do (the equation)
-        	    	
+
+
+					if(attacker.ability.equals("toughclaws")){
+
+
+						damage *= 1.3;
+						System.out.println("Tough claws increased the damage of the attack!!");
+
+
+					}
+
         	    	// make sure to code for crits 
         	    	
         	    	int crit = rand.nextInt(400);
@@ -11156,7 +12625,17 @@ public class battlesequence {
         	    	soundeffects.noo(); 
         	    	
         	    	double damage = ((double)(((((2 * 100) * 0.2) + 2 )   * attack.power * (double) (attacker.attack/ (double) defender.def)) * 0.02 ) + 2) * roll; // How much damage the move will do (the equation)
-        	    	
+
+
+					if(attacker.ability.equals("toughclaws")){
+
+
+						damage *= 1.3;
+						System.out.println("Tough claws increased the damage of the attack!!");
+
+
+					}
+
         	    	// make sure to code for crits 
         	    	
         	    	int crit = rand.nextInt(400);
@@ -11333,7 +12812,17 @@ public class battlesequence {
         	    	soundeffects.noo(); 
         	    	
         	    	double damage = ((double)(((((2 * 100) * 0.2) + 2 )   * attack.power * (double) (attacker.attack/ (double) defender.def)) * 0.02 ) + 2) * roll; // How much damage the move will do (the equation)
-        	    	
+
+
+					if(attacker.ability.equals("toughclaws")){
+
+
+						damage *= 1.3;
+						System.out.println("Tough claws increased the damage of the attack!!");
+
+
+					}
+
         	    	// make sure to code for crits 
         	    	
         	    	int crit = rand.nextInt(400);
@@ -11489,7 +12978,214 @@ public class battlesequence {
         	    	
         	    }
         	    
-        	    
+        	    //DRAINPUNCH
+
+						public static double drainpunch(pokemon attacker, move attack, pokemon defender, String player) {
+
+
+
+							if(defender.bounce == true) { // Checks if the opponent is in the air....
+
+								System.out.println("The move missed because the opponent bounced up high in the air!!!!!");
+								return defender.hp; // misses if the opponent is in the air
+							}
+
+
+
+
+							double health = defender.hp; // health value of the pokemon being attacked
+
+
+							double roll = mindamageroll + (maxdamageroll - mindamageroll) * rand.nextDouble() ; //now modified to 0.85-1)// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
+
+							System.out.println("Your damage roll is " + roll);
+
+							soundeffects.noo();
+
+							double damage = ((double)(((((2 * 100) * 0.2) + 2 )   * attack.power * (double) (attacker.attack/ (double) defender.def)) * 0.02 ) + 2) * roll; // How much damage the move will do (the equation)
+
+
+							if(attacker.ability.equals("toughclaws")){
+
+
+								damage *= 1.3;
+								System.out.println("Tough claws increased the damage of the attack!!");
+
+
+							}
+
+							// make sure to code for crits
+
+
+
+
+							if(   (defender.type1.equals("fairy")) ||(defender.type1.equals("bug")) ||(defender.type1.equals("psychic")) ||  (defender.type1.equals("flying")) ||  (defender.type1.equals("poison")) ) {
+
+								damage *= 0.5;  //fighting is resisted by these types
+								System.out.println(" \n IT'S NOT VERY EFFECTIVE!!!! \n ");  soundeffects.resist(); // plays sound effect for a move that resists
+
+							}
+
+
+							if(   (defender.type2.equals("fairy")) ||(defender.type2.equals("bug")) || (defender.type2.equals("psychic")) || (defender.type2.equals("flying")) || (defender.type2.equals("poison")) ) {
+
+								damage *= 0.5;  //fighting is resisted by these types
+								System.out.println(" \n IT'S NOT VERY EFFECTIVE!!!! \n ");  soundeffects.resist(); // plays sound effect for a move that resists
+
+							}
+
+
+							if(  (defender.type1.equals("steel")) ||(defender.type1.equals("dark")) || (defender.type1.equals("rock")) ||(defender.type1.equals("ice")) || (defender.type1.equals("normal")) ) {
+
+								damage *= 2;  //fighting is super effective against these types
+								System.out.println(" \n IT'S SUPER EFFECTIVE!!!! \n ");  soundeffects.attack(); // This plays a sound effect of the move hitting
+
+							}
+
+
+							if(  (defender.type2.equals("steel")) ||(defender.type2.equals("dark")) || (defender.type2.equals("rock")) ||(defender.type2.equals("ice")) || (defender.type2.equals("normal")) ) {
+
+								damage *= 2;  //fighting is super effective against these types
+								System.out.println(" \n IT'S SUPER EFFECTIVE!!!! \n ");  soundeffects.attack(); // This plays a sound effect of the move hitting
+
+							}
+
+
+
+							if(defender.type1.equals("ghost") || defender.type2.equals("ghost")) {
+
+								damage *= 0;
+								System.out.println("\n GHOST POKEMON ARE IMMUNE TO FIGHTING TYPE ATTACKS \n");
+
+							}
+
+
+							int crit = rand.nextInt(400);
+
+
+							if (attack.critrate == 3.0)  {
+
+
+								if (crit <= 27) {
+
+
+									System.out.println("\n YOU GOT A CRIT YOU LUCKY PERSON (You have a normal crit rate) \n");
+
+									if(attacker.ability.equals("sniper")) {
+
+										damage *= 2.5;
+										System.out.println("\n You got the sniper boost \n");
+									}
+									else {
+
+
+										damage *= 1.5;
+
+									}
+								}
+
+							}
+							else if (attack.critrate == 6.0) {
+
+
+								if (crit <= 55) {
+
+									System.out.println("\n YOU GOT A CRIT YOU LUCKY PERSON (You have a high crit rate) \n");
+
+									if(attacker.ability.equals("sniper")) {
+
+										damage *= 2.5;
+										System.out.println("\n You got the sniper boost \n");
+									}
+									else {
+										damage *= 1.5;
+									}
+								}
+
+							}
+							else {
+
+
+
+								if (crit <= 101) {
+
+									System.out.println("\n YOU GOT A CRIT YOU LUCKY PERSON (You have a really high crit rate) \n");
+
+									if(attacker.ability.equals("sniper")) {
+
+										damage *= 2.5;
+										System.out.println("\n You got the sniper boost \n");
+									}
+									else {
+										damage *= 1.5;
+									}
+								}
+
+
+
+							}
+
+
+
+
+
+							if( (defender.ability.equals("multiscale") ) ){
+
+								if(defender.hp == defender.maxhp) { System.out.println("multiscale reduced the damage the pokemon took");
+
+									damage = damage/2;
+
+								}
+							}
+
+
+
+							damage = Math.round(damage);
+
+							System.out.println("\n" + defender.hp + "  "  + " - "  + damage + " = " + "  " + player + "'s new health: " + Math.round(defender.hp - damage)  );
+
+
+							if (attacker.hp < attacker.maxhp) {
+
+								System.out.println("The attacking pokemon gained hp through drainpunch!! ");
+
+								System.out.println(attacker.hp + " + " + (damage/2) + " = "  + (attacker.hp + (damage/2)) );
+
+								attacker.hp += (damage / 2);
+
+
+							}
+							else {
+
+
+								System.out.println(" The attacking pokemon is already at full hp!!");
+
+
+
+							}
+
+							health =  health - damage;
+
+
+
+
+							if(defender.ability.equals("stamina")) {
+
+								defender.def *= 1.5;
+								soundeffects.statincrease();
+								System.out.println("The opposing pokemon's defense rose");
+							}
+
+
+							return Math.round(health);
+
+
+
+						}
+
+
+
+
         	    //BRICKBREAK
         	    public static double brickbreak(pokemon attacker, move attack, pokemon defender, String player) {
         	    	
@@ -11511,7 +13207,17 @@ public class battlesequence {
         	    	soundeffects.noo(); 
         	    	
         	    	double damage = ((double)(((((2 * 100) * 0.2) + 2 )   * attack.power * (double) (attacker.attack/ (double) defender.def)) * 0.02 ) + 2) * roll; // How much damage the move will do (the equation)
-        	    	
+
+
+					if(attacker.ability.equals("toughclaws")){
+
+
+						damage *= 1.3;
+						System.out.println("Tough claws increased the damage of the attack!!");
+
+
+					}
+
         	    	// make sure to code for crits 
         	    	
         	    	int crit = rand.nextInt(400);
@@ -11685,7 +13391,17 @@ public class battlesequence {
         	    	soundeffects.noo(); 
         	    	
         	    	double damage = ((double)(((((2 * 100) * 0.2) + 2 )   * attack.power * (double) (attacker.attack/ (double) defender.def)) * 0.02 ) + 2) * roll; // How much damage the move will do (the equation)
-        	    	
+
+
+					if(attacker.ability.equals("toughclaws")){
+
+
+						damage *= 1.3;
+						System.out.println("Tough claws increased the damage of the attack!!");
+
+
+					}
+
         	    	// make sure to code for crits 
         	    	
         	    	int crit = rand.nextInt(400);
@@ -11862,7 +13578,17 @@ public class battlesequence {
         	    	soundeffects.noo(); 
         	    	
         	    	double damage = ((double)(((((2 * 100) * 0.2) + 2 )   * attack.power * (double) (attacker.attack/ (double) defender.def)) * 0.02 ) + 2) * roll; // How much damage the move will do (the equation)
-        	    	
+
+
+					if(attacker.ability.equals("toughclaws")){
+
+
+						damage *= 1.3;
+						System.out.println("Tough claws increased the damage of the attack!!");
+
+
+					}
+
         	    	// make sure to code for crits 
         	    	
         	    	int crit = rand.nextInt(400);
@@ -12224,7 +13950,7 @@ public class battlesequence {
                       			if(defender.move4.attacktype.equals("ph")) {
                       				defender.move4.power *= 0.5;
                       			}
-                      		 System.out.println("Your " + attacker.pokename + " has burned the opponent's " + defender.pokename + " . " + defender.pokename + "'s physical attacks power has been cut in half. ");
+                      		 System.out.println("Your " + attacker.pokename + " has burned the opponent's " + defender.pokename + " with " + attack.movename + ". " + defender.pokename + "'s physical attacks power has been cut in half. ");
                       		}
                       		 
                       	
@@ -12261,7 +13987,17 @@ public class battlesequence {
         	    	soundeffects.noo(); 
         	    	
         	    	double damage = ((double)(((((2 * 100) * 0.2) + 2 )   * attack.power * (double) (attacker.attack/ (double) defender.def)) * 0.02 ) + 2) * roll; // How much damage the move will do (the equation)
-        	    	
+
+
+					if(attacker.ability.equals("toughclaws")){
+
+
+						damage *= 1.3;
+						System.out.println("Tough claws increased the damage of the attack!!");
+
+
+					}
+
         	    	// make sure to code for crits 
         	    	
         	    	int crit = rand.nextInt(400);
@@ -12412,7 +14148,7 @@ public class battlesequence {
                        			if(defender.move4.attacktype.equals("ph")) {
                        				defender.move4.power *= 0.5;
                        			}
-                       		 System.out.println("Your " + attacker.pokename + " has burned the opponent's " + defender.pokename + " . " + defender.pokename + "'s physical attacks power has been cut in half. ");
+                       		 System.out.println("Your " + attacker.pokename + " has burned the opponent's " + defender.pokename + " with " + attack.movename + " . " + defender.pokename + "'s physical attacks power has been cut in half. ");
                        		}
                        		 
                        	
@@ -12444,7 +14180,7 @@ public class battlesequence {
                       			if(defender.move4.attacktype.equals("ph")) {
                       				defender.move4.power *= 0.5;
                       			}
-                      		 System.out.println("Your " + attacker.pokename + " has burned the opponent's " + defender.pokename + " . " + defender.pokename + "'s physical attacks power has been cut in half. ");
+                      		 System.out.println("Your " + attacker.pokename + " has burned the opponent's " + defender.pokename + " with " + attack.movename + " . " + defender.pokename + "'s physical attacks power has been cut in half. ");
                       		}
                       		 
                       	
@@ -12494,7 +14230,17 @@ public class battlesequence {
         	    	soundeffects.noo(); 
         	    	
         	    	double damage = ((double)(((((2 * 100) * 0.2) + 2 )   * attack.power * (double) (attacker.attack/ (double) defender.def)) * 0.02 ) + 2) * roll; // How much damage the move will do (the equation)
-        	    	
+
+
+					if(attacker.ability.equals("toughclaws")){
+
+
+						damage *= 1.3;
+						System.out.println("Tough claws increased the damage of the attack!!");
+
+
+					}
+
         	    	// make sure to code for crits 
         	    	
         	    	int crit = rand.nextInt(400);
@@ -12644,7 +14390,7 @@ public class battlesequence {
                       			if(defender.move4.attacktype.equals("ph")) {
                       				defender.move4.power *= 0.5;
                       			}
-                      		 System.out.println("Your " + attacker.pokename + " has burned the opponent's " + defender.pokename + " . " + defender.pokename + "'s physical attacks power has been cut in half. ");
+                      		 System.out.println("Your " + attacker.pokename + " has burned the opponent's " + defender.pokename + " with " + attack.movename + " . " + defender.pokename + "'s physical attacks power has been cut in half. ");
                       		}
                       		 
                       	
@@ -12701,7 +14447,17 @@ public class battlesequence {
         	    	soundeffects.noo(); 
         	    	
         	    	double damage = ((double)(((((2 * 100) * 0.2) + 2 )   * attack.power * (double) (attacker.attack/ (double) defender.def)) * 0.02 ) + 2) * roll; // How much damage the move will do (the equation)
-        	    	
+
+
+					if(attacker.ability.equals("toughclaws")){
+
+
+						damage *= 1.3;
+						System.out.println("Tough claws increased the damage of the attack!!");
+
+
+					}
+
         	    	// make sure to code for crits 
         	    	
         	    	int crit = rand.nextInt(400);
@@ -12856,7 +14612,7 @@ public class battlesequence {
                       			if(defender.move4.attacktype.equals("ph")) {
                       				defender.move4.power *= 0.5;
                       			}
-                      		 System.out.println("Your " + attacker.pokename + " has burned the opponent's " + defender.pokename + " . " + defender.pokename + "'s physical attacks power has been cut in half. ");
+                      		 System.out.println("Your " + attacker.pokename + " has burned the opponent's " + defender.pokename + " with " + attack.movename + " . " + defender.pokename + "'s physical attacks power has been cut in half. ");
                       		}
                       		 
                       	
@@ -12901,7 +14657,8 @@ public class battlesequence {
         	       
         	    //thunderbolt
         	    public static double thunderbolt(pokemon attacker, move attack, pokemon defender, String player) {
-        	    	
+
+
         	    	
         	    	if(defender.bounce == true) { // Checks if the opponent is in the air....
         	    		
@@ -13104,9 +14861,230 @@ public class battlesequence {
         	    	
         	    }
         	    
-        	    
-        	    
-        	    //THUNDERPUNCH
+        	    //volttackle
+
+					public static double volttackle(pokemon attacker, move attack, pokemon defender, String player) {
+
+
+						if(defender.bounce == true) { // Checks if the opponent is in the air....
+
+							System.out.println("The move missed because the opponent bounced up high in the air!!!!!");
+							return defender.hp; // misses if the opponent is in the air
+						}
+
+
+						double health = defender.hp; // health value of the pokemon being attacked
+
+
+						double roll = mindamageroll + (maxdamageroll - mindamageroll) * rand.nextDouble() ; //now modified to 0.85-1)// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
+
+						System.out.println("Your damage roll is " + roll);
+
+						soundeffects.noo();
+
+						double damage = ((double)(((((2 * 100) * 0.2) + 2 )   * attack.power * (double) (attacker.attack/ (double) defender.def)) * 0.02 ) + 2) * roll; // How much damage the move will do (the equation)
+
+
+						if(attacker.ability.equals("toughclaws")){
+
+
+							damage *= 1.3;
+							System.out.println("Tough claws increased the damage of the attack!!");
+
+
+						}
+
+						// make sure to code for crits
+
+						int crit = rand.nextInt(400);
+
+
+
+						if (attack.critrate == 3.0)  {
+
+
+							if (crit <= 27) {
+
+
+								System.out.println("\n YOU GOT A CRIT YOU LUCKY PERSON (You have a normal crit rate) \n");
+
+								if(attacker.ability.equals("sniper")) {
+
+									damage *= 2.5;
+									System.out.println("\n You got the sniper boost \n");
+								}
+								else {
+
+
+									damage *= 1.5;
+
+								}
+							}
+
+						}
+						else if (attack.critrate == 6.0) {
+
+
+							if (crit <= 55) {
+
+								System.out.println("\n YOU GOT A CRIT YOU LUCKY PERSON (You have a high crit rate) \n");
+
+								if(attacker.ability.equals("sniper")) {
+
+									damage *= 2.5;
+									System.out.println("\n You got the sniper boost \n");
+								}
+								else {
+									damage *= 1.5;
+								}
+							}
+
+						}
+						else {
+
+
+
+							if (crit <= 101) {
+
+								System.out.println("\n YOU GOT A CRIT YOU LUCKY PERSON (You have a really high crit rate) \n");
+
+								if(attacker.ability.equals("sniper")) {
+
+									damage *= 2.5;
+									System.out.println("\n You got the sniper boost \n");
+								}
+								else {
+									damage *= 1.5;
+								}
+							}
+
+
+
+						}
+
+
+
+
+
+
+						if(  (defender.type1.equals("electric")) || (defender.type1.equals("grass")) || (defender.type1.equals("dragon")) ) {
+
+							damage *= 0.5;  //electric is resisted by these types
+							System.out.println(" \n IT'S NOT VERY EFFECTIVE!!!! \n ");   soundeffects.resist();
+
+						}
+
+
+						if(  (defender.type2.equals("electric")) || (defender.type2.equals("grass")) || (defender.type2.equals("dragon")) ) {
+
+							damage *= 0.5;  //electric is resisted by these types
+							System.out.println(" \n IT'S NOT VERY EFFECTIVE!!!! \n ");  soundeffects.resist(); // plays sound effect for a move that resists
+
+						}
+
+						if(   (defender.type1.equals("water")) || (defender.type1.equals("flying")) ) {
+
+							damage *= 2;  //electric is super effective against these types
+							System.out.println(" \n IT'S SUPER EFFECTIVE!!!! \n ");  soundeffects.attack(); // This plays a sound effect of the move hitting
+
+						}
+
+
+						if(   (defender.type2.equals("water")) || (defender.type2.equals("flying")) ) {
+
+							damage *= 2;  //electric is super effective agaisnt these types
+							System.out.println("\n  IT'S SUPER EFFECTIVE !!!! \n");  	soundeffects.attack(); // This plays a sound effect of the move hitting
+
+						}
+
+						if(defender.type1.equals("ground") || defender.type2.equals("ground")) {
+
+							damage *= 0;
+							System.out.println("\n GROUND POKEMON ARE IMMUNE TO ELECTRIC TYPE ATTACKS \n");
+
+						}
+
+
+
+
+						if( (defender.ability.equals("multiscale") ) ){
+
+							if(defender.hp == defender.maxhp) { System.out.println("multiscale reduced the damage the pokemon took");
+
+								damage = damage/2;
+
+							}
+						}
+
+
+
+						damage = Math.round(damage);
+
+						System.out.println("\n" + defender.hp + "  "  + " - "  + damage + " = " + "  " + player + "'s new health: " + Math.round(defender.hp - damage)  );
+
+
+						health =  health - damage;
+
+
+						System.out.println("The user took damage as a result of volttackle!! " + attacker.hp + " - " + (damage/3) + " = " + (attacker.hp - (damage/3)) );
+
+						attacker.hp -=  (damage/3);
+
+
+
+						int oof = rand.nextInt(100);
+
+
+
+
+
+						if( (defender.status.equals(" No status conditions")) ) {
+
+
+							if(oof < 10) {
+
+
+
+								defender.status = "Paralyzed";
+								defender.speed *= 0.5;
+								soundeffects.paralyze();
+								soundeffects.drop();
+								System.out.println("Your " + attacker.pokename + " has paralyzed the opponent's " + defender.pokename + " with "  + attack.movename + " . " + defender.pokename + "'s speed fell. ");
+
+
+
+
+
+
+
+							}
+
+
+
+
+
+						}
+
+
+
+
+
+						if(defender.ability.equals("stamina")) {
+
+							defender.def *= 1.5;
+							soundeffects.statincrease();
+							System.out.println("The opposing pokemon's defense rose");
+						}
+
+
+						return Math.round(health);
+
+
+
+					}
+
+
+	//THUNDERPUNCH
         	    public static double thunderpunch(pokemon attacker, move attack, pokemon defender, String player) {
         	    	
         	    	
@@ -13127,7 +15105,17 @@ public class battlesequence {
         	    	soundeffects.noo(); 
         	    	
         	    	double damage = ((double)(((((2 * 100) * 0.2) + 2 )   * attack.power * (double) (attacker.attack/ (double) defender.def)) * 0.02 ) + 2) * roll; // How much damage the move will do (the equation)
-        	    	
+
+
+					if(attacker.ability.equals("toughclaws")){
+
+
+						damage *= 1.3;
+						System.out.println("Tough claws increased the damage of the attack!!");
+
+
+					}
+
         	    	// make sure to code for crits 
         	    	
         	    	int crit = rand.nextInt(400);
@@ -13283,18 +15271,21 @@ public class battlesequence {
                			
                     			
                        		if(oof < 10) {
-                       		
-                       			defender.status = "Paralyzed";
-                       			soundeffects.paralyze();
-                       		     defender.speed *= 0.5;
-                       		
-                       		
-                       		 
-                       	
-                     		
-                     		
-                  		
-         	            }
+
+								defender.status = "Paralyzed";
+								defender.speed *= 0.5;
+								soundeffects.paralyze();
+								soundeffects.drop();
+								System.out.println("Your " + attacker.pokename + " has paralyzed the opponent's " + defender.pokename + " with "  + attack.movename + " . " + defender.pokename + "'s speed fell. ");
+
+
+
+
+
+
+
+
+							}
                       		 
                       	
                     		
@@ -13318,9 +15309,205 @@ public class battlesequence {
         	    	
         	    	
         	    }
-        	    
-        	    
-        	    //THUNDERFANG
+
+
+				//PLASMAFISTS
+
+
+					public static double plasmafists(pokemon attacker, move attack, pokemon defender, String player) {
+
+
+						if((defender.bounce == true) && !(attacker.ability.equals("noguard")) ) {// Checks if the opponent is in the air....
+
+							System.out.println("The move missed because the opponent bounced up high in the air!!!!!");
+							return defender.hp; // misses if the opponent is in the air
+						}
+
+
+						double health = defender.hp; // health value of the pokemon being attacked
+
+
+						double roll = mindamageroll + (maxdamageroll - mindamageroll) * rand.nextDouble() ; //now modified to 0.85-1)// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
+
+						System.out.println("Your damage roll is " + roll);
+
+						soundeffects.noo();
+
+						double damage = ((double)(((((2 * 100) * 0.2) + 2 )   * attack.power * (double) (attacker.attack/ (double) defender.def)) * 0.02 ) + 2) * roll; // How much damage the move will do (the equation)
+
+
+						if(attacker.ability.equals("toughclaws")){
+
+
+							damage *= 1.3;
+							System.out.println("Tough claws increased the damage of the attack!!");
+
+
+						}
+
+						// make sure to code for crits
+
+						int crit = rand.nextInt(400);
+
+
+
+						if (attack.critrate == 3.0)  {
+
+
+							if (crit <= 27) {
+
+
+								System.out.println("\n YOU GOT A CRIT YOU LUCKY PERSON (You have a normal crit rate) \n");
+
+								if(attacker.ability.equals("sniper")) {
+
+									damage *= 2.5;
+									System.out.println("\n You got the sniper boost \n");
+								}
+								else {
+
+
+									damage *= 1.5;
+
+								}
+							}
+
+						}
+						else if (attack.critrate == 6.0) {
+
+
+							if (crit <= 55) {
+
+								System.out.println("\n YOU GOT A CRIT YOU LUCKY PERSON (You have a high crit rate) \n");
+
+								if(attacker.ability.equals("sniper")) {
+
+									damage *= 2.5;
+									System.out.println("\n You got the sniper boost \n");
+								}
+								else {
+									damage *= 1.5;
+								}
+							}
+
+						}
+						else {
+
+
+
+							if (crit <= 101) {
+
+								System.out.println("\n YOU GOT A CRIT YOU LUCKY PERSON (You have a really high crit rate) \n");
+
+								if(attacker.ability.equals("sniper")) {
+
+									damage *= 2.5;
+									System.out.println("\n You got the sniper boost \n");
+								}
+								else {
+									damage *= 1.5;
+								}
+							}
+
+
+
+						}
+
+
+
+						if(  (defender.type1.equals("electric")) || (defender.type1.equals("grass")) || (defender.type1.equals("dragon")) ) {
+
+							damage *= 0.5;  //electric is resisted by these types
+							System.out.println(" \n IT'S NOT VERY EFFECTIVE!!!! \n ");   soundeffects.resist();
+
+						}
+
+
+						if(  (defender.type2.equals("electric")) || (defender.type2.equals("grass")) || (defender.type2.equals("dragon")) ) {
+
+							damage *= 0.5;  //electric is resisted by these types
+							System.out.println(" \n IT'S NOT VERY EFFECTIVE!!!! \n ");  soundeffects.resist(); // plays sound effect for a move that resists
+
+						}
+
+						if(   (defender.type1.equals("water")) || (defender.type1.equals("flying")) ) {
+
+							damage *= 2;  //electric is super effective against these types
+							System.out.println(" \n IT'S SUPER EFFECTIVE!!!! \n ");  soundeffects.attack(); // This plays a sound effect of the move hitting
+
+						}
+
+
+						if(   (defender.type2.equals("water")) || (defender.type2.equals("flying")) ) {
+
+							damage *= 2;  //electric is super effective agaisnt these types
+							System.out.println("\n  IT'S SUPER EFFECTIVE !!!! \n");  	soundeffects.attack(); // This plays a sound effect of the move hitting
+
+						}
+
+						if(defender.type1.equals("ground") || defender.type2.equals("ground")) {
+
+							damage *= 0;
+							System.out.println("\n GROUND POKEMON ARE IMMUNE TO ELECTRIC TYPE ATTACKS \n");
+
+						}
+
+
+
+						if( (defender.ability.equals("multiscale") ) ){
+
+							if(defender.hp == defender.maxhp) { System.out.println("multiscale reduced the damage the pokemon took");
+
+								damage = damage/2;
+
+							}
+						}
+
+
+						if(attacker.ability.equals("ironfist")) {
+
+							damage *= 1.3;
+
+							System.out.println("Ironfist powered up the hit!!!");
+						}
+
+
+
+						if(defender.ability.equals("solidrock")){
+
+							damage = damage * 0.6;
+							System.out.println("Solid rock reduced the damage of the attack");
+
+						}
+
+						damage = Math.round(damage);
+
+						System.out.println("\n" + defender.hp + "  "  + " - "  + damage + " = " + "  " + player + "'s new health: " + Math.round(defender.hp - damage)  );
+
+
+						health =  health - damage;
+
+
+
+
+
+
+						if(defender.ability.equals("stamina")) {
+
+							defender.def *= 1.5;
+							soundeffects.statincrease();
+							System.out.println("The opposing pokemon's defense rose");
+						}
+
+
+						return Math.round(health);
+
+
+
+					}
+
+
+	//THUNDERFANG
         	    
         	    public static double thunderfang(pokemon attacker, move attack, pokemon defender, String player) {
         	    	
@@ -13342,7 +15529,17 @@ public class battlesequence {
         	    	soundeffects.noo(); 
         	    	
         	    	double damage = ((double)(((((2 * 100) * 0.2) + 2 )   * attack.power * (double) (attacker.attack/ (double) defender.def)) * 0.02 ) + 2) * roll; // How much damage the move will do (the equation)
-        	    	
+
+
+					if(attacker.ability.equals("toughclaws")){
+
+
+						damage *= 1.3;
+						System.out.println("Tough claws increased the damage of the attack!!");
+
+
+					}
+
         	    	// make sure to code for crits 
         	    	
         	    	int crit = rand.nextInt(400);
@@ -13495,12 +15692,15 @@ public class battlesequence {
            	
                     			
                        		if( (oof < 10) && (attacker.speed >= defender.speed)){
-                       		
-                       			defender.status = "Paralyzed";
-                       			soundeffects.paralyze();
-                       		     defender.speed *= 0.5;
-                       		
-                       		}
+
+								defender.status = "Paralyzed";
+								defender.speed *= 0.5;
+								soundeffects.paralyze();
+								soundeffects.drop();
+								System.out.println("Your " + attacker.pokename + " has paralyzed the opponent's " + defender.pokename + " with "  + attack.movename + " . " + defender.pokename + "'s speed fell. ");
+
+
+							}
                        		 
                  		
                  		
@@ -13554,7 +15754,17 @@ public class battlesequence {
         	    	soundeffects.noo(); 
         	    	
         	    	double damage = ((double)(((((2 * 100) * 0.2) + 2 )   * attack.power * (double) (attacker.attack/ (double) defender.def)) * 0.02 ) + 2) * roll; // How much damage the move will do (the equation)
-        	    	
+
+
+					if(attacker.ability.equals("toughclaws")){
+
+
+						damage *= 1.3;
+						System.out.println("Tough claws increased the damage of the attack!!");
+
+
+					}
+
         	    	// make sure to code for crits 
         	    	
         	    	int crit = rand.nextInt(400);
@@ -13706,12 +15916,15 @@ public class battlesequence {
                		 if( (defender.status.equals(" No status conditions")) ) {
                			
                       		if(oof < 10) {
-                      		
-                      			defender.status = "Paralyzed";
-                      			soundeffects.paralyze();
-                      		     defender.speed *= 0.5;
-                      		
-                      		}
+
+								defender.status = "Paralyzed";
+								defender.speed *= 0.5;
+								soundeffects.paralyze();
+								soundeffects.drop();
+								System.out.println("Your " + attacker.pokename + " has paralyzed the opponent's " + defender.pokename + " with "  + attack.movename + " . " + defender.pokename + "'s speed fell. ");
+
+
+							}
                       		 
                       	
                     		
@@ -13768,7 +15981,17 @@ public class battlesequence {
         	    	soundeffects.noo(); 
         	    	
         	    	double damage = ((double)(((((2 * 100) * 0.2) + 2 )   * attack.power * (double) (attacker.attack/ (double) defender.def)) * 0.02 ) + 2) * roll; // How much damage the move will do (the equation)
-        	    	
+
+
+					if(attacker.ability.equals("toughclaws")){
+
+
+						damage *= 1.3;
+						System.out.println("Tough claws increased the damage of the attack!!");
+
+
+					}
+
         	    	// make sure to code for crits 
         	    	
         	    	int crit = rand.nextInt(400);
@@ -14312,7 +16535,17 @@ public class battlesequence {
         	    	soundeffects.noo(); 
         	    	
         	    	double damage = ((double)(((((2 * 100) * 0.2) + 2 )   * attack.power * (double) (attacker.attack/ (double) defender.def)) * 0.02 ) + 2) * roll; // How much damage the move will do (the equation)
-        	    	
+
+
+					if(attacker.ability.equals("toughclaws")){
+
+
+						damage *= 1.3;
+						System.out.println("Tough claws increased the damage of the attack!!");
+
+
+					}
+
         	    	// make sure to code for crits 
         	    	
         	    	int crit = rand.nextInt(400);
@@ -14507,7 +16740,17 @@ public class battlesequence {
         	    	soundeffects.noo(); 
         	    	
         	    	double damage = ((double)(((((2 * 100) * 0.2) + 2 )   * attack.power * (double) (attacker.attack/ (double) defender.def)) * 0.02 ) + 2) * roll; // How much damage the move will do (the equation)
-        	    	
+
+
+					if(attacker.ability.equals("toughclaws")){
+
+
+						damage *= 1.3;
+						System.out.println("Tough claws increased the damage of the attack!!");
+
+
+					}
+
         	    	// make sure to code for crits 
         	    	
         	    	int crit = rand.nextInt(400);
@@ -14675,9 +16918,214 @@ public class battlesequence {
         	    	
         	    	
         	    }
- 
-        	    
-        	    // 3/23/2021 (Types of moves sketched: Water, bug, steel,flying, normal, ice, dragon,fire, electric, grass, fighting, fairy)
+
+
+
+				//gunkshot
+
+
+						public static double gunkshot(pokemon attacker, move attack, pokemon defender, String player) {
+
+
+							if(defender.bounce == true) { // Checks if the opponent is in the air....
+
+								System.out.println("The move missed because the opponent bounced up high in the air!!!!!");
+								return defender.hp; // misses if the opponent is in the air
+							}
+
+
+							double health = defender.hp; // health value of the pokemon being attacked
+
+
+							double roll = mindamageroll + (maxdamageroll - mindamageroll) * rand.nextDouble() ; //now modified to 0.85-1)// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
+
+							System.out.println("Your damage roll is " + roll);
+
+
+							soundeffects.noo();
+
+							double damage = ((double)(((((2 * 100) * 0.2) + 2 )   * attack.power * (double) (attacker.attack/ (double) defender.def)) * 0.02 ) + 2) * roll; // How much damage the move will do (the equation)
+
+
+							if(attacker.ability.equals("toughclaws")){
+
+
+								damage *= 1.3;
+								System.out.println("Tough claws increased the damage of the attack!!");
+
+
+							}
+
+							// make sure to code for crits
+
+							int crit = rand.nextInt(400);
+
+
+
+
+							if (attack.critrate == 3.0)  {
+
+
+								if (crit <= 27) {
+
+
+									System.out.println("\n YOU GOT A CRIT YOU LUCKY PERSON (You have a normal crit rate) \n");
+
+									if(attacker.ability.equals("sniper")) {
+
+										damage *= 2.5;
+										System.out.println("\n You got the sniper boost \n");
+									}
+									else {
+
+
+										damage *= 1.5;
+
+									}
+								}
+
+							}
+							else if (attack.critrate == 6.0) {
+
+
+								if (crit <= 55) {
+
+									System.out.println("\n YOU GOT A CRIT YOU LUCKY PERSON (You have a high crit rate) \n");
+
+									if(attacker.ability.equals("sniper")) {
+
+										damage *= 2.5;
+										System.out.println("\n You got the sniper boost \n");
+									}
+									else {
+										damage *= 1.5;
+									}
+								}
+
+							}
+							else {
+
+
+
+								if (crit <= 101) {
+
+									System.out.println("\n YOU GOT A CRIT YOU LUCKY PERSON (You have a really high crit rate) \n");
+
+									if(attacker.ability.equals("sniper")) {
+
+										damage *= 2.5;
+										System.out.println("\n You got the sniper boost \n");
+									}
+									else {
+										damage *= 1.5;
+									}
+								}
+
+
+
+							}
+
+
+
+							if(   (defender.type1.equals("poison")) ||  (defender.type1.equals("ground")) ||  (defender.type1.equals("ghost")) || (defender.type1.equals("rock")) ) {
+
+								damage *= 0.5;  //poison is resisted by these types
+								System.out.println(" \n IT'S NOT VERY EFFECTIVE!!!! \n ");  soundeffects.resist(); // plays sound effect for a move that resists
+
+							}
+
+
+							if(   (defender.type2.equals("poison")) || (defender.type2.equals("ground")) || (defender.type2.equals("ghost")) || (defender.type2.equals("rock")) ) {
+
+								damage *= 0.5;  //poison is resisted by these types
+								System.out.println(" \n IT'S NOT VERY EFFECTIVE!!!! \n ");  soundeffects.resist(); // plays sound effect for a move that resists
+
+							}
+
+
+							if(   (defender.type1.equals("grass")) || (defender.type1.equals("fairy")) ) {
+
+								damage *= 2;  //poison is super effective against these types
+								System.out.println(" \n IT'S SUPER EFFECTIVE!!!! \n ");  soundeffects.attack(); // This plays a sound effect of the move hitting
+
+							}
+
+
+							if(  (defender.type2.equals("grass")) || (defender.type2.equals("fairy")) ) {
+
+								damage *= 2;  //poison is super effective against these types
+								System.out.println(" \n IT'S SUPER EFFECTIVE!!!! \n ");  soundeffects.attack(); // This plays a sound effect of the move hitting
+
+							}
+
+							if(defender.type1.equals("steel") || defender.type2.equals("steel")) {
+
+								damage *= 0;
+								System.out.println("\n STEEL POKEMON ARE IMMUNE TO POISON TYPE ATTACKS \n");
+
+							}
+							//
+
+
+
+							if( (defender.ability.equals("multiscale") ) ){
+
+								if(defender.hp == defender.maxhp) { System.out.println("multiscale reduced the damage the pokemon took");
+
+									damage = damage/2;
+
+								}
+							}
+
+
+
+							damage = Math.round(damage);
+
+							System.out.println("\n" + defender.hp + "  "  + " - "  + damage + " = " + "  " + player + "'s new health: " + Math.round(defender.hp - damage)  );
+
+
+							health =  health - damage;
+
+
+
+
+							int poison = rand.nextInt(100);
+
+
+							if(defender.status.equals(" No status conditions")) {
+
+
+								if(poison < 31) {
+
+									System.out.println("The opponent became poisoned due to the jab.....");
+									defender.status.equals("Poisoned");
+									soundeffects.poisoned();
+								}
+
+
+
+							}
+
+
+
+
+							if(defender.ability.equals("stamina")) {
+
+								defender.def *= 1.5;
+								soundeffects.statincrease();
+								System.out.println("The opposing pokemon's defense rose");
+							}
+
+
+
+							return Math.round(health);
+
+
+
+						}
+
+
+	// 3/23/2021 (Types of moves sketched: Water, bug, steel,flying, normal, ice, dragon,fire, electric, grass, fighting, fairy)
         	        	  
         	    //Start poison, dark, psychic, ghost, ground, rock       	    
         	    
@@ -14719,7 +17167,17 @@ public class battlesequence {
         	    	soundeffects.noo(); 
         	    	
         	    	double damage = ((double)(((((2 * 100) * 0.2) + 2 )   * attack.power * (double) (attacker.attack/ (double) defender.def)) * 0.02 ) + 2) * roll; // How much damage the move will do (the equation)
-        	    	
+
+
+					if(attacker.ability.equals("toughclaws")){
+
+
+						damage *= 1.3;
+						System.out.println("Tough claws increased the damage of the attack!!");
+
+
+					}
+
         	    	// make sure to code for crits 
         	    	
         	    	int crit = rand.nextInt(400);
@@ -15087,7 +17545,17 @@ public class battlesequence {
         	    	soundeffects.noo(); 
         	    	
         	    	double damage = ((double)(((((2 * 100) * 0.2) + 2 )   * attack.power * (double) (attacker.attack/ (double) defender.def)) * 0.02 ) + 2) * roll; // How much damage the move will do (the equation)
-        	    	
+
+
+					if(attacker.ability.equals("toughclaws")){
+
+
+						damage *= 1.3;
+						System.out.println("Tough claws increased the damage of the attack!!");
+
+
+					}
+
         	    	// make sure to code for crits 
         	    	
         	    	int crit = rand.nextInt(400);
@@ -15431,7 +17899,17 @@ public class battlesequence {
         	    	soundeffects.noo(); 
         	    	
         	    	double damage = ((double)(((((2 * 100) * 0.2) + 2 )   * attack.power * (double) (attacker.attack/ (double) defender.def)) * 0.02 ) + 2) * roll; // How much damage the move will do (the equation)
-        	    	
+
+
+					if(attacker.ability.equals("toughclaws")){
+
+
+						damage *= 1.3;
+						System.out.println("Tough claws increased the damage of the attack!!");
+
+
+					}
+
         	    	// make sure to code for crits 
         	    	
         	    	int crit = rand.nextInt(400);
@@ -15806,11 +18284,207 @@ public class battlesequence {
         	    	
         	    	
         	    }
-        	    
-        	    
-        	    
-        	    
-        	    //zenheadbut
+
+
+
+					public static double extrasensory(pokemon attacker, move attack, pokemon defender, String player) {
+
+
+						if(defender.bounce == true) { // Checks if the opponent is in the air....
+
+							System.out.println("The move missed because the opponent bounced up high in the air!!!!!");
+							return defender.hp; // misses if the opponent is in the air
+						}
+
+
+						double health = defender.hp; // health value of the pokemon being attacked
+
+
+						double roll = mindamageroll + (maxdamageroll - mindamageroll) * rand.nextDouble() ; //now modified to 0.85-1)// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
+
+						System.out.println("Your damage roll is " + roll);
+
+						soundeffects.noo();
+
+						double damage = ((double)(((((2 * 100) * 0.2) + 2 )   * attack.power * (double) (attacker.spa/ (double) defender.spdef)) * 0.02 ) + 2) * roll; // How much damage the move will do (the equation)
+
+						// make sure to code for crits
+
+						int crit = rand.nextInt(400);
+
+
+
+						if (attack.critrate == 3.0)  {
+
+
+							if (crit <= 27) {
+
+
+								System.out.println("\n YOU GOT A CRIT YOU LUCKY PERSON (You have a normal crit rate) \n");
+
+								if(attacker.ability.equals("sniper")) {
+
+									damage *= 2.5;
+									System.out.println("\n You got the sniper boost \n");
+								}
+								else {
+
+
+									damage *= 1.5;
+
+								}
+							}
+
+						}
+						else if (attack.critrate == 6.0) {
+
+
+							if (crit <= 55) {
+
+								System.out.println("\n YOU GOT A CRIT YOU LUCKY PERSON (You have a high crit rate) \n");
+
+								if(attacker.ability.equals("sniper")) {
+
+									damage *= 2.5;
+									System.out.println("\n You got the sniper boost \n");
+								}
+								else {
+									damage *= 1.5;
+								}
+							}
+
+						}
+						else {
+
+
+
+							if (crit <= 101) {
+
+								System.out.println("\n YOU GOT A CRIT YOU LUCKY PERSON (You have a really high crit rate) \n");
+
+								if(attacker.ability.equals("sniper")) {
+
+									damage *= 2.5;
+									System.out.println("\n You got the sniper boost \n");
+								}
+								else {
+									damage *= 1.5;
+								}
+							}
+
+
+
+						}
+
+
+
+
+						if(   (defender.type1.equals("steel")) || (defender.type1.equals("psychic"))  ) {
+
+							damage *= 0.5;  //psychic is resisted by these types
+							System.out.println(" \n IT'S NOT VERY EFFECTIVE!!!! \n ");  soundeffects.resist(); // plays sound effect for a move that resists
+
+						}
+
+
+						if(   (defender.type2.equals("steel")) || (defender.type2.equals("psychic")) ) {
+
+							damage *= 0.5;  //psychic is resisted by these types
+							System.out.println(" \n IT'S NOT VERY EFFECTIVE!!!! \n ");  soundeffects.resist(); // plays sound effect for a move that resists
+
+						}
+
+
+						if( (defender.type1.equals("fighting")) || (defender.type1.equals("poison")) ) {
+
+							damage *= 2;  //psychic is super effective against these types
+							System.out.println(" \n IT'S SUPER EFFECTIVE!!!! \n ");  soundeffects.attack(); // This plays a sound effect of the move hitting
+
+						}
+
+
+						if(  (defender.type2.equals("fighting")) || (defender.type2.equals("poison")) ) {
+
+							damage *= 2;  //psychic is super effective against these types
+							System.out.println(" \n IT'S SUPER EFFECTIVE!!!! \n ");  soundeffects.attack(); // This plays a sound effect of the move hitting
+
+						}
+
+						if(defender.type1.equals("dark") || defender.type2.equals("dark")) {
+
+							damage *= 0;
+							System.out.println("\n DARK POKEMON ARE IMMUNE TO PSYCHIC TYPE ATTACKS \n");
+
+						}
+						//
+
+
+
+						if( (defender.ability.equals("multiscale") ) ){
+
+							if(defender.hp == defender.maxhp) { System.out.println("multiscale reduced the damage the pokemon took");
+
+								damage = damage/2;
+
+							}
+						}
+
+
+						damage = Math.round(damage);
+
+						System.out.println("\n" + defender.hp + "  "  + " - "  + damage + " = " + "  " + player + "'s new health: " + Math.round(defender.hp - damage)  );
+
+
+						health =  health - damage;
+
+
+
+
+
+						int flinch = rand.nextInt(100);
+
+
+
+
+						if(attacker.ability.equals("serenegrace")) {
+							if( (flinch < 60) && (attacker.speed >= defender.speed)){
+
+								defender.flinched = true;
+
+							}
+
+
+						}
+
+						if( (flinch < 30) && (attacker.speed >= defender.speed)) {
+
+							defender.flinched = true;
+
+
+						}
+
+
+
+
+
+
+
+
+
+
+
+
+
+						return Math.round(health);
+
+
+
+					}
+
+
+
+
+	//zenheadbut
           	    
         	    public static double zenheadbut(pokemon attacker, move attack, pokemon defender, String player) {
         	    	
@@ -15832,7 +18506,17 @@ public class battlesequence {
         	    	soundeffects.noo(); 
         	    	
         	    	double damage = ((double)(((((2 * 100) * 0.2) + 2 )   * attack.power * (double) (attacker.attack/ (double) defender.def)) * 0.02 ) + 2) * roll; // How much damage the move will do (the equation)
-        	    	
+
+
+					if(attacker.ability.equals("toughclaws")){
+
+
+						damage *= 1.3;
+						System.out.println("Tough claws increased the damage of the attack!!");
+
+
+					}
+
         	    	// make sure to code for crits 
         	    	
         	    	int crit = rand.nextInt(400);
@@ -16005,8 +18689,402 @@ public class battlesequence {
         	     * GHOST TYPE ATTACKS
         	     * 
         	     */
-        	       
-        	    
+
+				//shadowsneak
+
+						public static double shadowsneak(pokemon attacker, move attack, pokemon defender, String player) {
+
+
+							if((defender.bounce == true) && !(attacker.ability.equals("noguard")) )  { // Checks if the opponent is in the air....
+
+								System.out.println("The move missed because the opponent bounced up high in the air!!!!!");
+								return defender.hp; // misses if the opponent is in the air
+							}
+
+
+							double health = defender.hp; // health value of the pokemon being attacked
+
+
+							double roll = mindamageroll + (maxdamageroll - mindamageroll) * rand.nextDouble() ; // The stupid damage roll pokemon made in gen 3: 0.85-1
+
+							soundeffects.noo();
+
+							System.out.println("Your damage roll is " + roll);
+
+							double damage = ((double)(((((2 * 100) * 0.2) + 2 )   * attack.power * (double) (attacker.attack/ (double) defender.def)) * 0.02 ) + 2) * roll; // How much damage the move will do (the equation)
+
+
+							if(attacker.ability.equals("toughclaws")){
+
+
+								damage *= 1.3;
+								System.out.println("Tough claws increased the damage of the attack!!");
+
+
+							}
+
+							// make sure to code for crits
+
+							int crit = rand.nextInt(400);
+
+
+
+							if (attack.critrate == 3.0)  {
+
+
+								if (crit <= 27) {
+
+
+									System.out.println("\n YOU GOT A CRIT YOU LUCKY PERSON (You have a normal crit rate) \n");
+
+									if(attacker.ability.equals("sniper")) {
+
+										damage *= 2.5;
+										System.out.println("\n You got the sniper boost \n");
+									}
+									else {
+
+
+										damage *= 1.5;
+
+									}
+								}
+
+							}
+							else if (attack.critrate == 6.0) {
+
+
+								if (crit <= 55) {
+
+									System.out.println("\n YOU GOT A CRIT YOU LUCKY PERSON (You have a high crit rate) \n");
+
+									if(attacker.ability.equals("sniper")) {
+
+										damage *= 2.5;
+										System.out.println("\n You got the sniper boost \n");
+									}
+									else {
+										damage *= 1.5;
+									}
+								}
+
+							}
+							else {
+
+
+
+								if (crit <= 101) {
+
+									System.out.println("\n YOU GOT A CRIT YOU LUCKY PERSON (You have a really high crit rate) \n");
+
+									if(attacker.ability.equals("sniper")) {
+
+										damage *= 2.5;
+										System.out.println("\n You got the sniper boost \n");
+									}
+									else {
+										damage *= 1.5;
+									}
+								}
+
+
+
+							}
+
+
+
+
+
+							if(   (defender.type1.equals("dark"))   ) {
+
+								damage *= 0.5;  //ghost is resisted by these types
+								System.out.println(" \n IT'S NOT VERY EFFECTIVE!!!! \n ");  soundeffects.resist(); // plays sound effect for a move that resists
+
+							}
+
+
+							if(   (defender.type2.equals("dark"))  ) {
+
+								damage *= 0.5;  //ghost is resisted by these types
+								System.out.println(" \n IT'S NOT VERY EFFECTIVE!!!! \n ");  soundeffects.resist(); // plays sound effect for a move that resists
+
+							}
+
+
+							if( (defender.type1.equals("ghost")) || (defender.type1.equals("psychic")) ) {
+
+								damage *= 2;  //ghost is super effective against these types
+								System.out.println(" \n IT'S SUPER EFFECTIVE!!!! \n ");  soundeffects.attack(); // This plays a sound effect of the move hitting
+
+							}
+
+
+							if(  (defender.type2.equals("ghost")) || (defender.type2.equals("psychic")) ) {
+
+								damage *= 2;  //ghost is super effective against these types
+								System.out.println(" \n IT'S SUPER EFFECTIVE!!!! \n ");  soundeffects.attack(); // This plays a sound effect of the move hitting
+
+							}
+
+							if(defender.type1.equals("normal") || defender.type2.equals("normal")) {
+
+								damage *= 0;
+								System.out.println("\n NORMAL POKEMON ARE IMMUNE TO GHOST TYPE ATTACKS \n");
+
+							}
+							//
+
+
+							if( (defender.ability.equals("multiscale") ) ){
+
+								if(defender.hp == defender.maxhp) { System.out.println("multiscale reduced the damage the pokemon took");
+
+									damage = damage/2;
+
+								}
+							}
+
+
+							if(attacker.ability.equals("technician")) {
+
+
+								damage *= 1.5;
+								System.out.println("Technician powered up the hit!!");
+							}
+
+
+							if(defender.ability.equals("solidrock")){
+
+								damage = damage * 0.6;
+								System.out.println("Solid rock reduced the damage of the attack");
+
+							}
+
+							damage = Math.round(damage);
+
+							System.out.println("\n" + defender.hp + "  "  + " - "  + damage + " = " + "  " + player + "'s new health: " + Math.round(defender.hp - damage)  );
+
+
+
+
+							health =  health - damage;
+
+
+
+							if(defender.ability.equals("stamina")) {
+
+								defender.def *= 1.5;
+								soundeffects.statincrease();
+								System.out.println("The opposing pokemon's defense rose");
+							}
+
+							return Math.round(health);
+
+
+
+						}
+
+
+
+
+
+
+	//shadowclaw
+
+							public static double shadowclaw(pokemon attacker, move attack, pokemon defender, String player) {
+
+
+								if(defender.bounce == true) { // Checks if the opponent is in the air....
+
+									System.out.println("The move missed because the opponent bounced up high in the air!!!!!");
+									return defender.hp; // misses if the opponent is in the air
+								}
+
+
+								double health = defender.hp; // health value of the pokemon being attacked
+
+
+								double roll = mindamageroll + (maxdamageroll - mindamageroll) * rand.nextDouble() ; //now modified to 0.85-1)// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
+
+								System.out.println("Your damage roll is " + roll);
+
+								soundeffects.noo();
+
+								double damage = ((double)(((((2 * 100) * 0.2) + 2 )   * attack.power * (double) (attacker.attack/ (double) defender.def)) * 0.02 ) + 2) * roll; // How much damage the move will do (the equation)
+
+
+								if(attacker.ability.equals("toughclaws")){
+
+
+									damage *= 1.3;
+									System.out.println("Tough claws increased the damage of the attack!!");
+
+
+								}
+
+								// make sure to code for crits
+
+								int crit = rand.nextInt(400);
+
+
+
+
+								if (attack.critrate == 3.0)  {
+
+
+									if (crit <= 27) {
+
+
+										System.out.println("\n YOU GOT A CRIT YOU LUCKY PERSON (You have a normal crit rate) \n");
+
+										if(attacker.ability.equals("sniper")) {
+
+											damage *= 2.5;
+											System.out.println("\n You got the sniper boost \n");
+										}
+										else {
+
+
+											damage *= 1.5;
+
+										}
+									}
+
+								}
+								else if (attack.critrate == 6.0) {
+
+
+									if (crit <= 55) {
+
+										System.out.println("\n YOU GOT A CRIT YOU LUCKY PERSON (You have a high crit rate) \n");
+
+										if(attacker.ability.equals("sniper")) {
+
+											damage *= 2.5;
+											System.out.println("\n You got the sniper boost \n");
+										}
+										else {
+											damage *= 1.5;
+										}
+									}
+
+								}
+								else {
+
+
+
+									if (crit <= 101) {
+
+										System.out.println("\n YOU GOT A CRIT YOU LUCKY PERSON (You have a really high crit rate) \n");
+
+										if(attacker.ability.equals("sniper")) {
+
+											damage *= 2.5;
+											System.out.println("\n You got the sniper boost \n");
+										}
+										else {
+											damage *= 1.5;
+										}
+									}
+
+
+
+								}
+
+
+
+
+
+
+								if(   (defender.type1.equals("dark"))   ) {
+
+									damage *= 0.5;  //ghost is resisted by these types
+									System.out.println(" \n IT'S NOT VERY EFFECTIVE!!!! \n ");  soundeffects.resist(); // plays sound effect for a move that resists
+
+								}
+
+
+								if(   (defender.type2.equals("dark"))  ) {
+
+									damage *= 0.5;  //ghost is resisted by these types
+									System.out.println(" \n IT'S NOT VERY EFFECTIVE!!!! \n ");  soundeffects.resist(); // plays sound effect for a move that resists
+
+								}
+
+
+								if( (defender.type1.equals("ghost")) || (defender.type1.equals("psychic")) ) {
+
+									damage *= 2;  //ghost is super effective against these types
+									System.out.println(" \n IT'S SUPER EFFECTIVE!!!! \n ");  soundeffects.attack(); // This plays a sound effect of the move hitting
+
+								}
+
+
+								if(  (defender.type2.equals("ghost")) || (defender.type2.equals("psychic")) ) {
+
+									damage *= 2;  //ghost is super effective against these types
+									System.out.println(" \n IT'S SUPER EFFECTIVE!!!! \n ");  soundeffects.attack(); // This plays a sound effect of the move hitting
+
+								}
+
+								if(defender.type1.equals("normal") || defender.type2.equals("normal")) {
+
+									damage *= 0;
+									System.out.println("\n NORMAL POKEMON ARE IMMUNE TO GHOST TYPE ATTACKS \n");
+
+								}
+								//
+
+
+
+								if( (defender.ability.equals("multiscale") ) ){
+
+									if(defender.hp == defender.maxhp) { System.out.println("multiscale reduced the damage the pokemon took");
+
+										damage = damage/2;
+
+									}
+								}
+
+								//
+
+
+								if(attacker.ability.equals("technician")) {
+
+
+									damage *= 1.5;
+									System.out.println("Technician powered up the hit!!");
+								}
+
+								damage = Math.round(damage);
+
+								System.out.println("\n" + defender.hp + "  "  + " - "  + damage + " = " + "  " + player + "'s new health: " + Math.round(defender.hp - damage)  );
+
+
+								health =  health - damage;
+
+
+
+
+
+
+								if(defender.ability.equals("stamina")) {
+
+									defender.def *= 1.5;
+									soundeffects.statincrease();
+									System.out.println("The opposing pokemon's defense rose");
+								}
+
+
+								return Math.round(health);
+
+
+
+							}
+
+
+
+	//shadowball
         	    public static double shadowball(pokemon attacker, move attack, pokemon defender, String player) {
         	    	
         	    	
@@ -16227,7 +19305,17 @@ public class battlesequence {
         	    	System.out.println("Your damage roll is " + roll);
         	    	
         	    	double damage = ((double)(((((2 * 100) * 0.2) + 2 )   * attack.power * (double) (attacker.attack/ (double) defender.def)) * 0.02 ) + 2) * roll; // How much damage the move will do (the equation)
-        	    	
+
+
+					if(attacker.ability.equals("toughclaws")){
+
+
+						damage *= 1.3;
+						System.out.println("Tough claws increased the damage of the attack!!");
+
+
+					}
+
         	    	// make sure to code for crits 
         	    	
         	    	int crit = rand.nextInt(400);
@@ -16421,7 +19509,17 @@ public class battlesequence {
         	    	System.out.println("Your damage roll is " + roll);
         	    	
         	    	double damage = ((double)(((((2 * 100) * 0.2) + 2 )   * attack.power * (double) (attacker.attack/ (double) defender.def)) * 0.02 ) + 2) * roll; // How much damage the move will do (the equation)
-        	    	
+
+
+					if(attacker.ability.equals("toughclaws")){
+
+
+						damage *= 1.3;
+						System.out.println("Tough claws increased the damage of the attack!!");
+
+
+					}
+
         	    	// make sure to code for crits 
         	    	
         	    	int crit = rand.nextInt(400);
@@ -16606,7 +19704,17 @@ public class battlesequence {
         	    	System.out.println("Your damage roll is " + roll);
         	    	
         	    	double damage = ((double)(((((2 * 100) * 0.2) + 2 )   * attack.power * (double) (attacker.attack/ (double) defender.def)) * 0.02 ) + 2) * roll; // How much damage the move will do (the equation)
-        	    	
+
+
+					if(attacker.ability.equals("toughclaws")){
+
+
+						damage *= 1.3;
+						System.out.println("Tough claws increased the damage of the attack!!");
+
+
+					}
+
         	    	// make sure to code for crits 
         	    	
         	    	int crit = rand.nextInt(400);

@@ -38,7 +38,7 @@ public class move {
 		
 		int priority = 1; // most moves dont have priority
 		
-		String[] priority2 = {"quickattack", "bulletpunch", "aquajet", "iceshard"};
+		String[] priority2 = {"suckerpunch", "shadowsneak", "quickattack", "bulletpunch", "aquajet", "iceshard", "watershuriken"};
 		
 	    
 	    
@@ -71,7 +71,7 @@ public class move {
 	public int getpower(String movename) {  // gets the base power of the move
 		int power = 0; // gets a move's base power
 		
-		String[] power90 = {"meteormash","flashcannon" ,"wildcharge", "psychic", "flamethrower", "thunderbolt", "icebeam", "energyball"};
+		String[] power90 = {"bugbuzz", "playrough","meteormash","flashcannon" ,"wildcharge", "psychic", "flamethrower", "thunderbolt", "icebeam", "energyball"};
 		
 		
 		// searches array of 90 power moves
@@ -85,7 +85,7 @@ public class move {
 					
 				}
 		
-		String[] power75 = {"thunderpunch", "airslash", "crosspoison", "firepunch", "icepunch", "rockslide", "brickbreak", "steelwing", "slash", "nightslash"};
+		String[] power75 = {"drainpunch", "thunderpunch", "airslash", "crosspoison", "firepunch", "icepunch", "rockslide", "brickbreak", "steelwing", "slash", "nightslash", "shadowclaw"};
 		// searches array of 75 power moves
 		for(int i = 0; i < power75.length; i++) {
 			
@@ -115,7 +115,7 @@ public class move {
 		}
 
 		
-		String[] power80 = {"foulplay", "ironhead","relicsong", "dazzlinggleam", "crosspoison", "leechlife", "bodyslam"  , "xscissor" ,"crunch", "extremespeed", "darkpulse", "dragonclaw", "waterfall", "bounce", "shadowball", "suckerpunch"};
+		String[] power80 = {"aurasphere", "extrasensory", "foulplay", "ironhead","relicsong", "dazzlinggleam", "crosspoison", "leechlife", "bodyslam"  , "xscissor" ,"crunch", "extremespeed", "darkpulse", "dragonclaw", "waterfall", "bounce", "shadowball", "suckerpunch"};
 		
 		// searches array of 80 power moves
 		for(int i = 0; i < power80.length; i++) {
@@ -142,7 +142,7 @@ public class move {
 		}
 
 		
-		String[] power100 = {"earthquake","crosschop", "dynamicpunch" ,"stoneedge","irontail"};
+		String[] power100 = {"plasmafists", "earthquake","crosschop", "dynamicpunch" ,"stoneedge","irontail"};
 		
 		
 		// searches array of 100 power moves
@@ -157,7 +157,7 @@ public class move {
 		}
 
 		
-		String[] power120 = {"flareblitz", "doubleironbash", "closecombat", "superpower", "bravebird", "dracometeor", "focusblast"};
+		String[] power120 = {"volttackle", "flareblitz", "doubleironbash", "closecombat", "superpower", "bravebird", "dracometeor", "focusblast", "gunkshot"};
 		
 		// searches array of 120 power moves
 		for(int i = 0; i < power120.length; i++) {
@@ -199,7 +199,7 @@ public class move {
 		}
 
 		
-		String[] power60 = {"hiddenpower", "doublekick", "waterpulse", "aerialace"};
+		String[] power60 = {"hiddenpower", "doublekick", "waterpulse", "aerialace" };
 		
 		// searches array of 60 power moves
 		for(int i = 0; i < power60.length; i++) {
@@ -240,7 +240,7 @@ public class move {
 		}
 
 		
-		String[] power40 = {"aquajet", "quickattack", "iceshard", "bulletpunch"};
+		String[] power40 = {"shadowsneak", "aquajet", "quickattack", "iceshard", "bulletpunch"};
 		
 		
 		// searches array of 40 power moves
@@ -266,9 +266,9 @@ public class move {
 	public double geteffectchance(String movename) {
 		double effectchance = 0; // most moves don't have an effect
 		
-		String[] chance10 = { "thunderpunch","thunderbolt" ,"psychic","crosspoison" , "steelwing","icepunch", "icebeam","flareblitz" , "firepunch" , "firefang", "thunderfang", "icefang"}; // 10 percent chance moves
-		String[] chance20 = { "zenheadbut", "crunch" , "waterfall", "waterpulse", "darkpulse" }; // 20 percent chance moves
-		String[] chance30 = { "rockslide", "ironhead" , "blizzard", "poisonjab","focusblast" ,"irontail", "sludgebomb" ,"shadowball","bounce" }; // 30 percent chance moves
+		String[] chance10 = { "volttackle", "bugbuzz", "playrough", "thunderpunch","thunderbolt" ,"psychic","crosspoison" , "steelwing","icepunch", "icebeam","flareblitz" , "firepunch" , "firefang", "thunderfang", "icefang"}; // 10 percent chance moves
+		String[] chance20 = {"extrasensory", "zenheadbut", "crunch" , "waterfall", "waterpulse", "darkpulse" }; // 20 percent chance moves
+		String[] chance30 = { "gunkshot", "rockslide", "ironhead" , "blizzard", "poisonjab","focusblast" ,"irontail", "sludgebomb" ,"shadowball","bounce" }; // 30 percent chance moves
 		
 		
 		for (int i = 0; i < chance10.length; i++) {
@@ -314,7 +314,7 @@ public class move {
 		double critrate = 3;   // 6.25 percent chance of a crit 
 		
 		
-		String[] highcrit = {"nightslash", "leafblade","crosschop" ,"stoneedge"};
+		String[] highcrit = {"shadowclaw", "nightslash", "leafblade","crosschop" ,"stoneedge"};
 		
 		
 		// searches array of  high crit moves
@@ -342,12 +342,12 @@ public class move {
 		double accuracy = 100; // most moves have 100% accuracy, so 100 is the default
 		
 		
-		String[] accuracy80 = { "stoneedge" };// moves with 80 accuracy
+		String[] accuracy80 = { "stoneedge" , "gunkshot"};// moves with 80 accuracy
 		
 		
 		String[] accuracy85 = { "zenheadbut"  }; // moves with 85 accuracy
 		
-		String[] accuracy90 = { "thunderwave", "willowisp" , "meteormash", "hyperbeam", "aquatail"  , "superfang", "bounce",  "steelwing", "pinmissle", "gigaimpact", "dracometeor"}; // moves with 90 accuracy
+		String[] accuracy90 = {"playrough", "thunderwave", "willowisp" , "meteormash", "hyperbeam", "aquatail"  , "superfang", "bounce",  "steelwing", "pinmissle", "gigaimpact", "dracometeor"}; // moves with 90 accuracy
 		
 		String[] accuracy95 = {  "rockslide","thunderfang", "firefang", "icefang" }; // moves with 95 accuracy
 		
@@ -357,7 +357,7 @@ public class move {
 		
 		String[] accuracy30 = {  "horndrill" }; // moves with 30 accuracy
 		
-		String[] accuracy101 = {  "aerialace" }; // moves with 85 accuracy
+		String[] accuracy101 = { "aurasphere",  "aerialace" }; // moves with no chance to miss
 		
 		
 		// searches array of 80 accuracy moves
@@ -497,29 +497,29 @@ public class move {
 		// Update  this data as needed 
 		
 		
-		String[] bugtype = {"xscissor" , "leechlife", "pinmissle" }; // bug type moves
+		String[] bugtype = {"quiverdance", "bugbuzz" , "leechlife", "pinmissle" }; // bug type moves
 		
-		String[] watertype = {"surf" , "hydropump", "aquaring" , "aquajet", "waterfall" , "waterpulse", "aquatail"}; // water type moves
+		String[] watertype = {"surf" , "hydropump", "aquaring" , "aquajet", "waterfall" , "waterpulse", "aquatail", "watershuriken"}; // water type moves
 		
 		String[] normaltype = {"hyperbeam", "bodyslam", "gigaimpact", "slash", "return", "swordsdance" ,"superfang", "horndrill" , "extremespeed" , "morningsun", "recover", "quickattack", "workup", "relicsong"};  // normal type moves
 		
 		String[] flyingtype = {"roost", "bravebird","airslash", "aerialace", "bounce" };// flying type moves
 		
-		String[] fightingtype = {"bulkup" , "superpower", "closecombat","dynamicpunch" , "brickbreak" ,"crosschop" ,"focusblast" , "doublekick"}; // fighting type moves
+		String[] fightingtype = {"aurasphere", "drainpunch", "bulkup" , "superpower", "closecombat","dynamicpunch" , "brickbreak" ,"crosschop" ,"focusblast" , "doublekick"}; // fighting type moves
 		
 		String[] firetype = {"flareblitz", "flamethrower", "firepunch", "firefang", "willowisp"   }; // fire type moves
 		
-		String[] electrictype = { "thunderfang", "wildcharge" , "thunderpunch" , "thunderwave", "thunderbolt", }; // electric type moves
+		String[] electrictype = { "volttackle", "plasmafists", "thunderfang", "wildcharge" , "thunderpunch" , "thunderwave", "thunderbolt", }; // electric type moves
 		
 		String[] grasstype = { "leafblade", "synthesis" , "energyball" }; // grass type moves
 		
-		String[] poisontype = { "crosspoison" ,"poisonjab", "sludgebomb", "toxic" }; // poison type moves
+		String[] poisontype = { "crosspoison" ,"poisonjab", "sludgebomb", "toxic", "gunkshot" }; // poison type moves
 		
 		String[] darktype = { "crunch","nastyplot" , "suckerpunch","foulplay","honeclaws",  "darkpulse", "nightslash"}; // dark type moves
 		
-		String[] psychictype = { "psychic", "zenheadbut" , "calmmind" }; // psychic type moves
+		String[] psychictype = { "extrasensory", "psychic", "zenheadbut" , "calmmind" }; // psychic type moves
 		
-		String[] ghosttype = {"shadowball" , "confuseray" }; // ghost type moves
+		String[] ghosttype = {"shadowclaw", "shadowsneak", "shadowball" , "confuseray" }; // ghost type moves
 		
 		String[] groundtype = { "earthquake"  }; // ground type moves
 		
@@ -531,7 +531,7 @@ public class move {
 		
 		String[] dragontype = { "dragonclaw" , "dracometeor","dragonpulse" }; // dragon type moves
 		
-		String[] fairytype = {  "moonblast" , "dazzlinggleam", "moonlight"}; // fairy type moves
+		String[] fairytype = {  "playrough", "moonblast" , "dazzlinggleam", "moonlight"}; // fairy type moves
 		
 		// The reason hyperbeam is in fairy is because sylveon has pixilate and is the only one who learns it in my simulation
 		
@@ -844,14 +844,14 @@ public class move {
 		
 		
 		// special attacks
-		String[] special = {"airslash", "energyball", "relicsong","dragonpulse", "flashcannon","flamethrower" ,"dracometeor", "darkpulse", "moonblast", "hyperbeam", "waterpulse", "blizzard", "dazzlinggleam","hiddenpower","thunderbolt", "psychic", "hydropump","surf" , "focusblast", "sludgebomb" , "shadowball"};
+		String[] special = {"bugbuzz", "aurasphere", "extrasensory", "watershuriken", "airslash", "energyball", "relicsong","dragonpulse", "flashcannon","flamethrower" ,"dracometeor", "darkpulse", "moonblast", "hyperbeam", "waterpulse", "blizzard", "dazzlinggleam","hiddenpower","thunderbolt", "psychic", "hydropump","surf" , "focusblast", "sludgebomb" , "shadowball"};
 				
 		
 		// physical attacks 
-	    String[] physical = {"bodyslam","crosschop", "dynamicpunch", "superfang","leechlife","steelwing","bravebird", "crosspoison", "aquatail", "closecombat", "firepunch" ,"slash", "gigaimpact" , "bulletpunch", "nightslash", "aerialace", "leafblade", "xscissor", "foulplay", "iceshard", "pinmissle", "doublekick", "quickattack", "meteormash", "zenheadbut", "thunderpunch","icepunch" ,"rockslide","return","earthquake","firefang" ,"thunderfang","icefang", "brickbreak", "poisonjab", "ironhead",  "flareblitz", "crunch", "extremespeed","wildcharge", "dragonclaw", "irontail","aquajet", "superpower", "waterfall","bounce", "stoneedge", "suckerpunch",  };
+	    String[] physical = {"volttackle","shadowclaw", "shadowsneak", "playrough", "drainpunch", "plasmafists", "gunkshot", "bodyslam","crosschop", "dynamicpunch", "superfang","leechlife","steelwing","bravebird", "crosspoison", "aquatail", "closecombat", "firepunch" ,"slash", "gigaimpact" , "bulletpunch", "nightslash", "aerialace", "leafblade", "xscissor", "foulplay", "iceshard", "pinmissle", "doublekick", "quickattack", "meteormash", "zenheadbut", "thunderpunch","icepunch" ,"rockslide","return","earthquake","firefang" ,"thunderfang","icefang", "brickbreak", "poisonjab", "ironhead",  "flareblitz", "crunch", "extremespeed","wildcharge", "dragonclaw", "irontail","aquajet", "superpower", "waterfall","bounce", "stoneedge", "suckerpunch",  };
 	    
 	    // setup moves
-	    String[] setup = {"swordsdance","focusenergy" ,"calmmind", "bulkup","nastyplot", "tailglow", "workup", "honeclaws" };
+	    String[] setup = {"quiverdance", "swordsdance","focusenergy" ,"calmmind", "bulkup","nastyplot", "tailglow", "workup", "honeclaws" };
 	    		
 	    
 	    // healing moves

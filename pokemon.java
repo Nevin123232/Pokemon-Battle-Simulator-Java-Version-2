@@ -39,6 +39,7 @@ public class pokemon {
 	boolean bounce = false; //whether you are bounced in the air when using bounce
 	boolean intimidate = false;  // checks if a pokemon's intimidate has taken affect yet
 
+	boolean disguise = true; // used for the ability disguise
 	String call = "";
 	
 	boolean endtheme = false;
@@ -1499,9 +1500,334 @@ public class pokemon {
    		       }
    			
    		}
-		
-		
-		
+
+		else if(pokemonname.equals("greninja")) {
+			String[] possiblemoves = {"watershuriken", "extrasensory", "hydropump","surf" ,"icebeam","gunkshot","darkpulse", "hiddenpower"}; // array of possible moves for this pokemon
+			String[] abbreviated = {"ws", "ex", "hpu", "su", "ib", "gs", "dp", "hp"};// array of the abbreviated moves
+			String[] explain = {"[The pokemon yeets some shurikens at the opponent, usually goes first]",
+					" [80 base power psychic move with 100 accuracy, can sometimes flinch] ",
+					" [A 110 power water move that has 80 accuracy] ",
+					"[A 95 power water move with 100 accuracy]  ",
+					" [An icy beam is shot at the opponent, ice type 90 base power, 10% chance to freeze] ",
+					" [A toxic blast is shot at the opponent, has a 30% chance to poison the opponent]  ",
+					" [A dark aura is projected at the opponent, has a 20% chance to flinch] ",
+					" [A mysterious blast is shot at the opponent, the user chooses its type]"};
+
+
+			for (int i = 0; i < abbreviated.length; i++) {
+
+				System.out.println("* " + possiblemoves[i] + "  " + abbreviated[i]+ "  " + explain[i]);
+
+			}
+
+			System.out.println("\n Input a move or its abbreviation \n");
+			mv1 = scan.nextLine();
+
+			while (legitmove1(possiblemoves, abbreviated, mv1) != true) { // sends arrays and the mv1 input variable to the boolean tester function to see if the move is legit
+
+				for (int i = 0; i < abbreviated.length; i++) {
+
+					System.out.println("* " + possiblemoves[i] + "  " + abbreviated[i]+ "  " + explain[i]);
+
+				}
+
+				System.out.println("\n Input a legitimate move or its abbreviation (Your previous input was invalid) \n");
+				mv1 = scan.nextLine();
+
+
+
+			}
+
+
+
+			for (int o = 0; o < abbreviated.length; o++) {
+
+				if(mv1.equals(abbreviated[o])){
+
+					mv1 = possiblemoves[o];
+				}
+
+
+			}
+
+
+		}
+		else if(pokemonname.equals("zeraora")) {
+			String[] possiblemoves = {"bulkup", "thunderwave", "toxic","closecombat" ,"plasmafists","drainpunch","firepunch", "playrough"} ; // array of possible moves for this pokemon
+			String[] abbreviated = {"bu", "tw", "tx", "cc", "pf", "dp", "fp", "pr"};// array of the abbreviated moves
+			String[] explain = {" [increases attack and defense]",
+					"[paralyzes opponent] ",
+					" [poisons opponent, opponent takes damage every turn, they're screwed if they can't win quickly] ",
+					" [A 120 base power fighting move that reduces spdef and def] ",
+					"[A mega-powerful electric punch, based 100 power] ",
+					"[a punch of toxicity, 75 base power; the user gains some health back]  ",
+					"[A punch of fiery wrath;75 base power; 10 percent chance to burn]  ",
+					"[A 90 base power fairy move, has a chance to reduce the opponent's attack]"};
+
+
+
+
+			for (int i = 0; i < abbreviated.length; i++) {
+
+				System.out.println("* " + possiblemoves[i] + "  " + abbreviated[i]+ "  " + explain[i]);
+
+			}
+
+			System.out.println("\n Input a move or its abbreviation \n");
+			mv1 = scan.nextLine();
+
+			while (legitmove1(possiblemoves, abbreviated, mv1) != true) { // sends arrays and the mv1 input variable to the boolean tester function to see if the move is legit
+
+				for (int i = 0; i < abbreviated.length; i++) {
+
+					System.out.println("* " + possiblemoves[i] + "  " + abbreviated[i]+ "  " + explain[i]);
+
+				}
+
+				System.out.println("\n Input a legitimate move or its abbreviation (Your previous input was invalid) \n");
+				mv1 = scan.nextLine();
+
+
+
+			}
+
+
+
+			for (int o = 0; o < abbreviated.length; o++) {
+
+				if(mv1.equals(abbreviated[o])){
+
+					mv1 = possiblemoves[o];
+				}
+
+
+			}
+
+
+		}
+		else if(pokemonname.equals("togekiss")) {
+
+			String[] possiblemoves = {"dazzlinggleam", "roost", "aurasphere", "flamethrower", "nastyplot",
+					"thunderwave" ,"shadowball","airslash", "psychic", "extremespeed"}; // array of possible moves for this pokemon
+			String[] abbreviated = {"dg", "roo" ,"asp", "ft", "np", "tw", "sb", "as", "ps", "es"};// array of the abbreviated moves
+			String[] explain = {"[An 80 base power fairy move]",
+					"[Heals user but the user loses their flying type for a turn]",
+					"[the user attacks with an 80 power fighting move that never misses]",
+					"[user shoots fire at the opponent, 90 power 10% chance to burn]",
+					"[User sharply increases its special attack]" ,
+					"[paralyzes the opponent, 90 accuracy]",
+					"[the user hits a ball of shadow, 80 power, 30% chance to drop spdef of opponent] ",
+					"[The opponent gets slashed with some crisp clean air, 30% flinch rate]",
+					"[ A 90 power psychic move that hits for 90 power and has a 10% for a spdef drop] ",
+					"[The fastest move in the game, always moves first, 80 base power, it is speed, gotta go fast]"};
+
+
+
+			for (int i = 0; i < abbreviated.length; i++) {
+
+				System.out.println("* " + possiblemoves[i] + "  " + abbreviated[i]+ "  " + explain[i]);
+
+			}
+
+			System.out.println("\n Input a move or its abbreviation \n");
+			mv1 = scan.nextLine();
+
+			while (legitmove1(possiblemoves, abbreviated, mv1) != true) { // sends arrays and the mv1 input variable to the boolean tester function to see if the move is legit
+
+				for (int i = 0; i < abbreviated.length; i++) {
+
+					System.out.println("* " + possiblemoves[i] + "  " + abbreviated[i]+ "  " + explain[i]);
+
+				}
+
+				System.out.println("\n Input a legitimate move or its abbreviation (Your previous input was invalid) \n");
+				mv1 = scan.nextLine();
+
+
+
+			}
+
+
+
+			for (int o = 0; o < abbreviated.length; o++) {
+
+				if(mv1.equals(abbreviated[o])){
+
+					mv1 = possiblemoves[o];
+				}
+
+
+			}
+
+		}
+		else if(pokemonname.equals("volcarona")) {
+
+			String[] possiblemoves = {"hiddenpower", "flamethrower", "calmmind","quiverdance" ,"bugbuzz","wildcharge", "psychic"}; // array of possible moves for this pokemon
+			String[] abbreviated = {"hp", "ft", "cm", "qd", "bb", "wc", "ps"};// array of the abbreviated moves
+			String[] explain = {" [the user attacks with a 60 base power special attack of any type]",
+					"[user shoots fire at the opponent, 90 power 10% chance to burn]",
+					"[User increases its spa and Spdef stats]" ,
+					"[ calm mind on steroids: also boosts speed, is super overpowered]",
+					"[the user screeches reeeeeeeee, 90 power, 10% chance to drop spdef of opponent] ",
+					"[hits the opponent with a 90 power physical electric type attack, hurts user as well]",
+					"[A 90 power psychic move that hits for 90 power and has a 10% for a spdef drop] "};
+
+
+
+			for (int i = 0; i < abbreviated.length; i++) {
+
+				System.out.println("* " + possiblemoves[i] + "  " + abbreviated[i]+ "  " + explain[i]);
+
+			}
+
+			System.out.println("\n Input a move or its abbreviation \n");
+			mv1 = scan.nextLine();
+
+			while (legitmove1(possiblemoves, abbreviated, mv1) != true) { // sends arrays and the mv1 input variable to the boolean tester function to see if the move is legit
+
+				for (int i = 0; i < abbreviated.length; i++) {
+
+					System.out.println("* " + possiblemoves[i] + "  " + abbreviated[i]+ "  " + explain[i]);
+
+				}
+
+				System.out.println("\n Input a legitimate move or its abbreviation (Your previous input was invalid) \n");
+				mv1 = scan.nextLine();
+
+
+
+			}
+
+
+
+			for (int o = 0; o < abbreviated.length; o++) {
+
+				if(mv1.equals(abbreviated[o])){
+
+					mv1 = possiblemoves[o];
+				}
+
+
+			}
+
+		}
+		else if(pokemonname.equals("pikachu")) {
+
+			String[] possiblemoves = {"thunderbolt", "volttackle", "hiddenpower","toxic" ,"extremespeed","quickattack","thunderwave", "surf", "horndrill"}; // array of possible moves for this pokemon
+			String[] abbreviated = {"tb", "vt", "hp", "tx", "es", "qa", "tw", "su", "hd"};// array of the abbreviated moves
+			String[] explain = {" [A 90 base power electric attack with a 10 % chance of paralysis]",
+					" [a 120 base power electric tackle attack, causes recoil but it goes hard]  ",
+					" [A 60 base power move that can be any type the user desires]  ",
+					" [this move poisons the opponent and the poison damage increases over time(poison types can't miss)] ",
+					" [ha ha fast pikachu goes brrr (an 80 base power move that ussually hits first)]  ",
+					" [A weaker extremespeed (just use extremespeed)] ",
+					" [Has a 90 percent chance to paralyze opponent] ",
+					" [A 90 base power watermove, yup I let pikachu learn this with lightball boosting its stats, it needs all the help it can get]",
+					" [A move with a 30% chance to one-shot the opponent, pikachu shouldn't be able to learn this but I just want to see the power of friendship lol."};
+
+			for (int i = 0; i < abbreviated.length; i++) {
+
+				System.out.println("* " + possiblemoves[i] + "  " + abbreviated[i]+ "  " + explain[i]);
+
+			}
+
+			System.out.println("\n Input a move or its abbreviation \n");
+			mv1 = scan.nextLine();
+
+			while (legitmove1(possiblemoves, abbreviated, mv1) != true) { // sends arrays and the mv1 input variable to the boolean tester function to see if the move is legit
+
+				for (int i = 0; i < abbreviated.length; i++) {
+
+					System.out.println("* " + possiblemoves[i] + "  " + abbreviated[i]+ "  " + explain[i]);
+
+				}
+
+				System.out.println("\n Input a legitimate move or its abbreviation (Your previous input was invalid) \n");
+				mv1 = scan.nextLine();
+
+
+
+			}
+
+
+
+			for (int o = 0; o < abbreviated.length; o++) {
+
+				if(mv1.equals(abbreviated[o])){
+
+					mv1 = possiblemoves[o];
+				}
+
+
+			}
+
+
+		}
+		else if(pokemonname.equals("mimikyu")) {
+			String[] possiblemoves = {"swordsdance", "thunderwave", "toxic","bulkup" ,"leechlife","drainpunch","shadowclaw", "playrough" , "shadowsneak"} ; // array of possible moves for this pokemon
+			String[] abbreviated = {"sd", "tw", "tx", "bu", "ll", "dp", "sc", "pr", "ss"};// array of the abbreviated moves
+			String[] explain = {" [sharply increases attack]",
+					"[paralyzes opponent] ",
+					"[poisons opponent, opponent takes damage every turn, they're screwed if they can't win quickly] ",
+					"[raises attack and defense] ",
+					"[An 80 power bug move that drains the opponent's hp and heals you] ",
+					"[a punch of toxicity, 75 base power; the user gains some health back]  ",
+					"[A slash of sinister intent, 75 power, high crit rate]  ",
+					"[A 90 base power fairy move, has a chance to reduce the opponent's attack]",
+					"[You hit the opponent with a 40 base power ghostly sneak attack like they owe you money]"};
+
+
+
+
+			for (int i = 0; i < abbreviated.length; i++) {
+
+				System.out.println("* " + possiblemoves[i] + "  " + abbreviated[i]+ "  " + explain[i]);
+
+			}
+
+			System.out.println("\n Input a move or its abbreviation \n");
+			mv1 = scan.nextLine();
+
+			while (legitmove1(possiblemoves, abbreviated, mv1) != true) { // sends arrays and the mv1 input variable to the boolean tester function to see if the move is legit
+
+				for (int i = 0; i < abbreviated.length; i++) {
+
+					System.out.println("* " + possiblemoves[i] + "  " + abbreviated[i]+ "  " + explain[i]);
+
+				}
+
+				System.out.println("\n Input a legitimate move or its abbreviation (Your previous input was invalid) \n");
+				mv1 = scan.nextLine();
+
+
+
+			}
+
+
+
+			for (int o = 0; o < abbreviated.length; o++) {
+
+				if(mv1.equals(abbreviated[o])){
+
+					mv1 = possiblemoves[o];
+				}
+
+
+			}
+
+
+		}
+
+
+
+
+
+
+
+
+
+
+
 		return mv1;
 		
 	}
@@ -2968,10 +3294,329 @@ public class pokemon {
  	  
  			
  		}
-		
-		
-		
-		
+
+		else if(pokemonname.equals("greninja")) {
+			String[] possiblemoves = {"watershuriken", "extrasensory", "hydropump","surf" ,"icebeam","gunkshot","darkpulse", "hiddenpower"}; // array of possible moves for this pokemon
+			String[] abbreviated = {"ws", "ex", "hpu", "su", "ib", "gs", "dp", "hp"};// array of the abbreviated moves
+			String[] explain = {"[The pokemon yeets some shurikens at the opponent, usually goes first]",
+					" [80 base power psychic move with 100 accuracy, can sometimes flinch] ",
+					" [A 110 power water move that has 80 accuracy] ",
+					"[A 95 power water move with 100 accuracy]  ",
+					" [An icy beam is shot at the opponent, ice type 90 base power, 10% chance to freeze] ",
+					" [A poison blast is shot at the opponent, has a 30% chance to poison the opponent]  ",
+					" [A dark aura is projected at the opponent, has a 20% chance to flinch] ",
+					" [A mysterious blast is shot at the opponent, the user chooses its type]"};
+
+
+
+			for (int i = 0; i < abbreviated.length; i++) {
+
+				System.out.println("* " + possiblemoves[i] + "  " + abbreviated[i]+ "  " + explain[i]);
+
+			}
+
+			System.out.println("\n Input a move or its abbreviation \n");
+			mv2 = scan.nextLine();
+
+			while (legitmove2(possiblemoves, abbreviated, mv2, move1) != true) { // sends arrays and the mv2 and the previous move input variable to the boolean tester function to see if the move is legit
+
+				for (int i = 0; i < abbreviated.length; i++) {
+
+					System.out.println("* " + possiblemoves[i] + "  " + abbreviated[i]+ "  " + explain[i]);
+
+				}
+
+				System.out.println("\n Input a legitimate move or its abbreviation (Your previous input was invalid) \n");
+				mv2 = scan.nextLine();
+
+
+
+			}
+
+
+
+			for (int o = 0; o < abbreviated.length; o++) {
+
+				if(mv2.equals(abbreviated[o])){
+
+					mv2 = possiblemoves[o];
+				}
+
+
+			}
+
+
+
+		}
+		else if(pokemonname.equals("zeraora")) {
+			String[] possiblemoves = {"bulkup", "thunderwave", "toxic","closecombat" ,"plasmafists","drainpunch","firepunch", "playrough"} ; // array of possible moves for this pokemon
+			String[] abbreviated = {"bu", "tw", "tx", "cc", "pf", "dp", "fp", "pr"};// array of the abbreviated moves
+			String[] explain = {" [increases attack and defense]",
+					"[paralyzes opponent] ",
+					" [poisons opponent, opponent takes damage every turn, they're screwed if they can't win quickly] ",
+					" [A 120 base power fighting move that reduces spdef and def] ",
+					"[A mega-powerful electric punch, based 100 power] ",
+					"[a punch of toxicity, 75 base power; the user gains some health back]  ",
+					"[A punch of fiery wrath;75 base power; 10 percent chance to burn]  ",
+					"[A 90 base power fairy move, has a chance to reduce the opponent's attack]"};
+
+
+
+				for (int i = 0; i < abbreviated.length; i++) {
+
+					System.out.println("* " + possiblemoves[i] + "  " + abbreviated[i]+ "  " + explain[i]);
+
+				}
+
+				System.out.println("\n Input a move or its abbreviation \n");
+				mv2 = scan.nextLine();
+
+				while (legitmove2(possiblemoves, abbreviated, mv2, move1) != true) { // sends arrays and the mv2 and the previous move input variable to the boolean tester function to see if the move is legit
+
+					for (int i = 0; i < abbreviated.length; i++) {
+
+						System.out.println("* " + possiblemoves[i] + "  " + abbreviated[i]+ "  " + explain[i]);
+
+					}
+
+					System.out.println("\n Input a legitimate move or its abbreviation (Your previous input was invalid) \n");
+					mv2 = scan.nextLine();
+
+
+
+				}
+
+
+
+				for (int o = 0; o < abbreviated.length; o++) {
+
+					if(mv2.equals(abbreviated[o])){
+
+						mv2 = possiblemoves[o];
+					}
+
+
+				}
+
+		}
+		else if(pokemonname.equals("togekiss")) {
+
+			String[] possiblemoves = {"dazzlinggleam", "roost", "aurasphere", "flamethrower", "nastyplot",
+					"thunderwave" ,"shadowball","airslash", "psychic", "extremespeed"}; // array of possible moves for this pokemon
+			String[] abbreviated = {"dg", "roo" ,"asp", "ft", "np", "tw", "sb", "as", "ps", "es"};// array of the abbreviated moves
+			String[] explain = {"[An 80 base power fairy move]",
+					"[Heals user but the user loses their flying type for a turn]",
+					"[the user attacks with an 80 power fighting move that never misses]",
+					"[user shoots fire at the opponent, 90 power 10% chance to burn]",
+					"[User sharply increases its special attack]" ,
+					"[paralyzes the opponent, 90 accuracy]",
+					"[the user hits a ball of shadow, 80 power, 30% chance to drop spdef of opponent] ",
+					"[The opponent gets slashed with some crisp clean air, 30% flinch rate]",
+					"[ A 90 power psychic move that hits for 90 power and has a 10% for a spdef drop] ",
+					"[The fastest move in the game, always moves first, 80 base power, it is speed, gotta go fast]"};
+
+
+
+					for (int i = 0; i < abbreviated.length; i++) {
+
+						System.out.println("* " + possiblemoves[i] + "  " + abbreviated[i]+ "  " + explain[i]);
+
+					}
+
+					System.out.println("\n Input a move or its abbreviation \n");
+					mv2 = scan.nextLine();
+
+					while (legitmove2(possiblemoves, abbreviated, mv2, move1) != true) { // sends arrays and the mv2 and the previous move input variable to the boolean tester function to see if the move is legit
+
+						for (int i = 0; i < abbreviated.length; i++) {
+
+							System.out.println("* " + possiblemoves[i] + "  " + abbreviated[i]+ "  " + explain[i]);
+
+						}
+
+						System.out.println("\n Input a legitimate move or its abbreviation (Your previous input was invalid) \n");
+						mv2 = scan.nextLine();
+
+
+
+					}
+
+
+
+					for (int o = 0; o < abbreviated.length; o++) {
+
+						if(mv2.equals(abbreviated[o])){
+
+							mv2 = possiblemoves[o];
+						}
+
+
+					}
+
+
+
+
+		}
+
+
+		else if(pokemonname.equals("volcarona")) {
+
+			String[] possiblemoves = {"hiddenpower", "flamethrower", "calmmind","quiverdance" ,"bugbuzz","wildcharge", "psychic"}; // array of possible moves for this pokemon
+			String[] abbreviated = {"hp", "ft", "cm", "qd", "bb", "wc", "ps"};// array of the abbreviated moves
+			String[] explain = {" [the user attacks with a 60 base power special attack of any type]",
+					"[user shoots fire at the opponent, 90 power 10% chance to burn]",
+					"[User increases its spa and Spdef stats]" ,
+					"[ calm mind on steroids: also boosts speed, is super overpowered]",
+					"[the user screeches reeeeeeeee, 90 power, 10% chance to drop spdef of opponent] ",
+					"[hits the opponent with a 90 power physical electric type attack, hurts user as well]",
+					"[A 90 power psychic move that hits for 90 power and has a 10% for a spdef drop] "};
+
+
+			for (int i = 0; i < abbreviated.length; i++) {
+
+				System.out.println("* " + possiblemoves[i] + "  " + abbreviated[i]+ "  " + explain[i]);
+
+			}
+
+			System.out.println("\n Input a move or its abbreviation \n");
+			mv2 = scan.nextLine();
+
+			while (legitmove2(possiblemoves, abbreviated, mv2, move1) != true) { // sends arrays and the mv2 and the previous move input variable to the boolean tester function to see if the move is legit
+
+				for (int i = 0; i < abbreviated.length; i++) {
+
+					System.out.println("* " + possiblemoves[i] + "  " + abbreviated[i]+ "  " + explain[i]);
+
+				}
+
+				System.out.println("\n Input a legitimate move or its abbreviation (Your previous input was invalid) \n");
+				mv2 = scan.nextLine();
+
+
+
+			}
+
+
+
+			for (int o = 0; o < abbreviated.length; o++) {
+
+				if(mv2.equals(abbreviated[o])){
+
+					mv2 = possiblemoves[o];
+				}
+
+
+			}
+
+		}
+		else if(pokemonname.equals("pikachu")) {
+
+			String[] possiblemoves = {"thunderbolt", "volttackle", "hiddenpower","toxic" ,"extremespeed","quickattack","thunderwave", "surf", "horndrill"}; // array of possible moves for this pokemon
+			String[] abbreviated = {"tb", "vt", "hp", "tx", "es", "qa", "tw", "su", "hd"};// array of the abbreviated moves
+			String[] explain = {" [A 90 base power electric attack with a 10 % chance of paralysis]",
+					" [a 120 base power electric tackle attack, causes recoil but it goes hard]  ",
+					" [A 60 base power move that can be any type the user desires]  ",
+					" [this move poisons the opponent and the poison damage increases over time(poison types can't miss)] ",
+					" [ha ha fast pikachu goes brrr (an 80 base power move that ussually hits first)]  ",
+					" [A weaker extremespeed (just use extremespeed)] ",
+					" [Has a 90 percent chance to paralyze opponent] ",
+					" [A 90 base power watermove, yup I let pikachu learn this with lightball boosting its stats, it needs all the help it can get]",
+					" [A move with a 30% chance to one-shot the opponent, pikachu shouldn't be able to learn this but I just want to see the power of friendship lol."};
+
+
+
+
+			for (int i = 0; i < abbreviated.length; i++) {
+
+				System.out.println("* " + possiblemoves[i] + "  " + abbreviated[i]+ "  " + explain[i]);
+
+			}
+
+			System.out.println("\n Input a move or its abbreviation \n");
+			mv2 = scan.nextLine();
+
+			while (legitmove2(possiblemoves, abbreviated, mv2, move1) != true) { // sends arrays and the mv2 and the previous move input variable to the boolean tester function to see if the move is legit
+
+				for (int i = 0; i < abbreviated.length; i++) {
+
+					System.out.println("* " + possiblemoves[i] + "  " + abbreviated[i]+ "  " + explain[i]);
+
+				}
+
+				System.out.println("\n Input a legitimate move or its abbreviation (Your previous input was invalid) \n");
+				mv2 = scan.nextLine();
+
+
+
+			}
+
+
+
+			for (int o = 0; o < abbreviated.length; o++) {
+
+				if(mv2.equals(abbreviated[o])){
+
+					mv2 = possiblemoves[o];
+				}
+
+
+			}
+
+		}
+		else if(pokemonname.equals("mimikyu")) {
+			String[] possiblemoves = {"swordsdance", "thunderwave", "toxic","bulkup" ,"leechlife","drainpunch","shadowclaw", "playrough" , "shadowsneak"} ; // array of possible moves for this pokemon
+			String[] abbreviated = {"sd", "tw", "tx", "bu", "ll", "dp", "sc", "pr", "ss"};// array of the abbreviated moves
+			String[] explain = {" [sharply increases attack]",
+					"[paralyzes opponent] ",
+					"[poisons opponent, opponent takes damage every turn, they're screwed if they can't win quickly] ",
+					"[raises attack and defense] ",
+					"[An 80 power bug move that drains the opponent's hp and heals you] ",
+					"[a punch of toxicity, 75 base power; the user gains some health back]  ",
+					"[A slash of sinister intent, 75 power, high crit rate]  ",
+					"[A 90 base power fairy move, has a chance to reduce the opponent's attack]",
+					"[You hit the opponent with a 40 base power ghostly sneak attack like they owe you money]"};
+
+
+
+
+			for (int i = 0; i < abbreviated.length; i++) {
+
+				System.out.println("* " + possiblemoves[i] + "  " + abbreviated[i]+ "  " + explain[i]);
+
+			}
+
+			System.out.println("\n Input a move or its abbreviation \n");
+			mv2 = scan.nextLine();
+
+			while (legitmove2(possiblemoves, abbreviated, mv2, move1) != true) { // sends arrays and the mv2 and the previous move input variable to the boolean tester function to see if the move is legit
+
+				for (int i = 0; i < abbreviated.length; i++) {
+
+					System.out.println("* " + possiblemoves[i] + "  " + abbreviated[i]+ "  " + explain[i]);
+
+				}
+
+				System.out.println("\n Input a legitimate move or its abbreviation (Your previous input was invalid) \n");
+				mv2 = scan.nextLine();
+
+
+
+			}
+
+
+
+			for (int o = 0; o < abbreviated.length; o++) {
+
+				if(mv2.equals(abbreviated[o])){
+
+					mv2 = possiblemoves[o];
+				}
+
+
+			}
+
+		}
+
 		return mv2;
 		
 		
@@ -4442,10 +5087,343 @@ public class pokemon {
 				       }
 					
 			}
-			
-			
-			
-			
+			else if(pokemonname.equals("greninja")) {
+				String[] possiblemoves = {"watershuriken", "extrasensory", "hydropump","surf" ,"icebeam","gunkshot","darkpulse", "hiddenpower"}; // array of possible moves for this pokemon
+				String[] abbreviated = {"ws", "ex", "hpu", "su", "ib", "gs", "dp", "hp"};// array of the abbreviated moves
+				String[] explain = {"[The pokemon yeets some shurikens at the opponent, usually goes first]",
+						" [80 base power psychic move with 100 accuracy, can sometimes flinch] ",
+						" [A 110 power water move that has 80 accuracy] ",
+						"[A 95 power water move with 100 accuracy]  ",
+						" [An icy beam is shot at the opponent, ice type 90 base power, 10% chance to freeze] ",
+						" [A poison blast is shot at the opponent, has a 30% chance to poison the opponent]  ",
+						" [A dark aura is projected at the opponent, has a 20% chance to flinch] ",
+						" [A mysterious blast is shot at the opponent, the user chooses its type]"};
+
+
+
+
+				for (int i = 0; i < abbreviated.length; i++) {
+
+					System.out.println("* " + possiblemoves[i] + "  " + abbreviated[i]+ "  " + explain[i]);
+
+				}
+
+				System.out.println("\n Input a move or its abbreviation \n");
+				mv3 = scan.nextLine();
+
+				while (legitmove3(possiblemoves, abbreviated, mv3, move1, move2) != true) { // sends arrays and the mv3 and the previous move input variable to the boolean tester function to see if the move is legit
+
+					for (int i = 0; i < abbreviated.length; i++) {
+
+						System.out.println("* " + possiblemoves[i] + "  " + abbreviated[i]+ "  " + explain[i]);
+
+					}
+
+					System.out.println("\n Input a legitimate move or its abbreviation (Your previous input was invalid) \n");
+					mv3 = scan.nextLine();
+
+
+
+				}
+
+
+
+				for (int o = 0; o < abbreviated.length; o++) {
+
+					if(mv3.equals(abbreviated[o])){
+
+						mv3 = possiblemoves[o];
+					}
+
+
+				}
+
+
+
+			}
+			else if(pokemonname.equals("zeraora")) {
+				String[] possiblemoves = {"bulkup", "thunderwave", "toxic","closecombat" ,"plasmafists","drainpunch","firepunch", "playrough"} ; // array of possible moves for this pokemon
+				String[] abbreviated = {"bu", "tw", "tx", "cc", "pf", "dp", "fp", "pr"};// array of the abbreviated moves
+				String[] explain = {" [increases attack and defense]",
+						"[paralyzes opponent] ",
+						" [poisons opponent, opponent takes damage every turn, they're screwed if they can't win quickly] ",
+						" [A 120 base power fighting move that reduces spdef and def] ",
+						"[A mega-powerful electric punch, based 100 power] ",
+						"[a punch of toxicity, 75 base power; the user gains some health back]  ",
+						"[A punch of fiery wrath;75 base power; 10 percent chance to burn]  ",
+						"[A 90 base power fairy move, has a chance to reduce the opponent's attack]"};
+
+
+
+
+				for (int i = 0; i < abbreviated.length; i++) {
+
+					System.out.println("* " + possiblemoves[i] + "  " + abbreviated[i]+ "  " + explain[i]);
+
+				}
+
+				System.out.println("\n Input a move or its abbreviation \n");
+				mv3 = scan.nextLine();
+
+				while (legitmove3(possiblemoves, abbreviated, mv3, move1, move2) != true) { // sends arrays and the mv3 and the previous move input variable to the boolean tester function to see if the move is legit
+
+					for (int i = 0; i < abbreviated.length; i++) {
+
+						System.out.println("* " + possiblemoves[i] + "  " + abbreviated[i]+ "  " + explain[i]);
+
+					}
+
+					System.out.println("\n Input a legitimate move or its abbreviation (Your previous input was invalid) \n");
+					mv3 = scan.nextLine();
+
+
+
+				}
+
+
+
+				for (int o = 0; o < abbreviated.length; o++) {
+
+					if(mv3.equals(abbreviated[o])){
+
+						mv3 = possiblemoves[o];
+					}
+
+
+				}
+
+
+			}
+			else if(pokemonname.equals("togekiss")) {
+
+				String[] possiblemoves = {"dazzlinggleam", "roost", "aurasphere", "flamethrower", "nastyplot",
+						"thunderwave" ,"shadowball","airslash", "psychic", "extremespeed"}; // array of possible moves for this pokemon
+				String[] abbreviated = {"dg", "roo" ,"asp", "ft", "np", "tw", "sb", "as", "ps", "es"};// array of the abbreviated moves
+				String[] explain = {"[An 80 base power fairy move]",
+						"[Heals user but the user loses their flying type for a turn]",
+						"[the user attacks with an 80 power fighting move that never misses]",
+						"[user shoots fire at the opponent, 90 power 10% chance to burn]",
+						"[User sharply increases its special attack]" ,
+						"[paralyzes the opponent, 90 accuracy]",
+						"[the user hits a ball of shadow, 80 power, 30% chance to drop spdef of opponent] ",
+						"[The opponent gets slashed with some crisp clean air, 30% flinch rate]",
+						"[ A 90 power psychic move that hits for 90 power and has a 10% for a spdef drop] ",
+						"[The fastest move in the game, always moves first, 80 base power, it is speed, gotta go fast]"};
+
+
+				for (int i = 0; i < abbreviated.length; i++) {
+
+					System.out.println("* " + possiblemoves[i] + "  " + abbreviated[i]+ "  " + explain[i]);
+
+				}
+
+				System.out.println("\n Input a move or its abbreviation \n");
+				mv3 = scan.nextLine();
+
+				while (legitmove3(possiblemoves, abbreviated, mv3, move1, move2) != true) { // sends arrays and the mv3 and the previous move input variable to the boolean tester function to see if the move is legit
+
+					for (int i = 0; i < abbreviated.length; i++) {
+
+						System.out.println("* " + possiblemoves[i] + "  " + abbreviated[i]+ "  " + explain[i]);
+
+					}
+
+					System.out.println("\n Input a legitimate move or its abbreviation (Your previous input was invalid) \n");
+					mv3 = scan.nextLine();
+
+
+
+				}
+
+
+
+				for (int o = 0; o < abbreviated.length; o++) {
+
+					if(mv3.equals(abbreviated[o])){
+
+						mv3 = possiblemoves[o];
+					}
+
+
+				}
+
+			}
+
+
+			else if(pokemonname.equals("volcarona")) {
+
+				String[] possiblemoves = {"hiddenpower", "flamethrower", "calmmind","quiverdance" ,"bugbuzz","wildcharge", "psychic"}; // array of possible moves for this pokemon
+				String[] abbreviated = {"hp", "ft", "cm", "qd", "bb", "wc", "ps"};// array of the abbreviated moves
+				String[] explain = {" [the user attacks with a 60 base power special attack of any type]",
+						"[user shoots fire at the opponent, 90 power 10% chance to burn]",
+						"[User increases its spa and Spdef stats]" ,
+						"[ calm mind on steroids: also boosts speed, is super overpowered]",
+						"[the user screeches reeeeeeeee, 90 power, 10% chance to drop spdef of opponent] ",
+						"[hits the opponent with a 90 power physical electric type attack, hurts user as well]",
+						"[A 90 power psychic move that hits for 90 power and has a 10% for a spdef drop] "};
+
+
+
+
+
+
+				for (int i = 0; i < abbreviated.length; i++) {
+
+					System.out.println("* " + possiblemoves[i] + "  " + abbreviated[i]+ "  " + explain[i]);
+
+				}
+
+				System.out.println("\n Input a move or its abbreviation \n");
+				mv3 = scan.nextLine();
+
+				while (legitmove3(possiblemoves, abbreviated, mv3, move1, move2) != true) { // sends arrays and the mv3 and the previous move input variable to the boolean tester function to see if the move is legit
+
+					for (int i = 0; i < abbreviated.length; i++) {
+
+						System.out.println("* " + possiblemoves[i] + "  " + abbreviated[i]+ "  " + explain[i]);
+
+					}
+
+					System.out.println("\n Input a legitimate move or its abbreviation (Your previous input was invalid) \n");
+					mv3 = scan.nextLine();
+
+
+
+				}
+
+
+
+				for (int o = 0; o < abbreviated.length; o++) {
+
+					if(mv3.equals(abbreviated[o])){
+
+						mv3 = possiblemoves[o];
+					}
+
+
+				}
+			}
+			else if(pokemonname.equals("pikachu")) {
+
+				String[] possiblemoves = {"thunderbolt", "volttackle", "hiddenpower","toxic" ,"extremespeed","quickattack","thunderwave", "surf", "horndrill"}; // array of possible moves for this pokemon
+				String[] abbreviated = {"tb", "vt", "hp", "tx", "es", "qa", "tw", "su", "hd"};// array of the abbreviated moves
+				String[] explain = {" [A 90 base power electric attack with a 10 % chance of paralysis]",
+						" [a 120 base power electric tackle attack, causes recoil but it goes hard]  ",
+						" [A 60 base power move that can be any type the user desires]  ",
+						" [this move poisons the opponent and the poison damage increases over time(poison types can't miss)] ",
+						" [ha ha fast pikachu goes brrr (an 80 base power move that ussually hits first)]  ",
+						" [A weaker extremespeed (just use extremespeed)] ",
+						" [Has a 90 percent chance to paralyze opponent] ",
+						" [A 90 base power watermove, yup I let pikachu learn this with lightball boosting its stats, it needs all the help it can get]",
+						" [A move with a 30% chance to one-shot the opponent, pikachu shouldn't be able to learn this but I just want to see the power of friendship lol."};
+
+
+
+
+
+
+				for (int i = 0; i < abbreviated.length; i++) {
+
+					System.out.println("* " + possiblemoves[i] + "  " + abbreviated[i]+ "  " + explain[i]);
+
+				}
+
+				System.out.println("\n Input a move or its abbreviation \n");
+				mv3 = scan.nextLine();
+
+				while (legitmove3(possiblemoves, abbreviated, mv3, move1, move2) != true) { // sends arrays and the mv3 and the previous move input variable to the boolean tester function to see if the move is legit
+
+					for (int i = 0; i < abbreviated.length; i++) {
+
+						System.out.println("* " + possiblemoves[i] + "  " + abbreviated[i]+ "  " + explain[i]);
+
+					}
+
+					System.out.println("\n Input a legitimate move or its abbreviation (Your previous input was invalid) \n");
+					mv3 = scan.nextLine();
+
+
+
+				}
+
+
+
+				for (int o = 0; o < abbreviated.length; o++) {
+
+					if(mv3.equals(abbreviated[o])){
+
+						mv3 = possiblemoves[o];
+					}
+
+
+				}
+
+
+
+			}
+			else if(pokemonname.equals("mimikyu")) {
+				String[] possiblemoves = {"swordsdance", "thunderwave", "toxic","bulkup" ,"leechlife","drainpunch","shadowclaw", "playrough" , "shadowsneak"} ; // array of possible moves for this pokemon
+				String[] abbreviated = {"sd", "tw", "tx", "bu", "ll", "dp", "sc", "pr", "ss"};// array of the abbreviated moves
+				String[] explain = {" [sharply increases attack]",
+						"[paralyzes opponent] ",
+						"[poisons opponent, opponent takes damage every turn, they're screwed if they can't win quickly] ",
+						"[raises attack and defense] ",
+						"[An 80 power bug move that drains the opponent's hp and heals you] ",
+						"[a punch of toxicity, 75 base power; the user gains some health back]  ",
+						"[A slash of sinister intent, 75 power, high crit rate]  ",
+						"[A 90 base power fairy move, has a chance to reduce the opponent's attack]",
+						"[You hit the opponent with a 40 base power ghostly sneak attack like they owe you money]"};
+
+
+
+
+
+
+				for (int i = 0; i < abbreviated.length; i++) {
+
+					System.out.println("* " + possiblemoves[i] + "  " + abbreviated[i]+ "  " + explain[i]);
+
+				}
+
+				System.out.println("\n Input a move or its abbreviation \n");
+				mv3 = scan.nextLine();
+
+				while (legitmove3(possiblemoves, abbreviated, mv3, move1, move2) != true) { // sends arrays and the mv3 and the previous move input variable to the boolean tester function to see if the move is legit
+
+					for (int i = 0; i < abbreviated.length; i++) {
+
+						System.out.println("* " + possiblemoves[i] + "  " + abbreviated[i]+ "  " + explain[i]);
+
+					}
+
+					System.out.println("\n Input a legitimate move or its abbreviation (Your previous input was invalid) \n");
+					mv3 = scan.nextLine();
+
+
+
+				}
+
+
+
+				for (int o = 0; o < abbreviated.length; o++) {
+
+					if(mv3.equals(abbreviated[o])){
+
+						mv3 = possiblemoves[o];
+					}
+
+
+				}
+
+
+			}
+
+
+
+
+
+
+
 		return mv3;
 		
 	}
@@ -5934,49 +6912,384 @@ public class pokemon {
    			String[] explain = {"[boosts attack and speed]", " [A 100 power ground move]", "[user hits the target with 80 power dragon power]","[An 120 power dragon move that reduces special attack of the user ]" ,"[The opponent is hit with a lot of rocks, 75 power, 30% chance to flinch]", "[the user hits the opponent with flames 90 power, 10% chance to burn] ", " [ The user slashes air at the oppponent, 30% chance to flinch]", "[ increases the user's chances of a crit] "};
    	
   			
-  			
-				
+
+
 	              for (int i = 0; i < abbreviated.length; i++) {
-						
+
 						System.out.println("* " + possiblemoves[i] + "  " + abbreviated[i]+ "  " + explain[i]);
-						
+
 					}
-					
+
 					System.out.println("\n Input a move or its abbreviation \n");
 					mv4 = scan.nextLine();
-					
+
 					while (legitmove4(possiblemoves, abbreviated, mv4, move1, move2, move3) != true) { // sends arrays and the mv4 and the previous move input variable to the boolean tester function to see if the move is legit
-						
+
 						for (int i = 0; i < abbreviated.length; i++) {
-							
+
 							System.out.println("* " + possiblemoves[i] + "  " + abbreviated[i]+ "  " + explain[i]);
-							
+
 						}
-						
+
 						System.out.println("\n Input a legitimate move or its abbreviation (Your previous input was invalid)  \n");
 						mv4 = scan.nextLine();
-						
-						
-						
+
+
+
 					}
-					
-					
-					
+
+
+
 					 for (int o = 0; o < abbreviated.length; o++) {
-				    		
+
 				    		if(mv4.equals(abbreviated[o])){
-				    			
+
 				    			mv4 = possiblemoves[o];
 				    		}
-				    		
-				    	
+
+
 				       }
-					
-				   
+
+
 					
 			}
-		
-			
+			else if(pokemonname.equals("greninja")) {
+				String[] possiblemoves = {"watershuriken", "extrasensory", "hydropump","surf" ,"icebeam","gunkshot","darkpulse", "hiddenpower"}; // array of possible moves for this pokemon
+				String[] abbreviated = {"ws", "ex", "hpu", "su", "ib", "gs", "dp", "hp"};// array of the abbreviated moves
+				String[] explain = {"[The pokemon yeets some shurikens at the opponent, usually goes first]",
+						" [80 base power psychic move with 100 accuracy, can sometimes flinch] ",
+						" [A 110 power water move that has 80 accuracy] ",
+						"[A 95 power water move with 100 accuracy]  ",
+						" [An icy beam is shot at the opponent, ice type 90 base power, 10% chance to freeze] ",
+						" [A poison blast is shot at the opponent, has a 30% chance to poison the opponent]  ",
+						" [A dark aura is projected at the opponent, has a 20% chance to flinch] ",
+						" [A mysterious blast is shot at the opponent, the user chooses its type]"};
+
+
+
+
+
+				for (int i = 0; i < abbreviated.length; i++) {
+
+					System.out.println("* " + possiblemoves[i] + "  " + abbreviated[i]+ "  " + explain[i]);
+
+				}
+
+				System.out.println("\n Input a move or its abbreviation \n");
+				mv4 = scan.nextLine();
+
+				while (legitmove4(possiblemoves, abbreviated, mv4, move1, move2, move3) != true) { // sends arrays and the mv4 and the previous move input variable to the boolean tester function to see if the move is legit
+
+					for (int i = 0; i < abbreviated.length; i++) {
+
+						System.out.println("* " + possiblemoves[i] + "  " + abbreviated[i]+ "  " + explain[i]);
+
+					}
+
+					System.out.println("\n Input a legitimate move or its abbreviation (Your previous input was invalid)  \n");
+					mv4 = scan.nextLine();
+
+
+
+				}
+
+
+
+				for (int o = 0; o < abbreviated.length; o++) {
+
+					if(mv4.equals(abbreviated[o])){
+
+						mv4 = possiblemoves[o];
+					}
+
+
+				}
+
+
+
+
+
+			}
+			else if(pokemonname.equals("zeraora")) {
+				String[] possiblemoves = {"bulkup", "thunderwave", "toxic","closecombat" ,"plasmafists","drainpunch","firepunch", "playrough"} ; // array of possible moves for this pokemon
+				String[] abbreviated = {"bu", "tw", "tx", "cc", "pf", "dp", "fp", "pr"};// array of the abbreviated moves
+				String[] explain = {" [increases attack and defense]",
+						"[paralyzes opponent] ",
+						" [poisons opponent, opponent takes damage every turn, they're screwed if they can't win quickly] ",
+						" [A 120 base power fighting move that reduces spdef and def] ",
+						"[A mega-powerful electric punch, based 100 power] ",
+						"[a punch of toxicity, 75 base power; the user gains some health back]  ",
+						"[A punch of fiery wrath;75 base power; 10 percent chance to burn]  ",
+						"[A 90 base power fairy move, has a chance to reduce the opponent's attack]"};
+
+
+
+
+
+				for (int i = 0; i < abbreviated.length; i++) {
+
+					System.out.println("* " + possiblemoves[i] + "  " + abbreviated[i]+ "  " + explain[i]);
+
+				}
+
+				System.out.println("\n Input a move or its abbreviation \n");
+				mv4 = scan.nextLine();
+
+				while (legitmove4(possiblemoves, abbreviated, mv4, move1, move2, move3) != true) { // sends arrays and the mv4 and the previous move input variable to the boolean tester function to see if the move is legit
+
+					for (int i = 0; i < abbreviated.length; i++) {
+
+						System.out.println("* " + possiblemoves[i] + "  " + abbreviated[i]+ "  " + explain[i]);
+
+					}
+
+					System.out.println("\n Input a legitimate move or its abbreviation (Your previous input was invalid)  \n");
+					mv4 = scan.nextLine();
+
+
+
+				}
+
+
+
+				for (int o = 0; o < abbreviated.length; o++) {
+
+					if(mv4.equals(abbreviated[o])){
+
+						mv4 = possiblemoves[o];
+					}
+
+
+				}
+
+
+
+
+			}
+			else if(pokemonname.equals("togekiss")) {
+
+				String[] possiblemoves = {"dazzlinggleam", "roost", "aurasphere", "flamethrower", "nastyplot",
+						"thunderwave" ,"shadowball","airslash", "psychic", "extremespeed"}; // array of possible moves for this pokemon
+				String[] abbreviated = {"dg", "roo" ,"asp", "ft", "np", "tw", "sb", "as", "ps", "es"};// array of the abbreviated moves
+				String[] explain = {"[An 80 base power fairy move]",
+						"[Heals user but the user loses their flying type for a turn]",
+						"[the user attacks with an 80 power fighting move that never misses]",
+						"[user shoots fire at the opponent, 90 power 10% chance to burn]",
+						"[User sharply increases its special attack]" ,
+						"[paralyzes the opponent, 90 accuracy]",
+						"[the user hits a ball of shadow, 80 power, 30% chance to drop spdef of opponent] ",
+						"[The opponent gets slashed with some crisp clean air, 30% flinch rate]",
+						"[ A 90 power psychic move that hits for 90 power and has a 10% for a spdef drop] ",
+						"[The fastest move in the game, always moves first, 80 base power, it is speed, gotta go fast]"};
+
+
+
+
+
+
+				for (int i = 0; i < abbreviated.length; i++) {
+
+					System.out.println("* " + possiblemoves[i] + "  " + abbreviated[i]+ "  " + explain[i]);
+
+				}
+
+				System.out.println("\n Input a move or its abbreviation \n");
+				mv4 = scan.nextLine();
+
+				while (legitmove4(possiblemoves, abbreviated, mv4, move1, move2, move3) != true) { // sends arrays and the mv4 and the previous move input variable to the boolean tester function to see if the move is legit
+
+					for (int i = 0; i < abbreviated.length; i++) {
+
+						System.out.println("* " + possiblemoves[i] + "  " + abbreviated[i]+ "  " + explain[i]);
+
+					}
+
+					System.out.println("\n Input a legitimate move or its abbreviation (Your previous input was invalid)  \n");
+					mv4 = scan.nextLine();
+
+
+
+				}
+
+
+
+				for (int o = 0; o < abbreviated.length; o++) {
+
+					if(mv4.equals(abbreviated[o])){
+
+						mv4 = possiblemoves[o];
+					}
+
+
+				}
+
+
+			}
+
+			else if(pokemonname.equals("volcarona")) {
+
+				String[] possiblemoves = {"hiddenpower", "flamethrower", "calmmind","quiverdance" ,"bugbuzz","wildcharge", "psychic"}; // array of possible moves for this pokemon
+				String[] abbreviated = {"hp", "ft", "cm", "qd", "bb", "wc", "ps"};// array of the abbreviated moves
+				String[] explain = {" [the user attacks with a 60 base power special attack of any type]",
+						"[user shoots fire at the opponent, 90 power 10% chance to burn]",
+						"[User increases its spa and Spdef stats]" ,
+						"[ calm mind on steroids: also boosts speed, is super overpowered]",
+						"[the user screeches reeeeeeeee, 90 power, 10% chance to drop spdef of opponent] ",
+						"[hits the opponent with a 90 power physical electric type attack, hurts user as well]",
+						"[A 90 power psychic move that hits for 90 power and has a 10% for a spdef drop] "};
+
+
+
+
+
+
+				for (int i = 0; i < abbreviated.length; i++) {
+
+					System.out.println("* " + possiblemoves[i] + "  " + abbreviated[i]+ "  " + explain[i]);
+
+				}
+
+				System.out.println("\n Input a move or its abbreviation \n");
+				mv4 = scan.nextLine();
+
+				while (legitmove4(possiblemoves, abbreviated, mv4, move1, move2, move3) != true) { // sends arrays and the mv4 and the previous move input variable to the boolean tester function to see if the move is legit
+
+					for (int i = 0; i < abbreviated.length; i++) {
+
+						System.out.println("* " + possiblemoves[i] + "  " + abbreviated[i]+ "  " + explain[i]);
+
+					}
+
+					System.out.println("\n Input a legitimate move or its abbreviation (Your previous input was invalid)  \n");
+					mv4 = scan.nextLine();
+
+
+
+				}
+
+
+
+				for (int o = 0; o < abbreviated.length; o++) {
+
+					if(mv4.equals(abbreviated[o])){
+
+						mv4 = possiblemoves[o];
+					}
+
+
+				}
+
+			}
+			else if(pokemonname.equals("pikachu")) {
+
+				String[] possiblemoves = {"thunderbolt", "volttackle", "hiddenpower","toxic" ,"extremespeed","quickattack","thunderwave", "surf", "horndrill"}; // array of possible moves for this pokemon
+				String[] abbreviated = {"tb", "vt", "hp", "tx", "es", "qa", "tw", "su", "hd"};// array of the abbreviated moves
+				String[] explain = {" [A 90 base power electric attack with a 10 % chance of paralysis]",
+						" [a 120 base power electric tackle attack, causes recoil but it goes hard]  ",
+						" [A 60 base power move that can be any type the user desires]  ",
+						" [this move poisons the opponent and the poison damage increases over time(poison types can't miss)] ",
+						" [ha ha fast pikachu goes brrr (an 80 base power move that ussually hits first)]  ",
+						" [A weaker extremespeed (just use extremespeed)] ",
+						" [Has a 90 percent chance to paralyze opponent] ",
+						" [A 90 base power watermove, yup I let pikachu learn this with lightball boosting its stats, it needs all the help it can get]",
+						" [A move with a 30% chance to one-shot the opponent, pikachu shouldn't be able to learn this but I just want to see the power of friendship lol."};
+
+
+
+
+
+				for (int i = 0; i < abbreviated.length; i++) {
+
+					System.out.println("* " + possiblemoves[i] + "  " + abbreviated[i]+ "  " + explain[i]);
+
+				}
+
+				System.out.println("\n Input a move or its abbreviation \n");
+				mv4 = scan.nextLine();
+
+				while (legitmove4(possiblemoves, abbreviated, mv4, move1, move2, move3) != true) { // sends arrays and the mv4 and the previous move input variable to the boolean tester function to see if the move is legit
+
+					for (int i = 0; i < abbreviated.length; i++) {
+
+						System.out.println("* " + possiblemoves[i] + "  " + abbreviated[i]+ "  " + explain[i]);
+
+					}
+
+					System.out.println("\n Input a legitimate move or its abbreviation (Your previous input was invalid)  \n");
+					mv4 = scan.nextLine();
+
+
+
+				}
+
+
+
+				for (int o = 0; o < abbreviated.length; o++) {
+
+					if(mv4.equals(abbreviated[o])){
+
+						mv4 = possiblemoves[o];
+					}
+
+
+				}
+
+
+
+			}
+			else if(pokemonname.equals("mimikyu")) {
+				String[] possiblemoves = {"swordsdance", "thunderwave", "toxic","bulkup" ,"leechlife","drainpunch","shadowclaw", "playrough" , "shadowsneak"} ; // array of possible moves for this pokemon
+				String[] abbreviated = {"sd", "tw", "tx", "bu", "ll", "dp", "sc", "pr", "ss"};// array of the abbreviated moves
+				String[] explain = {" [sharply increases attack]",
+						"[paralyzes opponent] ",
+						"[poisons opponent, opponent takes damage every turn, they're screwed if they can't win quickly] ",
+						"[raises attack and defense] ",
+						"[An 80 power bug move that drains the opponent's hp and heals you] ",
+						"[a punch of toxicity, 75 base power; the user gains some health back]  ",
+						"[A slash of sinister intent, 75 power, high crit rate]  ",
+						"[A 90 base power fairy move, has a chance to reduce the opponent's attack]",
+						"[You hit the opponent with a 40 base power ghostly sneak attack like they owe you money]"};
+
+
+
+
+
+				for (int i = 0; i < abbreviated.length; i++) {
+
+					System.out.println("* " + possiblemoves[i] + "  " + abbreviated[i]+ "  " + explain[i]);
+
+				}
+
+				System.out.println("\n Input a move or its abbreviation \n");
+				mv4 = scan.nextLine();
+
+				while (legitmove4(possiblemoves, abbreviated, mv4, move1, move2, move3) != true) { // sends arrays and the mv4 and the previous move input variable to the boolean tester function to see if the move is legit
+
+					for (int i = 0; i < abbreviated.length; i++) {
+
+						System.out.println("* " + possiblemoves[i] + "  " + abbreviated[i]+ "  " + explain[i]);
+
+					}
+
+					System.out.println("\n Input a legitimate move or its abbreviation (Your previous input was invalid)  \n");
+					mv4 = scan.nextLine();
+
+
+
+				}
+
+
+
+				for (int o = 0; o < abbreviated.length; o++) {
+
+					if(mv4.equals(abbreviated[o])){
+
+						mv4 = possiblemoves[o];
+					}
+
+
+				}
+			}
 			
 			
 		return mv4;
@@ -6115,11 +7428,35 @@ public class pokemon {
 			type1 = "flying";
 			
 		}
-		
-		
-		
-		
-		
+		else if(pokemonname.equals("greninja")) {
+			type1 = "water";
+
+		}
+		else if(pokemonname.equals("zeraora")) {
+			type1 = "electric";
+
+		}
+		else if(pokemonname.equals("togekiss")) {
+			type1 = "fairy";
+
+		}
+		else if(pokemonname.equals("volcarona")) {
+			type1 = "bug";
+
+		}
+		else if(pokemonname.equals("pikachu")) {
+			type1 = "electric";
+
+		}
+		else if(pokemonname.equals("mimikyu")) {
+			type1 = "ghost";
+
+		}
+
+
+
+
+
 		return type1;
 	}
 	
@@ -6255,6 +7592,30 @@ public class pokemon {
 			else if(pokemonname.equals("salamence")) {
 				type2 = "dragon";
 				
+			}
+			else if(pokemonname.equals("greninja")) {
+				type2 = "dark";
+
+			}
+			else if(pokemonname.equals("zeraora")) {
+				type2 = "null";
+
+			}
+			else if(pokemonname.equals("togekiss")) {
+				type2 = "flying";
+
+			}
+			else if(pokemonname.equals("volcarona")) {
+				type2 = "fire";
+
+			}
+			else if(pokemonname.equals("pikachu")) {
+				type2 = "null";
+
+			}
+			else if(pokemonname.equals("mimikyu")) {
+				type2 = "fairy";
+
 			}
 			
 			
@@ -6395,6 +7756,30 @@ public class pokemon {
 			ability = "intimidate";
 			
 		}
+		else if(pokemonname.equals("greninja")) {
+			ability = "protean";
+
+		}
+		else if(pokemonname.equals("zeraora")) {
+			ability = "toughclaws";
+
+		}
+		else if(pokemonname.equals("togekiss")) {
+			ability = "serenegrace";
+
+		}
+		else if(pokemonname.equals("volcarona")) {
+			ability = "flamebody";
+
+		}
+		else if(pokemonname.equals("pikachu")) {
+			ability = "static";
+
+		}
+		else if(pokemonname.equals("mimikyu")) {
+			ability = "disguise";
+
+		}
 		
 		return ability;
 		
@@ -6533,8 +7918,23 @@ public class pokemon {
 			abilityexplain = "intimidate reduces the opponent's attack";
 			
 		}
-		
-		
+		else if(pokemonname.equals("greninja")) {
+			abilityexplain = "protean changes a pokemon''s type to match the attack it is about to use. The pokemon gets a slight boost to these attacks due to the same type attack bonus. ";
+
+		}
+		else if(pokemonname.equals("zeraora")) {
+			abilityexplain = "tough claws powers up physical attacks by 30%";
+
+		}
+		else if(pokemonname.equals("togekiss")) {
+			abilityexplain = "serenegrace doubles chances for an effect to happen";
+
+		}
+		else if(pokemonname.equals("chandelure")) {
+			abilityexplain = "flamebody has a chance of burning opponents on contact";
+
+		}
+
 		explain = explain + " " + abilityexplain;
 		
 		
@@ -6677,6 +8077,33 @@ public class pokemon {
 			attack = 229;
 			
 		}
+		else if(pokemonname.equals("greninja")) {
+			attack = 317;
+
+		}
+		else if(pokemonname.equals("zeraora")) {
+			attack = 355;
+
+		}
+		else if(pokemonname.equals("togekiss")) {
+			attack = 218;
+
+		}
+		else if(pokemonname.equals("volcarona")) {
+			attack = 240;
+
+		}
+		else if(pokemonname.equals("pikachu")) {
+			attack = (229 * 2);
+
+		}
+		else if(pokemonname.equals("mimikyu")) {
+			attack = 306;
+
+		}
+
+
+
 		return attack;
 		
 	}
@@ -6815,6 +8242,30 @@ public class pokemon {
 		else if(pokemonname.equals("chandelure")) {
 			hp = 324;
 			
+		}
+		else if(pokemonname.equals("greninja")) {
+			hp = 348;
+
+		}
+		else if(pokemonname.equals("zeraora")) {
+			hp = 380;
+
+		}
+		else if(pokemonname.equals("togekiss")) {
+			hp = 374;
+
+		}
+		else if(pokemonname.equals("volcarona")) {
+			hp = 374;
+
+		}
+		else if(pokemonname.equals("pikachu")) {
+			hp = 274;
+
+		}
+		else if(pokemonname.equals("mimikyu")) {
+			hp = 314;
+
 		}
 		
 		return hp;
@@ -6958,7 +8409,30 @@ public class pokemon {
 			speed = 284;
 			
 		}
-       
+	   else if(pokemonname.equals("greninja")) {
+		   speed = 377;
+
+	   }
+	   else if(pokemonname.equals("zeraora")) {
+		   speed = 423;
+
+	   }
+	   else if(pokemonname.equals("togekiss")) {
+		   speed = 284;
+
+	   }
+	   else if(pokemonname.equals("volcarona")) {
+		   speed = 328;
+
+	   }
+	   else if(pokemonname.equals("pikachu")) {
+		   speed = 306;
+
+	   }
+	   else if(pokemonname.equals("mimikyu")) {
+		   speed = 320;
+
+	   }
        
        
 	      return speed;
@@ -7105,8 +8579,30 @@ public class pokemon {
 			def = 306;
 			
 		}
-	    
-	    
+		else if(pokemonname.equals("greninja")) {
+			def = 256;
+
+		}
+		else if(pokemonname.equals("zeraora")) {
+			def = 273;
+
+		}
+		else if(pokemonname.equals("togekiss")) {
+			def = 317;
+
+		}
+		else if(pokemonname.equals("volcarona")) {
+			def = 251;
+
+		}
+		else if(pokemonname.equals("pikachu")) {
+			def = 196;
+
+		}
+		else if(pokemonname.equals("mimikyu")) {
+			def = 284;
+
+		}
 	    
 	    
 	    
@@ -7264,6 +8760,31 @@ public class pokemon {
 		spdef = 306;
 		
 	}
+	else if(pokemonname.equals("greninja")) {
+		spdef = 265;
+
+	}
+	else if(pokemonname.equals("zeraora")) {
+		spdef = 284;
+
+	}
+	else if(pokemonname.equals("togekiss")) {
+		spdef = 361;
+
+	}
+	else if(pokemonname.equals("volcarona")) {
+		spdef = 339;
+
+	}
+	else if(pokemonname.equals("pikachu")) {
+		spdef = 218;
+
+	}
+	else if(pokemonname.equals("mimikyu")) {
+		spdef = 339;
+
+	}
+
 	return spdef;
 	
     }
@@ -7411,7 +8932,30 @@ public class pokemon {
 		spa = 427;
 		
 	}
-	
+	else if(pokemonname.equals("greninja")) {
+		spa = 335;
+
+	}
+	else if(pokemonname.equals("zeraora")) {
+		spa = 333;
+
+	}
+	else if(pokemonname.equals("togekiss")) {
+		spa = 372;
+
+	}
+	else if(pokemonname.equals("volcarona")) {
+		spa = 405;
+
+	}
+	else if(pokemonname.equals("pikachu")) {
+		spa = (218 * 2);
+
+	}
+	else if(pokemonname.equals("mimikyu")) {
+		spa = 218;
+
+	}
 	
 	
 	
@@ -7562,13 +9106,39 @@ public class pokemon {
  			call = "salamence.wav";//
  			
  		}
- 		
+		else if(pokemonname.equals("greninja")) {
+			call = "greninja.wav";//
+
+		}
+		else if(pokemonname.equals("zeraora")) {
+			call = "zeraora.wav";//
+
+		}
+		else if(pokemonname.equals("togekiss")) {
+			call = "togekiss.wav";//
+
+		}
+		else if(pokemonname.equals("volcarona")) {
+			call = "volcarona.wav";//
+
+		}
+		else if(pokemonname.equals("pikachu")) {
+			call = "pikachu.wav";//
+
+		}
+		else if(pokemonname.equals("mimikyu")) {
+			call = "mimikyu.wav";//
+
+		}
+
+
  		return call;
  		
  	}
  	
  	
-     
+
+
      // back up of pokemon and stats
      
 
@@ -7945,15 +9515,72 @@ public class pokemon {
       * Type2: ghost
       * 
       * 
+      * greninja
+      * HP: 348
+      * Attack: 317
+      * Defense: 256
+      * Special Attack:  335
+      * Special Defense: 265
+      * Speed: 377
+      * Ability: protean
+      * Type1: water
+      * Type2: dark
       * 
+      * zeraora
+      * HP: 380
+      * Attack: 355
+      * Defense: 273
+      * Special Attack:  333
+      * Special Defense: 284
+      * Speed: 423
+      * Ability: tough claws
+      * Type1: electric
+      * Type2: null
+      *
       * 
+      * togekiss
+      * HP: 374
+      * Attack: 218
+      * Defense: 317
+      * Special Attack:  372
+      * Special Defense: 361
+      * Speed: 284
+      * Ability: serenegrace
+      * Type1: fairy
+      * Type2: flying
+      *
+      * volcarona
+      * HP: 374
+      * Attack: 240
+      * Defense: 251
+      * Special Attack:  405
+      * Special Defense: 339
+      * Speed: 328
+      * Ability: flamebody
+      * Type1: bug
+      * Type2: fire
+      *
+      * pikachu
+      * HP: 274
+      * Attack: ( 229 * 2) holds light ball
+      * Defense: 196
+      * Special Attack:  (218 * 2 )(holds light ball)
+      * Special Defense: 218
+      * Speed: 306
+      * Ability: static
+      * Type1: electric
+      * Type2: null
       * 
-      * 
-      * 
-      * 
-      * 
-      * 
-      * 
+      * mimikyu
+      * HP: 314
+      * Attack: 306
+      * Defense: 284
+      * Special Attack:  218
+      * Special Defense: 339
+      * Speed: 320
+      * Ability: disguise
+      * Type1: ghost
+      * Type2: fairy
       * 
       * 
       * 
