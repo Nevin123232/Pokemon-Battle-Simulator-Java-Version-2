@@ -114,15 +114,23 @@ public class userlanguage extends Thread{ // this is the main file , makes threa
 				"meloetta", "crobat", "manaphy", "jirachi", "melmetal", "machamp", "milotic",
 				"kingdra", "salamence", "dragonite", "chandelure", "greninja",
 				"zeraora", "togekiss", "volcarona",
-				"pikachu", "mimikyu", "noivern"};
+				"pikachu", "mimikyu",
+				"noivern", "hawlucha",
+				"zoroark",
+				"garchomp", "tyranitar", "lucario", "flygon", "dragapult"
+		};
     	String[] abbreviated = {"met", "gli", "exc" , "arc" , "kro" , "fer", "gya",
 				"sta" , "gen" , "esp", "jol", "gla", "arch",
 				"umb", "lea", "vap", "fla", "syl", "sci", "hyd",
 				"mel", "cro", "man", "jir", "mml", "mac", "mil",
 				"kdr", "sal", "dra", "chan", "gren",
 				"zera", "toge", "volc",
-				"pika", "mimi", "noi"};
-    	// 53 pokemon are in the possible pokemon array      (53 is the new endgoal)                                                                                                                      "manaphy", "jirachi", "melmetal", "machamp", "milotic", "kingdra", "salamence", "dragonite", "chandelure"};
+				"pika", "mimi",
+				"noi","haw",
+				"zoro",
+				"gar", "tyra", "luca", "fly", "draga"
+		};
+    	// 60 pokemon are in the possible pokemon array      (60 is the new endgoal)                                                                                                                      "manaphy", "jirachi", "melmetal", "machamp", "milotic", "kingdra", "salamence", "dragonite", "chandelure"};
     	
     	for(int i = 0; i < abbreviated.length; i++) {
     		
@@ -157,7 +165,11 @@ public class userlanguage extends Thread{ // this is the main file , makes threa
 				"greninja",
 				"zeraora", "togekiss", "volcarona",
 				"pikachu", "mimikyu",
-				"noivern"};
+				"noivern", "hawlucha",
+				"zoroark",
+				"garchomp", "tyranitar", "lucario", "flygon", "dragapult"
+
+		};
     	String[] abbreviated = {"met", "gli", "exc" , "arc" , "kro" , "fer", "gya", "sta" , "gen" , "esp", "jol", "gla", "arch", "umb",
 				"lea", "vap", "fla", "syl", "sci",
 				"hyd", "mel", "cro", "man", "jir", "mml",
@@ -166,7 +178,10 @@ public class userlanguage extends Thread{ // this is the main file , makes threa
 				"gren",
 				"zera", "toge", "volc",
 				"pika", "mimi" ,
-				"noi"};
+				"noi", "haw",
+				"zoro",
+				"gar", "tyra", "luca", "fly", "draga"
+		};
     	String[] pokemonexplanations = {"[Metagross is a steel psychic pokemon. It has very notable attack and defense, has clearbody ability] ", "[gliscor is a ground-flying pokemon who is well known for having a great attack and defense (has hypercutter)]  ", " [excadrill is  ground-steel pokemon  who can hit every pokemon (Except flying mons) with earthquake (has moldbreaker ability)]", "[arcanine is a loyal fire pokemon who can burn opponents on a whim and heal with morning sun (has intimidate ability) ]","[A savage street dark-ground croc ready to hit hard (has intimidate ability)]", "[A water aligator pokemon who hits harder with sheerforce (has sheer force ability)]", "[A savage pokemon who learns more dragon moves then flying moves but is still water-flying type lol (has intimidate ability) ] ","[An alien star pokemon that is water-psychic type (has magic bounce ability)]", "[An ectoplasmic toxic being (ghost poison) who levitates to flex on pokemon with earthquake (has levitate ability) ]", "[A psychic evolution of eevee (I gave it magic bounce in this simulator) ]", "[A speedy electric type, (I gave it quick feet for the pun)]", "[glaceon is a really coool ice pokemon (I gave it magic bounce so that it could be good) ]", "[ Archeops is a prehistoric rock-flying pokemon that hits hard (I got rid of deafeatist and gave it solid rock)]", "[unbreon is annoying to battle, you will hate it lol, is dark type (has magic bounce) ] ",
 				"[ Leafeon is a grass pokemon that has great defenses so I gave it stamina because I hate leaf guard]", "[This pokemon lives for a long time and is water type (I gave it water absorb)]", "[A powerful physical fire type attacker that hits hard its the guts ability]  ", "[a beautiful fairy pokemon that uses pixilate to power up normal moves] ", "[a powerful steel bug pokemon that is really powerful with stab technician bulletpunch]",
 				"[An awesome three headed dark dragon pokemon with levitate]", "[A mythical pokemon with serene grace and is based on music who can use relic song to become a speedy normal-fighting type (starts of as normal-psychic type) ]" , "[ A reliable bat sniper ready to help you out; poison,flying, has inner focus ability]", "[A baby water pokemon that is cute until it tail glows, I gave it the serenegrace ability for lols]", "[ A baby steel-psychic pokemon that is cute until it para-flinches you with serenegrace]", "[A big boi basher who hits hard with the double iron bash and ironfist]",
@@ -175,10 +190,14 @@ public class userlanguage extends Thread{ // this is the main file , makes threa
 				"[my favorite pokemon of all time, with the ability protean it can be any type it wants, a ninja beast]",
 				"[A mythical electric beast, super fast and super overpowered]", "[An angelic creature capable of the most evil battle strategies]", "[An overpowered bug buzzer, ha ha quiver dance go brrrrr]",
 				"[The mascot of pokemon, everyone knows who this is, holds light ball and hits hard with volttackle]", "[The pikachu-wannabe, despite being better, it is jealous of pikachu, disguise + swordsdance goes crazy tho]",
-				"[A loud bat pokemon known for its boombursting]"};
+				"[A loud bat pokemon known for its boombursting]", "[Da flying wrestler enters the ring, fighting flying type, hits fast and hard]",
+				"[This creature is illusive, has the ability disguise, and is a dark pokemon that hits hard]",
+				"[Bringer of nightmares, a ferocious dragon ready to cause destruction]", "[The godzilla of the pokemon universe, run for your life]", "[A dog with aura powers, don't underestimate it]", "[King of the sand dunes, a very good dragon pokemon]", "[The dragon-lord of the underworld, don't mess with it or you'll regret it]"
+
+		};
     	
     	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
-    	// 53 pokemon are in the possible pokemon array (the new end goal)
+    	// 60 pokemon are in the possible pokemon array (the new end goal)
     	  
     	// teambuilder.nextLine() vs teambuilder.next(); (reads the input) 
     	for (int i = 0; i < abbreviated.length; i++) {
