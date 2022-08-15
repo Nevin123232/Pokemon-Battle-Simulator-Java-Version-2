@@ -2389,7 +2389,7 @@ public class battlesequence {
         else if (player2move.movename.equals("suckerpunch")) {
        	   
         	
-        	if( ((player1move.attacktype.equals("sp")) || (player1move.attacktype.equals("ph"))) && (player1move.priority >= player2move.priority)  ) {
+        	if( ((player1move.attacktype.equals("sp")) || (player1move.attacktype.equals("ph"))) && (player1move.priority <= player2move.priority)  ) {
         		
    			player1poke.hp = suckerpunch(player2poke, player2move, player1poke,  player);
    			

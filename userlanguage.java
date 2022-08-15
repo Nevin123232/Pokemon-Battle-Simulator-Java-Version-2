@@ -117,7 +117,10 @@ public class userlanguage extends Thread{ // this is the main file , makes threa
 				"pikachu", "mimikyu",
 				"noivern", "hawlucha",
 				"zoroark",
-				"garchomp", "tyranitar", "lucario", "flygon", "dragapult"
+				"garchomp", "tyranitar", "lucario", "flygon", "dragapult",
+				"goodra",
+				"golisopod", "sceptile", "roserade", "mewtwo", "charizard"
+
 		};
     	String[] abbreviated = {"met", "gli", "exc" , "arc" , "kro" , "fer", "gya",
 				"sta" , "gen" , "esp", "jol", "gla", "arch",
@@ -128,7 +131,9 @@ public class userlanguage extends Thread{ // this is the main file , makes threa
 				"pika", "mimi",
 				"noi","haw",
 				"zoro",
-				"gar", "tyra", "luca", "fly", "draga"
+				"gar", "tyra", "luca", "fly", "draga",
+				"goo",
+				"goli" ,"scep", "rose", "mew2", "char"
 		};
     	// 60 pokemon are in the possible pokemon array      (60 is the new endgoal)                                                                                                                      "manaphy", "jirachi", "melmetal", "machamp", "milotic", "kingdra", "salamence", "dragonite", "chandelure"};
     	
@@ -167,7 +172,9 @@ public class userlanguage extends Thread{ // this is the main file , makes threa
 				"pikachu", "mimikyu",
 				"noivern", "hawlucha",
 				"zoroark",
-				"garchomp", "tyranitar", "lucario", "flygon", "dragapult"
+				"garchomp", "tyranitar", "lucario", "flygon", "dragapult",
+				"goodra",
+				"golisopod", "sceptile", "roserade", "mewtwo", "charizard"
 
 		};
     	String[] abbreviated = {"met", "gli", "exc" , "arc" , "kro" , "fer", "gya", "sta" , "gen" , "esp", "jol", "gla", "arch", "umb",
@@ -180,7 +187,9 @@ public class userlanguage extends Thread{ // this is the main file , makes threa
 				"pika", "mimi" ,
 				"noi", "haw",
 				"zoro",
-				"gar", "tyra", "luca", "fly", "draga"
+				"gar", "tyra", "luca", "fly", "draga",
+				"goo",
+				"goli" ,"scep", "rose", "mew2", "char"
 		};
     	String[] pokemonexplanations = {"[Metagross is a steel psychic pokemon. It has very notable attack and defense, has clearbody ability] ", "[gliscor is a ground-flying pokemon who is well known for having a great attack and defense (has hypercutter)]  ", " [excadrill is  ground-steel pokemon  who can hit every pokemon (Except flying mons) with earthquake (has moldbreaker ability)]", "[arcanine is a loyal fire pokemon who can burn opponents on a whim and heal with morning sun (has intimidate ability) ]","[A savage street dark-ground croc ready to hit hard (has intimidate ability)]", "[A water aligator pokemon who hits harder with sheerforce (has sheer force ability)]", "[A savage pokemon who learns more dragon moves then flying moves but is still water-flying type lol (has intimidate ability) ] ","[An alien star pokemon that is water-psychic type (has magic bounce ability)]", "[An ectoplasmic toxic being (ghost poison) who levitates to flex on pokemon with earthquake (has levitate ability) ]", "[A psychic evolution of eevee (I gave it magic bounce in this simulator) ]", "[A speedy electric type, (I gave it quick feet for the pun)]", "[glaceon is a really coool ice pokemon (I gave it magic bounce so that it could be good) ]", "[ Archeops is a prehistoric rock-flying pokemon that hits hard (I got rid of deafeatist and gave it solid rock)]", "[unbreon is annoying to battle, you will hate it lol, is dark type (has magic bounce) ] ",
 				"[ Leafeon is a grass pokemon that has great defenses so I gave it stamina because I hate leaf guard]", "[This pokemon lives for a long time and is water type (I gave it water absorb)]", "[A powerful physical fire type attacker that hits hard its the guts ability]  ", "[a beautiful fairy pokemon that uses pixilate to power up normal moves] ", "[a powerful steel bug pokemon that is really powerful with stab technician bulletpunch]",
@@ -192,7 +201,9 @@ public class userlanguage extends Thread{ // this is the main file , makes threa
 				"[The mascot of pokemon, everyone knows who this is, holds light ball and hits hard with volttackle]", "[The pikachu-wannabe, despite being better, it is jealous of pikachu, disguise + swordsdance goes crazy tho]",
 				"[A loud bat pokemon known for its boombursting]", "[Da flying wrestler enters the ring, fighting flying type, hits fast and hard]",
 				"[This creature is illusive, has the ability disguise, and is a dark pokemon that hits hard]",
-				"[Bringer of nightmares, a ferocious dragon ready to cause destruction]", "[The godzilla of the pokemon universe, run for your life]", "[A dog with aura powers, don't underestimate it]", "[King of the sand dunes, a very good dragon pokemon]", "[The dragon-lord of the underworld, don't mess with it or you'll regret it]"
+				"[Bringer of nightmares, a ferocious dragon ready to cause destruction]", "[The godzilla of the pokemon universe, run for your life]", "[A dog with aura powers, don't underestimate it]", "[King of the sand dunes, a very good dragon pokemon]", "[The dragon-lord of the underworld, don't mess with it or you'll regret it]",
+				"[A dragon pokemon who loves to hug and is slimy to the touch]",
+				"[A bug monster that haunts one's nightmares]", "[A lizard lovin life, works at gieco (probably)]", "[A toxic plant about to end your career]", "[One of the most broken pokemon in this game]", "[Gamefreak loves this thing, you already know who this is why bother?]",
 
 		};
     	
