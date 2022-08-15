@@ -1409,9 +1409,9 @@ public class pokemon {
 		
          else if(pokemonname.equals("dragonite")) {
     			
-        	 String[] possiblemoves = {"dragondance", "thunderwave", "dragonclaw", "dracometeor","firepunch" ,"icepunch","thunderpunch", "superpower"}; // array of possible moves for this pokemon
-    			String[] abbreviated = {"dd", "tw", "dc", "dm", "fp", "ip", "tp", "sp"};// array of the abbreviated moves 
-    			String[] explain = {"[boosts attack and speed]", " [paralyzes opponent]", "[user hits the target with 80 power dragon power]","[An 120 power dragon move that reduces special attack of the user ]" ,"[The opponent is hit with a fiery punch, 75 power, 10% chance to burn]", "[the user hits an icy punch, 75 power, 10% chance to freeze] ", " [The user uses an electric punch to hit the opponent, 75 power; 10% chance to paralyze]", "[ user attacks with 120 power of fighting power, reduces attack and defense of the user] "};
+        	 String[] possiblemoves = {"extremespeed", "dragondance", "thunderwave", "dragonclaw", "dracometeor","firepunch" ,"icepunch","thunderpunch", "superpower"}; // array of possible moves for this pokemon
+    			String[] abbreviated = {"es", "dd", "tw", "dc", "dm", "fp", "ip", "tp", "sp"};// array of the abbreviated moves
+    			String[] explain = {"[an 80 base power normal move that hits fast and hard]", "[boosts attack and speed]", " [paralyzes opponent]", "[user hits the target with 80 power dragon power]","[An 120 power dragon move that reduces special attack of the user ]" ,"[The opponent is hit with a fiery punch, 75 power, 10% chance to burn]", "[the user hits an icy punch, 75 power, 10% chance to freeze] ", " [The user uses an electric punch to hit the opponent, 75 power; 10% chance to paralyze]", "[ user attacks with 120 power of fighting power, reduces attack and defense of the user] "};
     	
    			
    			
@@ -1777,6 +1777,58 @@ public class pokemon {
 					"[You hit the opponent with a 40 base power ghostly sneak attack like they owe you money]"};
 
 
+
+
+			for (int i = 0; i < abbreviated.length; i++) {
+
+				System.out.println("* " + possiblemoves[i] + "  " + abbreviated[i]+ "  " + explain[i]);
+
+			}
+
+			System.out.println("\n Input a move or its abbreviation \n");
+			mv1 = scan.nextLine();
+
+			while (legitmove1(possiblemoves, abbreviated, mv1) != true) { // sends arrays and the mv1 input variable to the boolean tester function to see if the move is legit
+
+				for (int i = 0; i < abbreviated.length; i++) {
+
+					System.out.println("* " + possiblemoves[i] + "  " + abbreviated[i]+ "  " + explain[i]);
+
+				}
+
+				System.out.println("\n Input a legitimate move or its abbreviation (Your previous input was invalid) \n");
+				mv1 = scan.nextLine();
+
+
+
+			}
+
+
+
+			for (int o = 0; o < abbreviated.length; o++) {
+
+				if(mv1.equals(abbreviated[o])){
+
+					mv1 = possiblemoves[o];
+				}
+
+
+			}
+
+
+		}
+		else if(pokemonname.equals("noivern")) {
+			String[] possiblemoves = {"boomburst", "dragonpulse", "moonlight","flamethrower" ,"toxic","darkpulse","dracometeor", "psychic", "superfang"}; // array of possible moves for this pokemon
+			String[] abbreviated = {"bb", "dp", "ml", "ft", "tx", "dpu", "dm", "ps", "sf"};// array of the abbreviated moves
+			String[] explain = {" [a 150 power normal move, loud noise go brrrr] ",
+					"[An 80 power base dragon move]  ",
+					" [the user heals some of their health back] ",
+					" [A 95 base power fire move with a 10% chance to burn] ",
+					" [poisons the opponent with a toxin] ",
+					" [An 80 base power dark move with a chance to flinch(20 %)] ",
+					" [A 120 base power special dragon move, reduces the user's special attack] ",
+					" [Mind melt, 90 power psychic move, can reduce special defense]",
+					" [Halves the opponent's hp, slicey dicey]"};
 
 
 			for (int i = 0; i < abbreviated.length; i++) {
@@ -3194,15 +3246,16 @@ public class pokemon {
 		
 		
          else if(pokemonname.equals("dragonite")) {
-      		
-        	 String[] possiblemoves = {"dragondance", "thunderwave", "dragonclaw", "dracometeor","firepunch" ,"icepunch","thunderpunch", "superpower"}; // array of possible moves for this pokemon
- 			String[] abbreviated = {"dd", "tw", "dc", "dm", "fp", "ip", "tp", "sp"};// array of the abbreviated moves 
- 			String[] explain = {"[boosts attack and speed]", " [paralyzes opponent]", "[user hits the target with 80 power dragon power]","[An 120 power dragon move that reduces special attack of the user ]" ,"[The opponent is hit with a fiery punch, 75 power, 10% chance to burn]", "[the user hits an icy punch, 75 power, 10% chance to freeze] ", " [The user uses an electric punch to hit the opponent, 75 power; 10% chance to paralyze]", "[ user attacks with 120 power of fighting power, reduces attack and defense of the user] "};
- 	
-    			
-    			
- 			
-        for (int i = 0; i < abbreviated.length; i++) {
+
+			String[] possiblemoves = {"extremespeed", "dragondance", "thunderwave", "dragonclaw", "dracometeor","firepunch" ,"icepunch","thunderpunch", "superpower"}; // array of possible moves for this pokemon
+			String[] abbreviated = {"es", "dd", "tw", "dc", "dm", "fp", "ip", "tp", "sp"};// array of the abbreviated moves
+			String[] explain = {"[an 80 base power normal move that hits fast and hard]", "[boosts attack and speed]", " [paralyzes opponent]", "[user hits the target with 80 power dragon power]","[An 120 power dragon move that reduces special attack of the user ]" ,"[The opponent is hit with a fiery punch, 75 power, 10% chance to burn]", "[the user hits an icy punch, 75 power, 10% chance to freeze] ", " [The user uses an electric punch to hit the opponent, 75 power; 10% chance to paralyze]", "[ user attacks with 120 power of fighting power, reduces attack and defense of the user] "};
+
+
+
+
+
+			for (int i = 0; i < abbreviated.length; i++) {
  				
  				System.out.println("* " + possiblemoves[i] + "  " + abbreviated[i]+ "  " + explain[i]);
  				
@@ -3614,6 +3667,58 @@ public class pokemon {
 
 
 			}
+
+		}
+		else if(pokemonname.equals("noivern")) {
+			String[] possiblemoves = {"boomburst", "dragonpulse", "moonlight","flamethrower" ,"toxic","darkpulse","dracometeor", "psychic", "superfang"}; // array of possible moves for this pokemon
+			String[] abbreviated = {"bb", "dp", "ml", "ft", "tx", "dpu", "dm", "ps", "sf"};// array of the abbreviated moves
+			String[] explain = {" [a 150 power normal move, loud noise go brrrr] ",
+					"[An 80 power base dragon move]  ",
+					" [the user heals some of their health back] ",
+					" [A 95 base power fire move with a 10% chance to burn] ",
+					" [poisons the opponent with a toxin] ",
+					" [An 80 base power dark move with a chance to flinch(20 %)] ",
+					" [A 120 base power special dragon move, reduces the user's special attack] ",
+					" [Mind melt, 90 power psychic move, can reduce special defense]",
+					" [Halves the opponent's hp, slicey dicey]"};
+
+
+						for (int i = 0; i < abbreviated.length; i++) {
+
+							System.out.println("* " + possiblemoves[i] + "  " + abbreviated[i]+ "  " + explain[i]);
+
+						}
+
+						System.out.println("\n Input a move or its abbreviation \n");
+						mv2 = scan.nextLine();
+
+						while (legitmove2(possiblemoves, abbreviated, mv2, move1) != true) { // sends arrays and the mv2 and the previous move input variable to the boolean tester function to see if the move is legit
+
+							for (int i = 0; i < abbreviated.length; i++) {
+
+								System.out.println("* " + possiblemoves[i] + "  " + abbreviated[i]+ "  " + explain[i]);
+
+							}
+
+							System.out.println("\n Input a legitimate move or its abbreviation (Your previous input was invalid) \n");
+							mv2 = scan.nextLine();
+
+
+
+						}
+
+
+
+						for (int o = 0; o < abbreviated.length; o++) {
+
+							if(mv2.equals(abbreviated[o])){
+
+								mv2 = possiblemoves[o];
+							}
+
+
+						}
+
 
 		}
 
@@ -4996,14 +5101,15 @@ public class pokemon {
 			
 			
           else if(pokemonname.equals("dragonite")) {
-				
-				
-        		 String[] possiblemoves = {"dragondance", "thunderwave", "dragonclaw", "dracometeor","firepunch" ,"icepunch","thunderpunch", "superpower"}; // array of possible moves for this pokemon
-     			String[] abbreviated = {"dd", "tw", "dc", "dm", "fp", "ip", "tp", "sp"};// array of the abbreviated moves 
-     			String[] explain = {"[boosts attack and speed]", " [paralyzes opponent]", "[user hits the target with 80 power dragon power]","[An 120 power dragon move that reduces special attack of the user ]" ,"[The opponent is hit with a fiery punch, 75 power, 10% chance to burn]", "[the user hits an icy punch, 75 power, 10% chance to freeze] ", " [The user uses an electric punch to hit the opponent, 75 power; 10% chance to paralyze]", "[ user attacks with 120 power of fighting power, reduces attack and defense of the user] "};
-     	
-  			
-  			for (int i = 0; i < abbreviated.length; i++) {
+
+
+				String[] possiblemoves = {"extremespeed", "dragondance", "thunderwave", "dragonclaw", "dracometeor","firepunch" ,"icepunch","thunderpunch", "superpower"}; // array of possible moves for this pokemon
+				String[] abbreviated = {"es", "dd", "tw", "dc", "dm", "fp", "ip", "tp", "sp"};// array of the abbreviated moves
+				String[] explain = {"[an 80 base power normal move that hits fast and hard]", "[boosts attack and speed]", " [paralyzes opponent]", "[user hits the target with 80 power dragon power]","[An 120 power dragon move that reduces special attack of the user ]" ,"[The opponent is hit with a fiery punch, 75 power, 10% chance to burn]", "[the user hits an icy punch, 75 power, 10% chance to freeze] ", " [The user uses an electric punch to hit the opponent, 75 power; 10% chance to paralyze]", "[ user attacks with 120 power of fighting power, reduces attack and defense of the user] "};
+
+
+
+				for (int i = 0; i < abbreviated.length; i++) {
 						
 						System.out.println("* " + possiblemoves[i] + "  " + abbreviated[i]+ "  " + explain[i]);
 						
@@ -5415,6 +5521,60 @@ public class pokemon {
 
 				}
 
+
+			}
+			else if(pokemonname.equals("noivern")) {
+				String[] possiblemoves = {"boomburst", "dragonpulse", "moonlight","flamethrower" ,"toxic","darkpulse","dracometeor", "psychic", "superfang"}; // array of possible moves for this pokemon
+				String[] abbreviated = {"bb", "dp", "ml", "ft", "tx", "dpu", "dm", "ps", "sf"};// array of the abbreviated moves
+				String[] explain = {" [a 150 power normal move, loud noise go brrrr] ",
+						"[An 80 power base dragon move]  ",
+						" [the user heals some of their health back] ",
+						" [A 95 base power fire move with a 10% chance to burn] ",
+						" [poisons the opponent with a toxin] ",
+						" [An 80 base power dark move with a chance to flinch(20 %)] ",
+						" [A 120 base power special dragon move, reduces the user's special attack] ",
+						" [Mind melt, 90 power psychic move, can reduce special defense]",
+						" [Halves the opponent's hp, slicey dicey]"};
+
+
+
+
+
+				for (int i = 0; i < abbreviated.length; i++) {
+
+					System.out.println("* " + possiblemoves[i] + "  " + abbreviated[i]+ "  " + explain[i]);
+
+				}
+
+				System.out.println("\n Input a move or its abbreviation \n");
+				mv3 = scan.nextLine();
+
+				while (legitmove3(possiblemoves, abbreviated, mv3, move1, move2) != true) { // sends arrays and the mv3 and the previous move input variable to the boolean tester function to see if the move is legit
+
+					for (int i = 0; i < abbreviated.length; i++) {
+
+						System.out.println("* " + possiblemoves[i] + "  " + abbreviated[i]+ "  " + explain[i]);
+
+					}
+
+					System.out.println("\n Input a legitimate move or its abbreviation (Your previous input was invalid) \n");
+					mv3 = scan.nextLine();
+
+
+
+				}
+
+
+
+				for (int o = 0; o < abbreviated.length; o++) {
+
+					if(mv3.equals(abbreviated[o])){
+
+						mv3 = possiblemoves[o];
+					}
+
+
+				}
 
 			}
 
@@ -6855,15 +7015,16 @@ public class pokemon {
 			
 			
            else if(pokemonname.equals("dragonite")) {
-				
-        		 String[] possiblemoves = {"dragondance", "thunderwave", "dragonclaw", "dracometeor","firepunch" ,"icepunch","thunderpunch", "superpower"}; // array of possible moves for this pokemon
-     			String[] abbreviated = {"dd", "tw", "dc", "dm", "fp", "ip", "tp", "sp"};// array of the abbreviated moves 
-     			String[] explain = {"[boosts attack and speed]", " [paralyzes opponent]", "[user hits the target with 80 power dragon power]","[An 120 power dragon move that reduces special attack of the user ]" ,"[The opponent is hit with a fiery punch, 75 power, 10% chance to burn]", "[the user hits an icy punch, 75 power, 10% chance to freeze] ", " [The user uses an electric punch to hit the opponent, 75 power; 10% chance to paralyze]", "[ user attacks with 120 power of fighting power, reduces attack and defense of the user] "};
-     	
-    			
-    			
-				
-	              for (int i = 0; i < abbreviated.length; i++) {
+
+				String[] possiblemoves = {"extremespeed", "dragondance", "thunderwave", "dragonclaw", "dracometeor","firepunch" ,"icepunch","thunderpunch", "superpower"}; // array of possible moves for this pokemon
+				String[] abbreviated = {"es", "dd", "tw", "dc", "dm", "fp", "ip", "tp", "sp"};// array of the abbreviated moves
+				String[] explain = {"[an 80 base power normal move that hits fast and hard]", "[boosts attack and speed]", " [paralyzes opponent]", "[user hits the target with 80 power dragon power]","[An 120 power dragon move that reduces special attack of the user ]" ,"[The opponent is hit with a fiery punch, 75 power, 10% chance to burn]", "[the user hits an icy punch, 75 power, 10% chance to freeze] ", " [The user uses an electric punch to hit the opponent, 75 power; 10% chance to paralyze]", "[ user attacks with 120 power of fighting power, reduces attack and defense of the user] "};
+
+
+
+
+
+				for (int i = 0; i < abbreviated.length; i++) {
 						
 						System.out.println("* " + possiblemoves[i] + "  " + abbreviated[i]+ "  " + explain[i]);
 						
@@ -7290,6 +7451,62 @@ public class pokemon {
 
 				}
 			}
+			else if(pokemonname.equals("noivern")) {
+				String[] possiblemoves = {"boomburst", "dragonpulse", "moonlight","flamethrower" ,"toxic","darkpulse","dracometeor", "psychic", "superfang"}; // array of possible moves for this pokemon
+				String[] abbreviated = {"bb", "dp", "ml", "ft", "tx", "dpu", "dm", "ps", "sf"};// array of the abbreviated moves
+				String[] explain = {" [a 150 power normal move, loud noise go brrrr] ",
+						"[An 80 power base dragon move]  ",
+						" [the user heals some of their health back] ",
+						" [A 95 base power fire move with a 10% chance to burn] ",
+						" [poisons the opponent with a toxin] ",
+						" [An 80 base power dark move with a chance to flinch(20 %)] ",
+						" [A 120 base power special dragon move, reduces the user's special attack] ",
+						" [Mind melt, 90 power psychic move, can reduce special defense]",
+						" [Halves the opponent's hp, slicey dicey]"};
+
+
+
+
+
+
+				for (int i = 0; i < abbreviated.length; i++) {
+
+					System.out.println("* " + possiblemoves[i] + "  " + abbreviated[i]+ "  " + explain[i]);
+
+				}
+
+				System.out.println("\n Input a move or its abbreviation \n");
+				mv4 = scan.nextLine();
+
+				while (legitmove4(possiblemoves, abbreviated, mv4, move1, move2, move3) != true) { // sends arrays and the mv4 and the previous move input variable to the boolean tester function to see if the move is legit
+
+					for (int i = 0; i < abbreviated.length; i++) {
+
+						System.out.println("* " + possiblemoves[i] + "  " + abbreviated[i]+ "  " + explain[i]);
+
+					}
+
+					System.out.println("\n Input a legitimate move or its abbreviation (Your previous input was invalid)  \n");
+					mv4 = scan.nextLine();
+
+
+
+				}
+
+
+
+				for (int o = 0; o < abbreviated.length; o++) {
+
+					if(mv4.equals(abbreviated[o])){
+
+						mv4 = possiblemoves[o];
+					}
+
+
+				}
+
+
+			}
 			
 			
 		return mv4;
@@ -7450,6 +7667,10 @@ public class pokemon {
 		}
 		else if(pokemonname.equals("mimikyu")) {
 			type1 = "ghost";
+
+		}
+		else if(pokemonname.equals("noivern")) {
+			type1 = "flying";
 
 		}
 
@@ -7617,6 +7838,10 @@ public class pokemon {
 				type2 = "fairy";
 
 			}
+			else if(pokemonname.equals("noivern")) {
+				type2 = "dragon";
+
+			}
 			
 			
 			
@@ -7780,6 +8005,10 @@ public class pokemon {
 			ability = "disguise";
 
 		}
+		else if(pokemonname.equals("noivern")) {
+			ability = "multiscale";
+
+		}
 		
 		return ability;
 		
@@ -7930,8 +8159,20 @@ public class pokemon {
 			abilityexplain = "serenegrace doubles chances for an effect to happen";
 
 		}
-		else if(pokemonname.equals("chandelure")) {
+		else if(pokemonname.equals("pikachu")) {
+			abilityexplain = "static has a chance of paralyzing opponents on contact";
+
+		}
+		else if(pokemonname.equals("volcarona")) {
 			abilityexplain = "flamebody has a chance of burning opponents on contact";
+
+		}
+		else if(pokemonname.equals("mimikyu")) {
+			abilityexplain = "disguise lets mimikyu avoid one attack before taking damage";
+
+		}
+		else if(pokemonname.equals("noivern")) {
+			abilityexplain = "multiscale boosts defense and special defense at full hp";
 
 		}
 
@@ -8101,7 +8342,10 @@ public class pokemon {
 			attack = 306;
 
 		}
+		else if(pokemonname.equals("noivern")) {
+			attack = 262;
 
+		}
 
 
 		return attack;
@@ -8265,6 +8509,10 @@ public class pokemon {
 		}
 		else if(pokemonname.equals("mimikyu")) {
 			hp = 314;
+
+		}
+		else if(pokemonname.equals("noivern")) {
+			hp = 374;
 
 		}
 		
@@ -8431,6 +8679,10 @@ public class pokemon {
 	   }
 	   else if(pokemonname.equals("mimikyu")) {
 		   speed = 320;
+
+	   }
+	   else if(pokemonname.equals("noivern")) {
+		   speed = 379;
 
 	   }
        
@@ -8600,6 +8852,10 @@ public class pokemon {
 
 		}
 		else if(pokemonname.equals("mimikyu")) {
+			def = 284;
+
+		}
+		else if(pokemonname.equals("noivern")) {
 			def = 284;
 
 		}
@@ -8784,6 +9040,10 @@ public class pokemon {
 		spdef = 339;
 
 	}
+	else if(pokemonname.equals("noivern")) {
+		spdef = 284;
+
+	}
 
 	return spdef;
 	
@@ -8956,6 +9216,10 @@ public class pokemon {
 		spa = 218;
 
 	}
+	else if(pokemonname.equals("noivern")) {
+		spa = 322;
+
+	}
 	
 	
 	
@@ -9126,8 +9390,8 @@ public class pokemon {
 			call = "pikachu.wav";//
 
 		}
-		else if(pokemonname.equals("mimikyu")) {
-			call = "mimikyu.wav";//
+		else if(pokemonname.equals("noivern")) {
+			call = "noivern.wav";//
 
 		}
 
@@ -9582,7 +9846,16 @@ public class pokemon {
       * Type1: ghost
       * Type2: fairy
       * 
-      * 
+      * noivern
+      * HP: 374
+      * Attack: 262
+      * Defense: 284
+      * Special Attack:  322
+      * Special Defense: 284
+      * Speed: 379
+      * Ability: multiscale
+      * Type1: flying
+      * Type2: dragon
       * 
       * 
       

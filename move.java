@@ -212,7 +212,7 @@ public class move {
 			
 		}
 
-		String[] power150 = {"gigaimpact", "hyperbeam"};
+		String[] power150 = {"gigaimpact", "hyperbeam", "boomburst"};
 		
 		// searches array of 150 power moves
 		for(int i = 0; i < power150.length; i++) {
@@ -501,7 +501,7 @@ public class move {
 		
 		String[] watertype = {"surf" , "hydropump", "aquaring" , "aquajet", "waterfall" , "waterpulse", "aquatail", "watershuriken"}; // water type moves
 		
-		String[] normaltype = {"hyperbeam", "bodyslam", "gigaimpact", "slash", "return", "swordsdance" ,"superfang", "horndrill" , "extremespeed" , "morningsun", "recover", "quickattack", "workup", "relicsong"};  // normal type moves
+		String[] normaltype = {"boomburst" ,"hyperbeam", "bodyslam", "gigaimpact", "slash", "return", "swordsdance" ,"superfang", "horndrill" , "extremespeed" , "morningsun", "recover", "quickattack", "workup", "relicsong"};  // normal type moves
 		
 		String[] flyingtype = {"roost", "bravebird","airslash", "aerialace", "bounce" };// flying type moves
 		
@@ -844,7 +844,7 @@ public class move {
 		
 		
 		// special attacks
-		String[] special = {"bugbuzz", "aurasphere", "extrasensory", "watershuriken", "airslash", "energyball", "relicsong","dragonpulse", "flashcannon","flamethrower" ,"dracometeor", "darkpulse", "moonblast", "hyperbeam", "waterpulse", "blizzard", "dazzlinggleam","hiddenpower","thunderbolt", "psychic", "hydropump","surf" , "focusblast", "sludgebomb" , "shadowball"};
+		String[] special = {"boomburst", "bugbuzz", "aurasphere", "extrasensory", "watershuriken", "airslash", "energyball", "relicsong","dragonpulse", "flashcannon","flamethrower" ,"dracometeor", "darkpulse", "moonblast", "hyperbeam", "waterpulse", "blizzard", "dazzlinggleam","hiddenpower","thunderbolt", "psychic", "hydropump","surf" , "focusblast", "sludgebomb" , "shadowball"};
 				
 		
 		// physical attacks 

@@ -1070,7 +1070,14 @@ public class battlesequence {
     				player2poke.hp = hyperbeam(player1poke, player1move, player2poke,  player);
 	
 	
-    			} //BUG MOVES
+    			}
+				else if(player1move.movename.equals("boomburst")) {
+
+					player2poke.hp = boomburst(player1poke, player1move, player2poke,  player);
+
+
+				}
+			//BUG MOVES
     			else if(player1move.movename.equals("xscissor")) {
     				
     				player2poke.hp = xscissor(player1poke, player1move, player2poke,  player);
@@ -1576,7 +1583,12 @@ public class battlesequence {
 			}
 
 		}
-            
+
+		//checks if any player's pokemon have fainted
+		if( (player1poke.hp <= 0) || (player2poke.hp <= 0)){
+			return;
+		}
+
     	   /*
     	    * 
     	    * 	String[] psychictype = { "psychic", "zenheadbut" , "calmmind" }; // psychic type moves
@@ -2051,7 +2063,13 @@ public class battlesequence {
           	   
    			player1poke.hp = hyperbeam(player2poke, player2move, player1poke,  player);
    			
-   		 }//BUG MOVES
+   		 }
+		   else if (player2move.movename.equals("boomburst")) {
+
+			   player1poke.hp = boomburst(player2poke, player2move, player1poke,  player);
+
+		   }
+		  //BUG MOVES
           else if (player2move.movename.equals("pinmissle")) {
          	   
      			player1poke.hp = pinmissle(player2poke, player2move, player1poke,  player);
@@ -2492,6 +2510,11 @@ public class battlesequence {
 
 			}
 
+		}
+
+		//checks if any player's pokemon have fainted
+		if( (player1poke.hp <= 0) || (player2poke.hp <= 0)){
+			return;
 		}
            /*
             * 
@@ -5598,7 +5621,153 @@ public class battlesequence {
         	    	
         	    }
         	    
-        	    
+        	    //boomburst
+
+
+
+
+						public static double boomburst(pokemon attacker, move attack, pokemon defender, String player) {
+
+
+							if(defender.bounce == true) { // Checks if the opponent is in the air....
+
+								System.out.println("The move missed because the opponent bounced up high in the air!!!!!");
+								return defender.hp; // misses if the opponent is in the air
+							}
+
+
+							double health = defender.hp; // health value of the pokemon being attacked
+
+
+							double roll = mindamageroll + (maxdamageroll - mindamageroll) * rand.nextDouble() ; //now modified to 0.85-1)// The stupid damage roll pokemon made in gen 3: 0-1, modified by Nevin Ndonwi
+
+							soundeffects.noo();
+
+							System.out.println("Your damage roll is " + roll);
+
+							double damage = ((double)(((((2 * 100) * 0.2) + 2 )   * attack.power * (double) (attacker.spa/ (double) defender.spdef)) * 0.02 ) + 2) * roll; // How much damage the move will do (the equation)
+
+							// make sure to code for crits
+
+							int crit = rand.nextInt(400);
+
+
+
+							if (attack.critrate == 3.0)  {
+
+
+								if (crit <= 27) {
+
+
+									System.out.println("\n YOU GOT A CRIT YOU LUCKY PERSON (You have a normal crit rate) \n");
+
+									if(attacker.ability.equals("sniper")) {
+
+										damage *= 2.5;
+										System.out.println("\n You got the sniper boost \n");
+									}
+									else {
+
+
+										damage *= 1.5;
+
+									}
+								}
+
+							}
+							else if (attack.critrate == 6.0) {
+
+
+								if (crit <= 55) {
+
+									System.out.println("\n YOU GOT A CRIT YOU LUCKY PERSON (You have a high crit rate) \n");
+
+									if(attacker.ability.equals("sniper")) {
+
+										damage *= 2.5;
+										System.out.println("\n You got the sniper boost \n");
+									}
+									else {
+										damage *= 1.5;
+									}
+								}
+
+							}
+							else {
+
+
+
+								if (crit <= 101) {
+
+									System.out.println("\n YOU GOT A CRIT YOU LUCKY PERSON (You have a really high crit rate) \n");
+
+									if(attacker.ability.equals("sniper")) {
+
+										damage *= 2.5;
+										System.out.println("\n You got the sniper boost \n");
+									}
+									else {
+										damage *= 1.5;
+									}
+								}
+
+
+
+							}
+
+
+
+
+							if(   (defender.type1.equals("steel")) || (defender.type1.equals("rock")) ) {
+
+								damage *= 0.5;  //normal is resisted by these types
+								System.out.println(" \n IT'S NOT VERY EFFECTIVE!!!! \n ");soundeffects.resist();
+
+							}
+
+
+							if(  (defender.type2.equals("steel")) || (defender.type2.equals("rock")) ) {
+
+								damage *= 0.5;  //normal is resisted by these types
+								System.out.println(" \n IT'S NOT VERY EFFECTIVE!!!! \n ");  soundeffects.resist(); // plays sound effect for a move that resists
+
+							}
+
+
+							if(defender.type1.equals("ghost") || defender.type2.equals("ghost")) {
+
+								damage *= 0;
+								System.out.println("\n GHOST POKEMON ARE IMMUNE TO NORMAL TYPE ATTACKS \n");
+
+							}
+
+
+
+
+							if( (defender.ability.equals("multiscale") ) ){
+
+								if(defender.hp == defender.maxhp) { System.out.println("multiscale reduced the damage the pokemon took");
+
+									damage = damage/2;
+
+								}
+							}
+
+
+							damage = Math.round(damage);
+
+							System.out.println("\n" + defender.hp + "  "  + " - "  + damage + " = " + "  " + player + "'s new health: " + Math.round(defender.hp - damage)  );
+
+
+							health =  health - damage;
+
+
+
+							return Math.round(health);
+
+
+
+						}
         	    
         	    //hyperbeam
            	 

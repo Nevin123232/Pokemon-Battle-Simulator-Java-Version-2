@@ -39,16 +39,17 @@ The usable pokemon programmed into this project are:
 - 25) Metagross
 - 26) Milotic
 - 27) Mimikyu
-- 28) Pikachu
-- 29) Salamence
-- 30) Scizor
-- 31) Starmie
-- 32) Sylveon
-- 33) Togekiss
-- 34) Umbreon
-- 35) Volcarona
-- 36) Vaporeon
-- 37) Zeraora
+- 28) Noivern 
+- 29) Pikachu 
+- 30) Salamence
+- 31) Scizor
+- 32) Starmie
+- 33) Sylveon
+- 34) Togekiss
+- 35) Umbreon
+- 36) Volcarona
+- 37) Vaporeon
+- 38) Zeraora
 
 
 The .java files contain the base code to run the project.

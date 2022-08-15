@@ -9,44 +9,47 @@ Project Duration: December 2020 - March 2021 (3 months) (However, updates have b
 This is the second version that I created, the first one I created was a test run in c++. 
 
 A text-based battle sim inspired by pokemon showdown's battle simulator. 
-This is a battle simulator where two players choose between 53 pokemon and have a 1v1 fight between them.
+This is a battle simulator where two players choose between 30+ pokemon and have a 1v1 fight between them.
 
 The usable pokemon programmed into this project are:
-- Arcanine
-- Archeops
-- Chandelure
-- Crobat
-- Dragonite
-- Espeon
-- Excadrill
-- Feraligatr
-- Flareon
-- Gengar
-- Glaceon
-- Gliscor
-- Greninja
-- Gyarados
-- Hydreigon
-- Jirachi
-- Jolteon
-- Kingdra
-- Krookodile
-- Leafeon
-- Machamp
-- Manaphy
-- Melmetal
-- Meloetta
-- Metagross
-- Milotic
-- Salamence
-- Scizor
-- Starmie
-- Sylveon
-- Togekiss
-- Umbreon
-- Volcarona
-- Vaporeon
-- Zeraora
+- 1) Arcanine
+- 2) Archeops
+- 3) Chandelure
+- 4) Crobat
+- 5) Dragonite
+- 6) Espeon
+- 7) Excadrill
+- 8) Feraligatr
+- 9) Flareon
+- 10) Gengar
+- 11) Glaceon
+- 12) Gliscor
+- 13) Greninja
+- 14) Gyarados
+- 15) Hydreigon
+- 16) Jirachi
+- 17) Jolteon
+- 18) Kingdra
+- 19) Krookodile
+- 20) Leafeon
+- 21) Machamp
+- 22) Manaphy
+- 23) Melmetal
+- 24) Meloetta
+- 25) Metagross
+- 26) Milotic
+- 27) Mimikyu
+- 28) Noivern 
+- 29) Pikachu 
+- 30) Salamence
+- 31) Scizor
+- 32) Starmie
+- 33) Sylveon
+- 34) Togekiss
+- 35) Umbreon
+- 36) Volcarona
+- 37) Vaporeon
+- 38) Zeraora
 
 
 The .java files contain the base code to run the project.
