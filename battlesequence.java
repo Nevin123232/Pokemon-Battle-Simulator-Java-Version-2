@@ -1530,6 +1530,36 @@ public class battlesequence {
 
 
 
+
+
+
+		//poisonpoint
+
+		if(player1move.attacktype.equals("ph")) {
+
+
+			if(player2poke.ability.equals("poisonpoint")){
+
+				if( (player1poke.status.equals(" No status conditions")) && !(player1poke.type1.equals("poison")) && !(player1poke.type2.equals("poison")) ) {
+					int hit = rand.nextInt(10);
+
+					if(hit > 4) {
+						player1poke.status = "Toxic";
+						soundeffects.poisoned();
+
+						System.out.println( player2poke.pokename + " has poisoned the opponent's " + player1poke.pokename + " due to its poisonpoint ability!! " + player1poke.pokename + " is kinda screwed. ");
+
+					}
+
+
+				}
+
+			}
+
+		}
+
+
+
 //static
 		if(player1move.attacktype.equals("ph")) {
 
@@ -1584,9 +1614,43 @@ public class battlesequence {
 
 		}
 
+
+
+
 		//checks if any player's pokemon have fainted
 		if( (player1poke.hp <= 0) || (player2poke.hp <= 0)){
 			return;
+		}
+
+
+
+
+//gooey
+		if(player1move.attacktype.equals("ph")) {
+
+
+			if(player2poke.ability.equals("gooey")){
+
+
+
+
+				soundeffects.drop();
+
+				System.out.println( player2poke.pokename + " has slowed down the opponent's " + player1poke.pokename + " with its gooey skin!! ");
+
+				player1poke.speed *= 0.5;
+
+
+
+
+
+
+
+
+
+
+			}
+
 		}
 
     	   /*
@@ -2455,6 +2519,35 @@ public class battlesequence {
 
 
 
+
+
+		//poisonpoint
+
+		if(player2move.attacktype.equals("ph")) {
+
+
+			if(player1poke.ability.equals("poisonpoint")){
+
+				if( (player2poke.status.equals(" No status conditions")) && !(player2poke.type1.equals("poison")) && !(player2poke.type2.equals("poison")) ) {
+					int hit = rand.nextInt(10);
+
+					if(hit > 4) {
+						player2poke.status = "Toxic";
+						soundeffects.poisoned();
+
+						System.out.println( player1poke.pokename + " has poisoned the opponent's " + player2poke.pokename + " due to its poisonpoint!! " + player2poke.pokename + " is kinda screwed. ");
+
+					}
+
+
+				}
+
+			}
+
+		}
+
+
+
 //static
 		if(player2move.attacktype.equals("ph")) {
 
@@ -2516,6 +2609,33 @@ public class battlesequence {
 		if( (player1poke.hp <= 0) || (player2poke.hp <= 0)){
 			return;
 		}
+
+
+		//gooey
+		if(player2move.attacktype.equals("ph")) {
+
+
+			if(player1poke.ability.equals("gooey")){
+
+
+
+
+				soundeffects.drop();
+
+				System.out.println( player1poke.pokename + " has slowed down the opponent's " + player2poke.pokename + " with its gooey skin!! ");
+
+				player2poke.speed *= 0.5;
+
+
+
+
+
+
+
+			}
+
+		}
+
            /*
             * 
             * 
