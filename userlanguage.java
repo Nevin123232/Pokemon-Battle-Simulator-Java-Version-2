@@ -122,6 +122,8 @@ public class userlanguage extends Thread{ // this is the main file , makes threa
 				"golisopod", "sceptile", "roserade", "mewtwo", "charizard",
 				"talonflame", "snorlax",
 				"infernape", "weavile",
+				"giratina-altered", "giratina-origin",
+				"rayquaza", "kyogre", "groudon",
 
 
 
@@ -142,6 +144,8 @@ public class userlanguage extends Thread{ // this is the main file , makes threa
 				"goli" ,"scep", "rose", "mew2", "char",
 				"talon", "snor",
 				"infe", "weav",
+				"gira-a", "gira-o",
+				"ray", "kyo", "grou",
 
 
 
@@ -188,6 +192,8 @@ public class userlanguage extends Thread{ // this is the main file , makes threa
 				"golisopod", "sceptile", "roserade", "mewtwo", "charizard",
 				"talonflame", "snorlax",
 				"infernape", "weavile",
+				"giratina-altered", "giratina-origin",
+				"rayquaza", "kyogre", "groudon",
 
 
 
@@ -207,6 +213,8 @@ public class userlanguage extends Thread{ // this is the main file , makes threa
 				"goli" ,"scep", "rose", "mew2", "char",
 				"talon", "snor",
 				"infe", "weav",
+				"gira-a", "gira-o",
+				"ray", "kyo", "grou",
 
 
 		};
@@ -225,6 +233,9 @@ public class userlanguage extends Thread{ // this is the main file , makes threa
 				"[A bug monster that haunts one's nightmares]", "[A lizard lovin life, works at gieco (probably)]", "[A toxic plant about to end your career]", "[One of the most broken pokemon in this game]", "[Gamefreak loves this thing, you already know who this is why bother?]",
 				"[A bird who hits fast and hard, great in pokemon unite]", "[A bulky normal type, it hits hard and tanks a lot of damage ]",
 				"[MonkEE, a powerful firetype with great move variety]", "[An icy gremlin who hits fast, hard, and is garchomp's worst nightmare]",
+				"[The true god of the pokemon underworld, this is its earthly form, don't mess with this ghostly dragon beast]", "[The true god of the pokemon underworld, this is its distorted form, it is pretty powerful]",
+				"[A dragon king of weather, makes sure that there is ecological balance]", "[A water whale that can flood the world]", "[A dino able to deepfry earth and put it on a stick, pretty powerful]",
+
 		};
     	
     	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             

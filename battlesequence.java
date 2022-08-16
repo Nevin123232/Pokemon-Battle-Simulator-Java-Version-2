@@ -6193,15 +6193,7 @@ public class battlesequence {
            	        	
            	        } 
            	        
-           	     
-           	        if( (defender.ability.equals("multiscale") ) ){
-           	          	 
-           	      	     if(defender.hp == defender.maxhp) { System.out.println("multiscale reduced the damage the pokemon took");
-           	      	     
-           	      	     damage = damage/2;
-           	      	     
-           	      	     }
-           	      	 }
+						soundeffects.attack();
          
         	        damage = Math.round(damage);
         	        
