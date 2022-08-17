@@ -124,6 +124,7 @@ public class userlanguage extends Thread{ // this is the main file , makes threa
 				"infernape", "weavile",
 				"giratina-altered", "giratina-origin",
 				"rayquaza", "kyogre", "groudon",
+				"gardevoir", "gallade",
 
 
 
@@ -146,6 +147,7 @@ public class userlanguage extends Thread{ // this is the main file , makes threa
 				"infe", "weav",
 				"gira-a", "gira-o",
 				"ray", "kyo", "grou",
+				"gard", "gall",
 
 
 
@@ -194,6 +196,7 @@ public class userlanguage extends Thread{ // this is the main file , makes threa
 				"infernape", "weavile",
 				"giratina-altered", "giratina-origin",
 				"rayquaza", "kyogre", "groudon",
+				"gardevoir", "gallade",
 
 
 
@@ -215,6 +218,8 @@ public class userlanguage extends Thread{ // this is the main file , makes threa
 				"infe", "weav",
 				"gira-a", "gira-o",
 				"ray", "kyo", "grou",
+				"gard", "gall",
+
 
 
 		};
@@ -235,7 +240,7 @@ public class userlanguage extends Thread{ // this is the main file , makes threa
 				"[MonkEE, a powerful firetype with great move variety]", "[An icy gremlin who hits fast, hard, and is garchomp's worst nightmare]",
 				"[The true god of the pokemon underworld, this is its earthly form, don't mess with this ghostly dragon beast]", "[The true god of the pokemon underworld, this is its distorted form, it is pretty powerful]",
 				"[A dragon king of weather, makes sure that there is ecological balance]", "[A water whale that can flood the world]", "[A dino able to deepfry earth and put it on a stick, pretty powerful]",
-
+				"[A guardian angelic pokemon able to create black holes]", "[A knight pokemon able to slice air with its psychic power]",
 		};
     	
     	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
