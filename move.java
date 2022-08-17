@@ -844,18 +844,35 @@ public class move {
 		
 		
 		// special attacks
-		String[] special = {"boomburst", "bugbuzz", "aurasphere", "extrasensory", "watershuriken", "airslash", "energyball", "relicsong","dragonpulse", "flashcannon","flamethrower" ,"dracometeor", "darkpulse", "moonblast", "hyperbeam", "waterpulse", "blizzard", "dazzlinggleam","hiddenpower","thunderbolt", "psychic", "hydropump","surf" , "focusblast", "sludgebomb" , "shadowball"};
+		String[] special = {"boomburst", "bugbuzz", "aurasphere", "extrasensory", "watershuriken",
+							"airslash", "energyball", "relicsong","dragonpulse", "flashcannon",
+							"flamethrower" ,"dracometeor", "darkpulse", "moonblast", "hyperbeam",
+							"waterpulse", "blizzard", "dazzlinggleam","hiddenpower","thunderbolt",
+								"psychic", "hydropump","surf" , "focusblast", "sludgebomb" ,
+							"shadowball"};
 				
 		
 		// physical attacks 
-	    String[] physical = {"volttackle","shadowclaw", "shadowsneak", "playrough", "drainpunch", "plasmafists", "gunkshot", "bodyslam","crosschop", "dynamicpunch", "superfang","leechlife","steelwing","bravebird", "crosspoison", "aquatail", "closecombat", "firepunch" ,"slash", "gigaimpact" , "bulletpunch", "nightslash", "aerialace", "leafblade", "xscissor", "foulplay", "iceshard", "pinmissle", "doublekick", "quickattack", "meteormash", "zenheadbut", "thunderpunch","icepunch" ,"rockslide","return","earthquake","firefang" ,"thunderfang","icefang", "brickbreak", "poisonjab", "ironhead",  "flareblitz", "crunch", "extremespeed","wildcharge", "dragonclaw", "irontail","aquajet", "superpower", "waterfall","bounce", "stoneedge", "suckerpunch",  };
+	    String[] physical = {"volttackle","shadowclaw", "shadowsneak", "playrough", "drainpunch",
+							"plasmafists", "gunkshot", "bodyslam","crosschop", "dynamicpunch",
+							"superfang","leechlife","steelwing","bravebird", "crosspoison",
+								"aquatail", "closecombat", "firepunch" ,"slash", "gigaimpact" ,
+								"bulletpunch", "nightslash", "aerialace", "leafblade", "xscissor",
+									"foulplay", "iceshard", "pinmissle", "doublekick", "quickattack",
+							"meteormash", "zenheadbut", "thunderpunch","icepunch" ,"rockslide",
+							"return","earthquake","firefang" ,"thunderfang","icefang",
+								"brickbreak", "poisonjab", "ironhead",  "flareblitz", "crunch",
+									"extremespeed","wildcharge", "dragonclaw", "irontail","aquajet",
+								"superpower", "waterfall","bounce", "stoneedge", "suckerpunch",  };
 	    
 	    // setup moves
-	    String[] setup = {"quiverdance", "swordsdance","focusenergy" ,"calmmind", "bulkup","nastyplot", "tailglow", "workup", "honeclaws" };
+	    String[] setup = {"quiverdance", "swordsdance","focusenergy" ,"calmmind",
+						"bulkup","nastyplot", "tailglow", "workup", "honeclaws" };
 	    		
 	    
 	    // healing moves
-	    String[] heal = {"morningsun","recover", "moonlight", "synthesis", "aquaring", "roost"};
+	    String[] heal = {"morningsun","recover", "moonlight", "synthesis", "aquaring",
+				 "roost"};
 	    
 	    
 	    // moves that cause status conditions

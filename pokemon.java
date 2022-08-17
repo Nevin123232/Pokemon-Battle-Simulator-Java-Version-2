@@ -6,8 +6,31 @@ import java.util.*; // imports scanner class (for user input) , random class (fo
 // This is where we get the information for pokemon
 //possible pokemon list (insert possible pokemon array here (commented out)
 
+  /*	String[] possiblepokemon = {"metagross", "gliscor", "excadrill", "arcanine", "krookodile", "feraligatr", "gyarados",
+			"starmie", "gengar", "espeon", "jolteon", "glaceon", "archeops",
+			"umbreon", "leafeon", "vaporeon", "flareon", "sylveon", "scizor", "hydreigon",
+			"meloetta", "crobat", "manaphy", "jirachi", "melmetal", "machamp", "milotic",
+			"kingdra", "salamence", "dragonite", "chandelure", "greninja",
+			"zeraora", "togekiss", "volcarona",
+			"pikachu", "mimikyu",
+			"noivern", "hawlucha",
+			"zoroark",
+			"garchomp", "tyranitar", "lucario", "flygon", "dragapult",
+			"goodra",
+			"golisopod", "sceptile", "roserade", "mewtwo", "charizard",
+			"talonflame", "snorlax",
+			"infernape", "weavile",
+			"giratina-altered", "giratina-origin",
+			"rayquaza", "kyogre", "groudon",
+			"gardevoir", "gallade",
 
 
+
+
+
+			};
+
+*/
 public class pokemon {
 
 	// the core requirements (pokemon stats) of the pokemon class
@@ -40,7 +63,7 @@ public class pokemon {
 	boolean drowsy = false; // Whether yawn makes you sleep
 	boolean charging = false; // whether someone is recharging from hyperbeam
 	boolean relic = false; //whether meloetta is in its aria or parriouette form
-	boolean bounce = false; //whether you are bounced in the air when using bounce
+	boolean bounce = false; //whether you are bounced in the air when using bounce, broken for now, bounce can not be used due to bugs
 	boolean intimidate = false;  // checks if a pokemon's intimidate has taken affect yet
 
 	boolean disguise = true; // used for the ability disguise
@@ -353,12 +376,13 @@ public class pokemon {
 
 
 		} else if (pokemonname.equals("gyarados")) {
+			String[] possiblemoves = {"dragondance", "icefang", "waterfall", "return", "irontail", "stoneedge", "earthquake"}; // array of possible moves for this pokemon
+			String[] abbreviated = {"dd", "if", "wf", "re", "it", "se", "ea"};// array of the abbreviated moves
+			String[] explain = {"[boosts attack and speed]", "[a 65 power physical ice move (95 accuracy) 10 percent chance to freeze or flinch ] ", "  [an 80 base power water move with a 20 percent chance to flinch] ", " [a 102 base power normal physical attack] ", " [A steel move that has 75 percent accuracy ]",
+					"[The user snipes the opponent with stones (rock move, 100 base power, 80 accuracy]  ", " [ A 100 base power ground type move  with 100 accuracy] "};
 
-			String[] possiblemoves = {"dragondance", "icefang", "waterfall", "return", "irontail", "bounce", "stoneedge", "earthquake"}; // array of possible moves for this pokemon
-			String[] abbreviated = {"dd", "if", "wf", "re", "it", "bo", "se", "ea"};// array of the abbreviated moves
-			String[] explain = {"[boosts attack and speed]", "[a 65 power physical ice move (95 accuracy) 10 percent chance to freeze or flinch ] ", "  [an 80 base power water move with a 20 percent chance to flinch] ", " [a 102 base power normal physical attack] ", " [A steel move that has 75 percent accuracy ]", " [The user bounces in the air one turn but then dunks on the opponent the second turn, 85 base power flying move, 30 % flinch rate , 85 accuracy]", " [The user snipes the opponent with stones (rock move, 100 base power, 80 accuracy]  ", " [ A 100 base power ground type move  with 100 accuracy] "};
 
-			for (int i = 0; i < abbreviated.length; i++) {
+		for (int i = 0; i < abbreviated.length; i++) {
 
 				System.out.println("* " + possiblemoves[i] + "  " + abbreviated[i] + "  " + explain[i]);
 
@@ -1007,10 +1031,13 @@ public class pokemon {
 
 		} else if (pokemonname.equals("manaphy")) {
 
+			String[] possiblemoves = {"tailglow", "surf", "energyball",  "shadowball", "psychic", "dazzlinggleam", "icebeam"}; // array of possible moves for this pokemon
+			String[] abbreviated = {"tg", "su", "eb", "sb", "ps", "dg", "ib"};// array of the abbreviated moves
+			String[] explain = {" [An over powered move that boosts the special attack of the user. Manaphy's secret weapon]",
+					"[A wave of water washes the opponent, 95 power move ]",
+					"[A ball of grassy naturs hits the opponent, 90 power, 20% of a spdef drop]",
+					" [A shadowball sniped the opponent, ghost 80 power move with a 30% chance of a spdef drop]", "[ A psychic wave is shot at the opponent, 90 power, 10% for a special def drop] ", " [A bright light hits the opponent, an 80 power fairy move] ", "[An icy beam hits the oponent, 90 power, 20% chance of freeze] "};
 
-			String[] possiblemoves = {"tailglow", "surf", "energyball", "bounce", "shadowball", "psychic", "dazzlinggleam", "icebeam"}; // array of possible moves for this pokemon
-			String[] abbreviated = {"tg", "su", "eb", "bo", "sb", "ps", "dg", "ib"};// array of the abbreviated moves
-			String[] explain = {" [An over powered move that boosts the special attack of the user. Manaphy's secret weapon]", "[A wave of water washes the opponent, 95 power move ]", "[A ball of grassy naturs hits the opponent, 90 power, 20% of a spdef drop]", "[the user bounces up and dunks on the opponent, 2 turn move, 40% chance of paralysis] ", " [A shadowball sniped the opponent, ghost 80 power move with a 30% chance of a spdef drop]", "[ A psychic wave is shot at the opponent, 90 power, 10% for a special def drop] ", " [A bright light hits the opponent, an 80 power fairy move] ", "[An icy beam hits the oponent, 90 power, 20% chance of freeze] "};
 
 			for (int i = 0; i < abbreviated.length; i++) {
 
@@ -1131,9 +1158,10 @@ public class pokemon {
 		} else if (pokemonname.equals("kingdra")) {
 
 
-			String[] possiblemoves = {"dragondance", "bounce", "hydropump", "dragonpulse", "flashcannon", "bodyslam", "yawn", "focusenergy"}; // array of possible moves for this pokemon
-			String[] abbreviated = {"dd", "bo", "hp", "dp", "fc", "bs", "y", "fe"};// array of the abbreviated moves
-			String[] explain = {"[boosts attack and speed]", " [User bounces in the air and slams the opponent, 80 power, 20% chance to paralyze]", "[user hits the target with a 110 power water type move]", "[An 80 power dragon move]", "[The opponent is hit with a steel beam, 90 power, has a chance of reducing spdef]", "[the user hits the opponent with its body, 80 power 30% chance to paralyse the opponent] ", " [The user makes the opponent tired and sleep after one turn]", "[ Increases the chances of crits] "};
+
+			String[] possiblemoves = {"waterfall", "dragondance", "hydropump", "dragonpulse", "flashcannon", "bodyslam", "yawn", "focusenergy"}; // array of possible moves for this pokemon
+			String[] abbreviated = {"wf","dd", "hp", "dp", "fc", "bs", "y", "fe"};// array of the abbreviated moves
+			String[] explain = {"[An 80 base power physical water move]", "[boosts attack and speed]", "[user hits the target with a 110 power water type move]", "[An 80 power dragon move]", "[The opponent is hit with a steel beam, 90 power, has a chance of reducing spdef]", "[the user hits the opponent with its body, 80 power 30% chance to paralyse the opponent] ", " [The user makes the opponent tired and sleep after one turn]", "[ Increases the chances of crits] "};
 
 
 			for (int i = 0; i < abbreviated.length; i++) {
@@ -3217,9 +3245,10 @@ public class pokemon {
 
 		} else if (pokemonname.equals("gyarados")) {
 
-			String[] possiblemoves = {"dragondance", "icefang", "waterfall", "return", "irontail", "bounce", "stoneedge", "earthquake"}; // array of possible moves for this pokemon
-			String[] abbreviated = {"dd", "if", "wf", "re", "it", "bo", "se", "ea"};// array of the abbreviated moves
-			String[] explain = {"[boosts attack and speed]", "[a 65 power physical ice move (95 accuracy) 10 percent chance to freeze or flinch ] ", "  [an 80 base power water move with a 20 percent chance to flinch] ", " [a 102 base power normal physical attack] ", " [A steel move that has 75 percent accuracy ]", " [The user bounces in the air one turn but then dunks on the opponent the second turn, 85 base power flying move, 30 % flinch rate , 85 accuracy]", " [The user snipes the opponent with stones (rock move, 100 base power, 80 accuracy]  ", " [ A 100 base power ground type move  with 100 accuracy] "};
+			String[] possiblemoves = {"dragondance", "icefang", "waterfall", "return", "irontail", "stoneedge", "earthquake"}; // array of possible moves for this pokemon
+			String[] abbreviated = {"dd", "if", "wf", "re", "it", "se", "ea"};// array of the abbreviated moves
+			String[] explain = {"[boosts attack and speed]", "[a 65 power physical ice move (95 accuracy) 10 percent chance to freeze or flinch ] ", "  [an 80 base power water move with a 20 percent chance to flinch] ", " [a 102 base power normal physical attack] ", " [A steel move that has 75 percent accuracy ]",
+					"[The user snipes the opponent with stones (rock move, 100 base power, 80 accuracy]  ", " [ A 100 base power ground type move  with 100 accuracy] "};
 
 			for (int i = 0; i < abbreviated.length; i++) {
 
@@ -3862,9 +3891,13 @@ public class pokemon {
 
 		} else if (pokemonname.equals("manaphy")) {
 
-			String[] possiblemoves = {"tailglow", "surf", "energyball", "bounce", "shadowball", "psychic", "dazzlinggleam", "icebeam"}; // array of possible moves for this pokemon
-			String[] abbreviated = {"tg", "su", "eb", "bo", "sb", "ps", "dg", "ib"};// array of the abbreviated moves
-			String[] explain = {" [An over powered move that boosts the special attack of the user. Manaphy's secret weapon]", "[A wave of water washes the opponent, 95 power move ]", "[A ball of grassy naturs hits the opponent, 90 power, 20% of a spdef drop]", "[the user bounces up and dunks on the opponent, 2 turn move, 40% chance of paralysis] ", " [A shadowball sniped the opponent, ghost 80 power move with a 30% chance of a spdef drop]", "[ A psychic wave is shot at the opponent, 90 power, 10% for a special def drop] ", " [A bright light hits the opponent, an 80 power fairy move] ", "[An icy beam hits the oponent, 90 power, 20% chance of freeze] "};
+			String[] possiblemoves = {"tailglow", "surf", "energyball",  "shadowball", "psychic", "dazzlinggleam", "icebeam"}; // array of possible moves for this pokemon
+			String[] abbreviated = {"tg", "su", "eb", "sb", "ps", "dg", "ib"};// array of the abbreviated moves
+			String[] explain = {" [An over powered move that boosts the special attack of the user. Manaphy's secret weapon]",
+					"[A wave of water washes the opponent, 95 power move ]",
+					"[A ball of grassy naturs hits the opponent, 90 power, 20% of a spdef drop]",
+					" [A shadowball sniped the opponent, ghost 80 power move with a 30% chance of a spdef drop]", "[ A psychic wave is shot at the opponent, 90 power, 10% for a special def drop] ", " [A bright light hits the opponent, an 80 power fairy move] ", "[An icy beam hits the oponent, 90 power, 20% chance of freeze] "};
+
 
 
 			for (int i = 0; i < abbreviated.length; i++) {
@@ -3988,9 +4021,10 @@ public class pokemon {
 
 		} else if (pokemonname.equals("kingdra")) {
 
-			String[] possiblemoves = {"dragondance", "bounce", "hydropump", "dragonpulse", "flashcannon", "bodyslam", "yawn", "focusenergy"}; // array of possible moves for this pokemon
-			String[] abbreviated = {"dd", "bo", "hp", "dp", "fc", "bs", "y", "fe"};// array of the abbreviated moves
-			String[] explain = {"[boosts attack and speed]", " [User bounces in the air and slams the opponent, 80 power, 20% chance to paralyze]", "[user hits the target with a 110 power water type move]", "[An 80 power dragon move]", "[The opponent is hit with a steel beam, 90 power, has a chance of reducing spdef]", "[the user hits the opponent with its body, 80 power 30% chance to paralyse the opponent] ", " [The user makes the opponent tired and sleep after one turn]", "[ Increases the chances of crits] "};
+
+			String[] possiblemoves = {"waterfall", "dragondance", "hydropump", "dragonpulse", "flashcannon", "bodyslam", "yawn", "focusenergy"}; // array of possible moves for this pokemon
+			String[] abbreviated = {"wf","dd", "hp", "dp", "fc", "bs", "y", "fe"};// array of the abbreviated moves
+			String[] explain = {"[An 80 base power physical water move]", "[boosts attack and speed]", "[user hits the target with a 110 power water type move]", "[An 80 power dragon move]", "[The opponent is hit with a steel beam, 90 power, has a chance of reducing spdef]", "[the user hits the opponent with its body, 80 power 30% chance to paralyse the opponent] ", " [The user makes the opponent tired and sleep after one turn]", "[ Increases the chances of crits] "};
 
 
 			for (int i = 0; i < abbreviated.length; i++) {
@@ -6119,9 +6153,10 @@ public class pokemon {
 
 		} else if (pokemonname.equals("gyarados")) {
 
-			String[] possiblemoves = {"dragondance", "icefang", "waterfall", "return", "irontail", "bounce", "stoneedge", "earthquake"}; // array of possible moves for this pokemon
-			String[] abbreviated = {"dd", "if", "wf", "re", "it", "bo", "se", "ea"};// array of the abbreviated moves
-			String[] explain = {"[boosts attack and speed]", "[a 65 power physical ice move (95 accuracy) 10 percent chance to freeze or flinch ] ", "  [an 80 base power water move with a 20 percent chance to flinch] ", " [a 102 base power normal physical attack] ", " [A steel move that has 75 percent accuracy ]", " [The user bounces in the air one turn but then dunks on the opponent the second turn, 85 base power flying move, 30 % flinch rate , 85 accuracy]", " [The user snipes the opponent with stones (rock move, 100 base power, 80 accuracy]  ", " [ A 100 base power ground type move  with 100 accuracy] "};
+			String[] possiblemoves = {"dragondance", "icefang", "waterfall", "return", "irontail", "stoneedge", "earthquake"}; // array of possible moves for this pokemon
+			String[] abbreviated = {"dd", "if", "wf", "re", "it", "se", "ea"};// array of the abbreviated moves
+			String[] explain = {"[boosts attack and speed]", "[a 65 power physical ice move (95 accuracy) 10 percent chance to freeze or flinch ] ", "  [an 80 base power water move with a 20 percent chance to flinch] ", " [a 102 base power normal physical attack] ", " [A steel move that has 75 percent accuracy ]",
+					"[The user snipes the opponent with stones (rock move, 100 base power, 80 accuracy]  ", " [ A 100 base power ground type move  with 100 accuracy] "};
 
 			for (int i = 0; i < abbreviated.length; i++) {
 
@@ -6768,9 +6803,13 @@ public class pokemon {
 		} else if (pokemonname.equals("manaphy")) {
 
 
-			String[] possiblemoves = {"tailglow", "surf", "energyball", "bounce", "shadowball", "psychic", "dazzlinggleam", "icebeam"}; // array of possible moves for this pokemon
-			String[] abbreviated = {"tg", "su", "eb", "bo", "sb", "ps", "dg", "ib"};// array of the abbreviated moves
-			String[] explain = {" [An over powered move that boosts the special attack of the user. Manaphy's secret weapon]", "[A wave of water washes the opponent, 95 power move ]", "[A ball of grassy naturs hits the opponent, 90 power, 20% of a spdef drop]", "[the user bounces up and dunks on the opponent, 2 turn move, 40% chance of paralysis] ", " [A shadowball sniped the opponent, ghost 80 power move with a 30% chance of a spdef drop]", "[ A psychic wave is shot at the opponent, 90 power, 10% for a special def drop] ", " [A bright light hits the opponent, an 80 power fairy move] ", "[An icy beam hits the oponent, 90 power, 20% chance of freeze] "};
+			String[] possiblemoves = {"tailglow", "surf", "energyball",  "shadowball", "psychic", "dazzlinggleam", "icebeam"}; // array of possible moves for this pokemon
+			String[] abbreviated = {"tg", "su", "eb", "sb", "ps", "dg", "ib"};// array of the abbreviated moves
+			String[] explain = {" [An over powered move that boosts the special attack of the user. Manaphy's secret weapon]",
+					"[A wave of water washes the opponent, 95 power move ]",
+					"[A ball of grassy naturs hits the opponent, 90 power, 20% of a spdef drop]",
+					" [A shadowball sniped the opponent, ghost 80 power move with a 30% chance of a spdef drop]", "[ A psychic wave is shot at the opponent, 90 power, 10% for a special def drop] ", " [A bright light hits the opponent, an 80 power fairy move] ", "[An icy beam hits the oponent, 90 power, 20% chance of freeze] "};
+
 
 			for (int i = 0; i < abbreviated.length; i++) {
 
@@ -6891,10 +6930,10 @@ public class pokemon {
 		} else if (pokemonname.equals("kingdra")) {
 
 
-			String[] possiblemoves = {"dragondance", "bounce", "hydropump", "dragonpulse", "flashcannon", "bodyslam", "yawn", "focusenergy"}; // array of possible moves for this pokemon
-			String[] abbreviated = {"dd", "bo", "hp", "dp", "fc", "bs", "y", "fe"};// array of the abbreviated moves
-			String[] explain = {"[boosts attack and speed]", " [User bounces in the air and slams the opponent, 80 power, 20% chance to paralyze]", "[user hits the target with a 110 power water type move]", "[An 80 power dragon move]", "[The opponent is hit with a steel beam, 90 power, has a chance of reducing spdef]", "[the user hits the opponent with its body, 80 power 30% chance to paralyse the opponent] ", " [The user makes the opponent tired and sleep after one turn]", "[ Increases the chances of crits] "};
 
+			String[] possiblemoves = {"waterfall", "dragondance", "hydropump", "dragonpulse", "flashcannon", "bodyslam", "yawn", "focusenergy"}; // array of possible moves for this pokemon
+			String[] abbreviated = {"wf","dd", "hp", "dp", "fc", "bs", "y", "fe"};// array of the abbreviated moves
+			String[] explain = {"[An 80 base power physical water move]", "[boosts attack and speed]", "[user hits the target with a 110 power water type move]", "[An 80 power dragon move]", "[The opponent is hit with a steel beam, 90 power, has a chance of reducing spdef]", "[the user hits the opponent with its body, 80 power 30% chance to paralyse the opponent] ", " [The user makes the opponent tired and sleep after one turn]", "[ Increases the chances of crits] "};
 
 			for (int i = 0; i < abbreviated.length; i++) {
 
@@ -9064,9 +9103,10 @@ public class pokemon {
 
 		} else if (pokemonname.equals("gyarados")) {
 
-			String[] possiblemoves = {"dragondance", "icefang", "waterfall", "return", "irontail", "bounce", "stoneedge", "earthquake"}; // array of possible moves for this pokemon
-			String[] abbreviated = {"dd", "if", "wf", "re", "it", "bo", "se", "ea"};// array of the abbreviated moves
-			String[] explain = {"[boosts attack and speed]", "[a 65 power physical ice move (95 accuracy) 10 percent chance to freeze or flinch ] ", "  [an 80 base power water move with a 20 percent chance to flinch] ", " [a 102 base power normal physical attack] ", " [A steel move that has 75 percent accuracy ]", " [The user bounces in the air one turn but then dunks on the opponent the second turn, 85 base power flying move, 30 % flinch rate , 85 accuracy]", " [The user snipes the opponent with stones (rock move, 100 base power, 80 accuracy]  ", " [ A 100 base power ground type move  with 100 accuracy] "};
+			String[] possiblemoves = {"dragondance", "icefang", "waterfall", "return", "irontail", "stoneedge", "earthquake"}; // array of possible moves for this pokemon
+			String[] abbreviated = {"dd", "if", "wf", "re", "it", "se", "ea"};// array of the abbreviated moves
+			String[] explain = {"[boosts attack and speed]", "[a 65 power physical ice move (95 accuracy) 10 percent chance to freeze or flinch ] ", "  [an 80 base power water move with a 20 percent chance to flinch] ", " [a 102 base power normal physical attack] ", " [A steel move that has 75 percent accuracy ]",
+				"[The user snipes the opponent with stones (rock move, 100 base power, 80 accuracy]  ", " [ A 100 base power ground type move  with 100 accuracy] "};
 
 			for (int i = 0; i < abbreviated.length; i++) {
 
@@ -9731,9 +9771,12 @@ public class pokemon {
 		} else if (pokemonname.equals("manaphy")) {
 
 
-			String[] possiblemoves = {"tailglow", "surf", "energyball", "bounce", "shadowball", "psychic", "dazzlinggleam", "icebeam"}; // array of possible moves for this pokemon
-			String[] abbreviated = {"tg", "su", "eb", "bo", "sb", "ps", "dg", "ib"};// array of the abbreviated moves
-			String[] explain = {" [An over powered move that boosts the special attack of the user. Manaphy's secret weapon]", "[A wave of water washes the opponent, 95 power move ]", "[A ball of grassy naturs hits the opponent, 90 power, 20% of a spdef drop]", "[the user bounces up and dunks on the opponent, 2 turn move, 40% chance of paralysis] ", " [A shadowball sniped the opponent, ghost 80 power move with a 30% chance of a spdef drop]", "[ A psychic wave is shot at the opponent, 90 power, 10% for a special def drop] ", " [A bright light hits the opponent, an 80 power fairy move] ", "[An icy beam hits the oponent, 90 power, 20% chance of freeze] "};
+			String[] possiblemoves = {"tailglow", "surf", "energyball",  "shadowball", "psychic", "dazzlinggleam", "icebeam"}; // array of possible moves for this pokemon
+			String[] abbreviated = {"tg", "su", "eb", "sb", "ps", "dg", "ib"};// array of the abbreviated moves
+			String[] explain = {" [An over powered move that boosts the special attack of the user. Manaphy's secret weapon]",
+					"[A wave of water washes the opponent, 95 power move ]",
+					"[A ball of grassy naturs hits the opponent, 90 power, 20% of a spdef drop]",
+					 " [A shadowball sniped the opponent, ghost 80 power move with a 30% chance of a spdef drop]", "[ A psychic wave is shot at the opponent, 90 power, 10% for a special def drop] ", " [A bright light hits the opponent, an 80 power fairy move] ", "[An icy beam hits the oponent, 90 power, 20% chance of freeze] "};
 
 
 			for (int i = 0; i < abbreviated.length; i++) {
@@ -9859,9 +9902,9 @@ public class pokemon {
 		} else if (pokemonname.equals("kingdra")) {
 
 
-			String[] possiblemoves = {"dragondance", "bounce", "hydropump", "dragonpulse", "flashcannon", "bodyslam", "yawn", "focusenergy"}; // array of possible moves for this pokemon
-			String[] abbreviated = {"dd", "bo", "hp", "dp", "fc", "bs", "y", "fe"};// array of the abbreviated moves
-			String[] explain = {"[boosts attack and speed]", " [User bounces in the air and slams the opponent, 80 power, 20% chance to paralyze]", "[user hits the target with a 110 power water type move]", "[An 80 power dragon move]", "[The opponent is hit with a steel beam, 90 power, has a chance of reducing spdef]", "[the user hits the opponent with its body, 80 power 30% chance to paralyse the opponent] ", " [The user makes the opponent tired and sleep after one turn]", "[ Increases the chances of crits] "};
+			String[] possiblemoves = {"waterfall", "dragondance", "hydropump", "dragonpulse", "flashcannon", "bodyslam", "yawn", "focusenergy"}; // array of possible moves for this pokemon
+			String[] abbreviated = {"wf","dd", "hp", "dp", "fc", "bs", "y", "fe"};// array of the abbreviated moves
+			String[] explain = {"[An 80 base power physical water move]", "[boosts attack and speed]", "[user hits the target with a 110 power water type move]", "[An 80 power dragon move]", "[The opponent is hit with a steel beam, 90 power, has a chance of reducing spdef]", "[the user hits the opponent with its body, 80 power 30% chance to paralyse the opponent] ", " [The user makes the opponent tired and sleep after one turn]", "[ Increases the chances of crits] "};
 
 
 			for (int i = 0; i < abbreviated.length; i++) {
@@ -14087,7 +14130,7 @@ public class pokemon {
  	// this is where all pokemon will get their stats (Whether player 1 or player 2 ) 
  	
      
-     // every pokemon has 7 potential moves
+     // every pokemon has at least 7 potential moves
      
  	// These are the pokemon of this simulator and their stats 
      /* Metagross:
@@ -14642,7 +14685,7 @@ public class pokemon {
       *
       *
       *
-      * UNADDED POKEMON (batch 1)
+      *
       *
       * charizard
       * HP: 360
@@ -14728,7 +14771,7 @@ public class pokemon {
       *
       *
       *
-      * //MORE UNADDED POKEMON (batch 2)
+      *
       *
       * talonflame
       * HP: 360
@@ -14789,7 +14832,7 @@ public class pokemon {
       *
       *
       *
-      * //MORE UNADDED POKEMON (batch 3)
+      *
       *
       * groudon
       * HP: 404

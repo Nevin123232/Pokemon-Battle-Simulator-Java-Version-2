@@ -1,0 +1,55 @@
+
+Opening credits- Pokemon platinum opening credits theme (Music Creator: Junichi Masuda, Go Ichinose, Morikazu Aoki,   )
+Main menu theme- Pokemon firered victory Road theme(Music Creator: Junichi Masuda, Go Ichinose, Morikazu Aoki,   )
+
+Battle themes:
+
+	* Gen 5 pokemon world championships theme (pokemon black and white):  Music Creators: Junichi Masuda, Go Ichinose, Morikazu Aoki
+
+	* A mashup of hugh's theme: (while the origonal compositions are by Music Creators: Junichi Masuda, Go Ichinose, Morikazu Aoki)
+	the mashup I found was created by IschmarVI Mashups. Here is a link to ther youtube channel: https://www.youtube.com/c/IschmarVI
+
+	* A mashup of wally's ORAS theme: (while the origonal compositions are by Music Creators: Junichi Masuda, Go Ichinose, Morikazu Aoki)
+      the mashup I found was created by IschmarVI Mashups. Here is a link to ther youtube channel: https://www.youtube.com/c/IschmarVI
+
+    * Trainer theme mashup of various kanto/jhoto games: (while the origonal compositions are by Music Creators: Junichi Masuda, Go Ichinose, Morikazu Aoki)
+      the mashup I found was created by IschmarVI Mashups. Here is a link to ther youtube channel: https://www.youtube.com/c/IschmarVI
+
+	* Silver's fight theme (jhoto pokemon rival theme): (while the origonal compositions are by Music Creators: Junichi Masuda, Go Ichinose, Morikazu Aoki)
+     the mashup I found was created by IschmarVI Mashups. Here is a link to ther youtube channel: https://www.youtube.com/c/IschmarVI
+
+	* An ace attorney theme: (while the origonal compositions are by Music Creator: Noriyuki Iwadare)
+    the mashup I found was created by IschmarVI Mashups. Here is a link to ther youtube channel: https://www.youtube.com/c/IschmarVI
+
+    * Cynthia's PWT theme: This was a gamerip, the origonal music creators are: Junichi Masuda, Go Ichinose, Morikazu Aoki
+
+	* Megalovania (from undertale): This was a gamerip: the origonal greator is named: Toby Fox
+
+	* PWT final round theme: This was a gamerip, the origonal music creators are: Junichi Masuda, Go Ichinose, Morikazu Aoki
+
+	* "Never Gona Give You Up" - The song by Rick Astley, I really wanted to rickroll other players lol
+
+
+
+
+End Credits theme - Pokemon black and white end credits theme (Music Creators: Junichi Masuda, Go Ichinose, Morikazu Aoki,    )
+
+Various sound effects:
+
+        * pokemon cries: Music Creator: Junichi Masuda, Go Ichinose, Morikazu Aoki,
+            -  I downloaded them from pokemon showdown at: https://play.pokemonshowdown.com/audio/cries/?C=D;O=A
+        * various music and move sound effects:  Music Creator: Junichi Masuda, Go Ichinose, Morikazu Aoki,
+            -  I downloaded them from: https://downloads.khinsider.com/game-soundtracks/album/pokemon-sfx-gen-3-attack-moves-rse-fr-lg/Slam.mp3
+
+
+
+
+ Here are the mp3 to wav converters I used:
+ * https://cloudconvert.com/
+ * https://convertio.co/download/4d33a124346963b68599e00c210c3d6b7635f2/
+ * https://audio.online-convert.com/convert-to-wav
+ * https://www.freeconvert.com/mp3-to-wav
+
+
+
+ No copyright intended, All brands belong to their respective owners, I make no money from this game, I'm just trying to practice my programming skills

@@ -1,0 +1,834 @@
+  /*	All possible pokemon in the game:
+
+"metagross", "gliscor", "excadrill", "arcanine", "krookodile",
+
+ "feraligatr", "gyarados","starmie", "gengar", "espeon", 
+
+"jolteon", "glaceon", "archeops","umbreon", "leafeon", 
+
+"vaporeon", "flareon", "sylveon", "scizor", "hydreigon",
+
+"meloetta", "crobat", "manaphy", "jirachi", "melmetal", 
+
+"milotic", "kingdra", "salamence", "dragonite", "chandelure", 
+
+"greninja","zeraora", "togekiss", "volcarona","pikachu",
+
+ "mimikyu","noivern", "hawlucha","zoroark","garchomp", 
+
+"tyranitar", "lucario", "flygon", "dragapult","goodra",
+
+"golisopod", "sceptile", "roserade", "mewtwo", "charizard",
+
+
+"talonflame", "snorlax", "infernape", "weavile","giratina-altered", 
+
+"giratina-origin","rayquaza", "kyogre", "groudon","gardevoir",
+
+ "gallade", "machamp",
+
+
+
+
+
+			};
+
+*/
+
+
+All of their stats:
+
+ 
+     // every pokemon has at least 7 potential moves
+     
+ 	// These are the pokemon of this simulator and their stats 
+     /* Metagross:
+      * HP: 364
+      * Attack: 405
+      * Defense: 394
+      * Special Attack:  317
+      * Special Defense: 306
+      * Speed: 262
+      * Ability: clearbody
+      * Type1: steel
+      * Type2: psychic
+      * 
+      * Gliscor
+        HP: 354
+      * Attack: 317
+      * Defense: 383
+      * Special Attack:  207
+      * Special Defense: 273
+      * Speed: 317
+      * Ability: hypercutter
+      * Type1: ground 
+      * Type2: flying
+
+        excadrill
+        
+       HP: 404
+      * Attack: 405
+      * Defense: 240
+      * Special Attack:  218
+      * Special Defense: 251
+      * Speed: 302
+      * Ability: moldbreaker
+      * Type1: steel
+      * Type2: ground
+      * 
+      * 
+      *arcanine
+      * HP: 384
+      * Attack: 350
+      * Defense: 284
+      * Special Attack:  328
+      * Special Defense: 284
+      * Speed: 317
+      * Ability: intimidate
+      * Type1: fire
+      * Type2: null
+      * 
+      * krookodile
+      * HP: 394
+      * Attack: 366
+      * Defense: 284
+      * Special Attack:  251
+      * Special Defense: 262
+      * Speed: 311
+      * Ability: intimidate
+      * Type1: ground
+      * Type2: dark
+      * 
+      * feraligatr
+      *  HP: 374
+      * Attack: 339
+      * Defense: 328
+      * Special Attack:  282
+      * Special Defense: 291
+      * Speed: 280
+      * Ability: sheerforce
+      * Type1: water
+      * Type2: null
+      * 
+      * gyarados
+      * HP: 394
+      * Attack: 383
+      * Defense: 282
+      * Special Attack:  240
+      * Special Defense: 328
+      * Speed: 287
+      * Ability: intimidate
+      * Type1: water
+      * Type2: flying
+      * 
+      * Starmie
+      * HP: 324
+      * Attack: 273
+      * Defense: 295
+      * Special Attack:  328
+      * Special Defense: 295
+      * Speed: 361
+      * Ability: (it is now magic guard)
+      * Type1: water
+      * Type2: psychic
+      * 
+      * 
+      * gengar
+      * HP: 324
+      * Attack: 251
+      * Defense: 240
+      * Special Attack:  394
+      * Special Defense: 273
+      * Speed: 350
+      * Ability: levitate
+      * Type1: ghost
+      * Type2: poison
+      * 
+      * espeon
+      * HP: 334
+      * Attack: 251
+      * Defense: 240
+      * Special Attack:  394
+      * Special Defense: 317
+      * Speed: 350
+      * Ability: magicbounce
+      * Type1: psychic
+      * Type2: null
+      * 
+      * jolteon
+      * HP: 334
+      * Attack: 251
+      * Defense: 240
+      * Special Attack:  350
+      * Special Defense: 317
+      * Speed: 394
+      * Ability: quickfeet
+      * Type1: electric
+      * Type2: null
+      * 
+      * glaceon
+      * HP: 334
+      * Attack: 240
+      * Defense: 350
+      * Special Attack:  394
+      * Special Defense: 317
+      * Speed: 251
+      * Ability: magicbounce
+      * Type1: ice
+      * Type2: null
+      * 
+      * sylveon
+      * HP: 394
+      * Attack: 251
+      * Defense: 251
+      * Special Attack:  350
+      * Special Defense: 394
+      * Speed: 240
+      * Ability: pixilate
+      * Type1: fairy
+      * Type2: null
+      * 
+      * umbreon
+      * HP: 394
+      * Attack: 251
+      * Defense: 350
+      * Special Attack:  240
+      * Special Defense: 394
+      * Speed: 251
+      * Ability: magicbounce
+      * Type1: dark
+      * Type2: null
+      * 
+      * leafeon
+      * HP: 334
+      * Attack: 350
+      * Defense: 394
+      * Special Attack:  240
+      * Special Defense: 251
+      * Speed: 317
+      * Ability: stamina
+      * Type1: grass
+      * Type2: null
+      * 
+      * vaporeon
+      * HP: 464
+      * Attack: 251
+      * Defense: 240
+      * Special Attack:  350
+      * Special Defense: 317
+      * Speed: 251
+      * Ability: waterabsorb
+      * Type1: water
+      * Type2: null
+      * 
+      * flareon
+      * HP: 334
+      * Attack: 394
+      * Defense: 240
+      * Special Attack:  317
+      * Special Defense: 350
+      * Speed: 251
+      * Ability: guts
+      * Type1: fire
+      * Type2: null
+      * 
+      * scizor
+      * HP: 344
+      * Attack: 394
+      * Defense: 328
+      * Special Attack:  229
+      * Special Defense: 284
+      * Speed: 251
+      * Ability: technician
+      * Type1: steel
+      * Type2: bug
+      * 
+      * 
+      * hydriegon
+      * HP: 388
+      * Attack: 339
+      * Defense: 306
+      * Special Attack:  383
+      * Special Defense: 306
+      * Speed: 324
+      * Ability: levitate
+      * Type1: dragon
+      * Type2: dark
+      * 
+      * meloetta // We are going to use its aria form as its default form 
+      * 
+      * Aria Form:
+      * HP: 404
+      * Attack: 278
+      * Defense: 278
+      * Special Attack:  390
+      * Special Defense: 390
+      * Speed: 306
+      * Ability: serenegrace
+      * Type1: normal
+      * Type2: psychic
+      * 
+      * Pirouete Form:
+      * HP: 404
+      * Attack: 390
+      * Defense: 306
+      * Special Attack:  278
+      * Special Defense: 278
+      * Speed: 390
+      * Ability: serenegrace
+      * Type1: normal
+      * Type2: fighting
+      * 
+      * archeops:
+      * HP: 354
+      * Attack: 416
+      * Defense: 251
+      * Special Attack:  355
+      * Special Defense: 251
+      * Speed: 350
+      * Ability: solidrock (Actual deafeatist)
+      * Type1: rock
+      * Type2: flying
+      * 
+      * 
+      * 
+      * 
+      * crobat:
+      * HP: 374
+      * Attack: 306
+      * Defense: 284
+      * Special Attack:  262
+      * Special Defense: 284
+      * Speed: 394
+      * Ability: inner focus 
+      * Type1: poison
+      * Type2: flying
+      *
+      * manaphy:
+      * HP: 404
+      * Attack: 328
+      * Defense: 328
+      * Special Attack:  328
+      * Special Defense: 328
+      * Speed: 328
+      * Ability: marvel scale
+      * Type1: water
+      * Type2: null
+      *
+      *
+      *
+      * jirachi:
+      * HP: 404
+      * Attack: 328
+      * Defense: 328
+      * Special Attack:  328
+      * Special Defense: 328
+      * Speed: 328
+      * Ability: serenegrace 
+      * Type1: steel
+      * Type2: psychic
+      * 
+      * melmetal:
+      * HP: 423
+      * Attack: 423
+      * Defense: 423
+      * Special Attack:  284
+      * Special Defense: 251
+      * Speed: 183
+      * Ability: ironfist 
+      * Type1: steel
+      * Type2: null
+      * 
+      * Kingdra
+      * HP: 354
+      * Attack: 317
+      * Defense: 317
+      * Special Attack:  317
+      * Special Defense: 317
+      * Speed: 295
+      * Ability: sniper
+      * Type1: water
+      * Type2: dragon
+      * 
+      * 
+      * machamp
+      * HP: 384
+      * Attack: 394
+      * Defense: 284
+      * Special Attack:  251
+      * Special Defense: 295
+      * Speed: 229
+      * Ability: noguard
+      * Type1: fighting
+      * Type2: null
+      * 
+      * milotic
+      * HP: 394
+      * Attack: 240
+      * Defense: 282
+      * Special Attack:  328
+      * Special Defense: 383
+      * Speed: 287
+      * Ability: marvelscale
+      * Type1: water
+      * Type2: null
+      * 
+      * dragonite
+      * HP: 386
+      * Attack: 403
+      * Defense: 317
+      * Special Attack:  328
+      * Special Defense: 328
+      * Speed: 284
+      * Ability: multiscale
+      * Type1: flying
+      * Type2: dragon
+      * 
+      * 
+      * salamence
+      * HP: 394
+      * Attack: 405
+      * Defense: 284
+      * Special Attack:  350
+      * Special Defense: 284
+      * Speed: 328
+      * Ability: intimidate
+      * Type1: flying
+      * Type2: dragon
+      * 
+      * * 
+      * chandelure
+      * HP: 324
+      * Attack: 224
+      * Defense: 306
+      * Special Attack:  427
+      * Special Defense: 306
+      * Speed: 284
+      * Ability: multiscale
+      * Type1: fire
+      * Type2: ghost
+      * 
+      * 
+      * greninja
+      * HP: 348
+      * Attack: 317
+      * Defense: 256
+      * Special Attack:  335
+      * Special Defense: 265
+      * Speed: 377
+      * Ability: protean
+      * Type1: water
+      * Type2: dark
+      * 
+      * zeraora
+      * HP: 380
+      * Attack: 355
+      * Defense: 273
+      * Special Attack:  333
+      * Special Defense: 284
+      * Speed: 423
+      * Ability: tough claws
+      * Type1: electric
+      * Type2: null
+      *
+      * 
+      * togekiss
+      * HP: 374
+      * Attack: 218
+      * Defense: 317
+      * Special Attack:  372
+      * Special Defense: 361
+      * Speed: 284
+      * Ability: serenegrace
+      * Type1: fairy
+      * Type2: flying
+      *
+      * volcarona
+      * HP: 374
+      * Attack: 240
+      * Defense: 251
+      * Special Attack:  405
+      * Special Defense: 339
+      * Speed: 328
+      * Ability: flamebody
+      * Type1: bug
+      * Type2: fire
+      *
+      * pikachu
+      * HP: 274
+      * Attack: ( 229 * 2) holds light ball
+      * Defense: 196
+      * Special Attack:  (218 * 2 )(holds light ball)
+      * Special Defense: 218
+      * Speed: 306
+      * Ability: static
+      * Type1: electric
+      * Type2: null
+      * 
+      * mimikyu
+      * HP: 314
+      * Attack: 306
+      * Defense: 284
+      * Special Attack:  218
+      * Special Defense: 339
+      * Speed: 320
+      * Ability: disguise
+      * Type1: ghost
+      * Type2: fairy
+      * 
+      * noivern
+      * HP: 374
+      * Attack: 262
+      * Defense: 284
+      * Special Attack:  322
+      * Special Defense: 284
+      * Speed: 379
+      * Ability: multiscale
+      * Type1: flying
+      * Type2: dragon
+      *
+      *
+      * hawlucha
+      * HP: 360
+      * Attack: 311
+      * Defense: 273
+      * Special Attack:  271
+      * Special Defense: 247
+      * Speed: 368
+      * Ability: moldbreaker
+      * Type1: fighting
+      * Type2: flying
+      *
+      *
+      *
+      * zoroark
+      * HP: 324
+      * Attack: 339
+      * Defense: 240
+      * Special Attack:  372
+      * Special Defense: 240
+      * Speed: 339
+      * Ability: disguise
+      * Type1: dark
+      * Type2: null
+      *
+      *
+      *
+      * garchomp
+      * HP: 420
+      * Attack: 394
+      * Defense: 317
+      * Special Attack:  284
+      * Special Defense: 295
+      * Speed: 333
+      * Ability: roughskin
+      * Type1: dragon
+      * Type2: ground
+      *
+      *
+      * tyranitar
+      * HP: 404
+      * Attack: 403
+      * Defense: 350
+      * Special Attack:  317
+      * Special Defense: 328
+      * Speed: 243
+      * Ability: solidrock
+      * Type1: rock
+      * Type2: dark
+      *
+      *
+      *
+      * lucario
+      * HP: 344
+      * Attack: 350
+      * Defense: 262
+      * Special Attack:  361
+      * Special Defense: 262
+      * Speed: 306
+      * Ability: innerfocus
+      * Type1: fighting
+      * Type2: steel
+      *
+      *
+      * flygon
+      * HP: 364
+      * Attack: 328
+      * Defense: 284
+      * Special Attack:  284
+      * Special Defense: 284
+      * Speed: 328
+      * Ability: levitate
+      * Type1: dragon
+      * Type2: ground
+      *
+      *
+      * dragapult
+      * HP: 380
+      * Attack: 372
+      * Defense: 273
+      * Special Attack:  328
+      * Special Defense: 273
+      * Speed: 421
+      * Ability: clearbody
+      * Type1: dragon
+      * Type2: ghost
+      *
+      * goodra
+      * HP: 384
+      * Attack: 328
+      * Defense: 262
+      * Special Attack:  350
+      * Special Defense: 438
+      * Speed: 284
+      * Ability: gooey
+      * Type1: dragon
+      * Type2: null
+      *
+      *
+      *
+      *
+      *
+      *
+      *
+      *
+      *
+      *
+
+      *
+      * charizard
+      * HP: 360
+      * Attack: 293
+      * Defense: 280
+      * Special Attack:  348
+      * Special Defense: 295
+      * Speed: 328
+      * Ability: toughclaws
+      * Type1: fire
+      * Type2: flying
+      *
+      *
+      * golisopod
+      * HP: 354
+      * Attack: 383
+      * Defense: 416
+      * Special Attack:  240
+      * Special Defense: 306
+      * Speed: 196
+      * Ability: toughclaws
+      * Type1: bug
+      * Type2: water
+      *
+      *
+      * roserade
+      * HP: 324
+      * Attack: 262
+      * Defense: 251
+      * Special Attack:  383
+      * Special Defense: 339
+      * Speed: 306
+      * Ability: poisonpoint
+      * Type1: grass
+      * Type2: poison
+      *
+      *
+      * sceptile
+      * HP: 344
+      * Attack: 295
+      * Defense: 251
+      * Special Attack:  339
+      * Special Defense: 295
+      * Speed: 372
+      * Ability: protean
+      * Type1: grass
+      * Type2: null
+
+      * mewtwo
+      * HP: 416
+      * Attack: 350
+      * Defense: 306
+      * Special Attack:  447
+      * Special Defense: 306
+      * Speed: 394
+      * Ability: multiscale
+      * Type1: psychic
+      * Type2: null
+      *
+      *
+      *
+      *
+      *
+      *
+      *
+      *
+      *
+      *
+      *
+      *
+      *
+      *
+      *
+      *
+      *
+      *
+      *
+      *
+      *
+      *
+      *
+      *
+      *
+      *
+      *
+      * 
+      *
+      * talonflame
+      * HP: 360
+      * Attack: 287
+      * Defense: 265
+      * Special Attack:  271
+      * Special Defense: 260
+      * Speed: 386
+      * Ability: toughclaws
+      * Type1: fire
+      * Type2: flying
+      *
+      *
+      * snorlax
+      * HP: 524
+      * Attack: 350
+      * Defense: 251
+      * Special Attack:  251
+      * Special Defense: 350
+      * Speed: 174
+      * Ability: roughskin
+      * Type1: normal
+      * Type2: null
+      *
+      *
+      * infernape
+      * HP: 356
+      * Attack: 337
+      * Defense: 265
+      * Special Attack:  337
+      * Special Defense: 265
+      * Speed: 346
+      * Ability: toughclaws
+      * Type1: fire
+      * Type2: fighting
+      *
+      *
+      * weavile
+      * HP: 344
+      * Attack: 372
+      * Defense: 251
+      * Special Attack:  207
+      * Special Defense: 295
+      * Speed: 383
+      * Ability: toughclaws
+      * Type1: dark
+      * Type2: ice
+      *
+      *
+      *
+      *
+      *
+      *
+      *
+      *
+      *
+      *
+      *
+      *
+      *
+      * groudon
+      * HP: 404
+      * Attack: 438
+      * Defense: 416
+      * Special Attack:  328
+      * Special Defense: 306
+      * Speed: 306
+      * Ability: solidrock
+      * Type1: ground
+      * Type2: null
+      *
+      *
+      * kyogre
+      * HP:404
+      * Attack: 328
+      * Defense: 306
+      * Special Attack: 438
+      * Special Defense: 416
+      * Speed: 306
+      * Ability: multiscale
+      * Type1: water
+      * Type2: null
+      *
+      *
+      * rayquaza
+      * HP: 414
+      * Attack: 438
+      * Defense: 306
+      * Special Attack:  438
+      * Special Defense: 306
+      * Speed: 317
+      * Ability: multiscale
+      * Type1: dragon
+      * Type2: flying
+      *
+      *
+      * giratina-altered
+      * HP: 504
+      * Attack: 328
+      * Defense: 372
+      * Special Attack:  328
+      * Special Defense: 372
+      * Speed: 306
+      * Ability: levitate
+      * Type1: dragon
+      * Type2: ghost
+
+      * giratina-origin
+      * HP: 504
+      * Attack: 372
+      * Defense: 328
+      * Special Attack:  372
+      * Special Defense: 328
+      * Speed: 306
+      * Ability: levitate
+      * Type1: dragon
+      * Type2: ghost
+      *
+      *
+      *
+      * gallade
+      * HP: 340
+      * Attack: 383
+      * Defense: 251
+      * Special Attack:  251
+      * Special Defense: 361
+      * Speed: 284
+      * Ability: toughclaws
+      * Type1: psychic
+      * Type2: fighting
+
+      * gardevoir
+      * HP: 340
+      * Attack: 251
+      * Defense: 251
+      * Special Attack:  383
+      * Special Defense: 361
+      * Speed: 284
+      * Ability: magicbounce
+      * Type1: psychic
+      * Type2: fairy
+      *
+      *
+      *
+      *
+      *
+      *
+      */
+ 	
+
+

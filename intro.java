@@ -35,11 +35,6 @@ public class intro {
 			
 			System.out.println("Okay... Returning you to gameplay.....");
 			
-			
-			System.out.println(" ");
-			
-			System.out.println("The move bounce is still pretty buggy in the program....");
-			
 			System.out.println(" ");
 			
 			System.out.println("MAKE SURE TO TERMINATE PROGRAM OUTPUT BEFORE CLOSING THIS CONSOLE (to stop the music)....");
@@ -145,7 +140,7 @@ public class intro {
 		
 		TimeUnit.MILLISECONDS.sleep(3375);
 		
-			System.out.println("*******  WELCOME TO THE POKEMON BATTLE SIMULATOR: JAVA EDITION. ******");
+			System.out.println("*******  WELCOME TO THE POKEMON BATTLE SIMULATOR: JAVA EDITION. (Version 2.5)******");
 			
 
 			
@@ -250,11 +245,13 @@ public class intro {
 		 System.out.println("       ");
 		 
 		 
-		 System.out.println("Amount of pokemon: 31,   Amount of moves: I stopped counting after 90......");
+		 System.out.println("Amount of pokemon: 62, I added double the pokemon since last time!!!  Amount of moves: I stopped counting after 100 (lots of more new playstyles supported)......");
 		
 		 TimeUnit.MILLISECONDS.sleep(5000);
 		 
-		 System.out.println("\nCreator of pokemon: Satoshi Tajiri \nMusic Creator: Junichi Masuda, Go Ichinose, Morikazu Aoki");
+		 System.out.println("\nCreator of pokemon: Satoshi Tajiri \nMusic Creator: Junichi Masuda, Go Ichinose, Morikazu Aoki"
+		 +"\nShout out to IschmarVI Mashups for the cool new music I added to the program. Here is a link to their Youtube channel: https://www.youtube.com/c/IschmarVI,\n" +
+				 "Also shoutout to Rick Astley for a surprise theme I added:)");
 	
 		 
 		 TimeUnit.MILLISECONDS.sleep(5000);
@@ -269,10 +266,12 @@ public class intro {
 		 
 		 System.out.println("\n");
 		 
-		 System.out.println("Here is the mp3 - wav converter I used for the themes and pokemon cries..."
+		 System.out.println("Here are the mp3 - wav converters I used for the themes and pokemon cries..."
 		 		+ "\nhttps://cloudconvert.com/"
 		 		+ "\nAnd https://convertio.co/download/4d33a124346963b68599e00c210c3d6b7635f2/ "
-		 		+ "\nhttps://audio.online-convert.com/convert-to-wav");
+		 		+ "\nhttps://audio.online-convert.com/convert-to-wav"
+		 		+ "\nhttps://www.freeconvert.com/mp3-to-wav"
+		 		);
 		 
 		 TimeUnit.MILLISECONDS.sleep(5000);
 		 
