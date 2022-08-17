@@ -14851,7 +14851,27 @@ public class pokemon {
       *
       *
       *
-      *
+      * gallade
+      * HP: 340
+      * Attack: 383
+      * Defense: 251
+      * Special Attack:  251
+      * Special Defense: 361
+      * Speed: 284
+      * Ability: toughclaws
+      * Type1: psychic
+      * Type2: fighting
+
+      * gardevoir
+      * HP: 340
+      * Attack: 251
+      * Defense: 251
+      * Special Attack:  383
+      * Special Defense: 361
+      * Speed: 284
+      * Ability: magicbounce
+      * Type1: psychic
+      * Type2: fairy
       *
       *
       *
