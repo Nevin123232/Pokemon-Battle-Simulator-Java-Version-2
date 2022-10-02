@@ -1,2 +1,4 @@
 Nevintest8-7-2022b used a feraligatr
 Nevintest8-7-2022c used a kingdra
+test-postversion2.5update-2 used a metagross
+Alan used a charizard

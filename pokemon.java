@@ -12385,7 +12385,7 @@ public class pokemon {
 
 		}
 		else if (pokemonname.equals("giratina-origin")) {
-			ability = "toughclaws";
+			ability = "levitate";
 
 		}
 		else if (pokemonname.equals("gardevoir")) {
