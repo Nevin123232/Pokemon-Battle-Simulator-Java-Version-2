@@ -5,7 +5,7 @@ Project Creator: Nevin Ndonwi
 Contact info: nevinfonndonwi@gmail.com
 
 Project Duration: December 2020 - March 2021 (3 months) (However, updates have been made post-development in August of 2022)
-* version 2.5 (this current version, was worked on during August of 2022), doubled pokemon avaialable to players and diversified gameplay
+* version 2.5 (this current version, was worked on during August of 2022), doubled pokemon available to players and diversified gameplay)
 
 This is the second version that I created, the first one I created was a test run in c++. 
 
